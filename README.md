@@ -49,7 +49,8 @@ This project is part of the Pre-Advanced Websites series, designed to:
 - Improve responsive web design techniques
 
 ## License
-This project is licensed under the MIT License.  
-See the LICENSE file for more details.
 
-**License: MIT**
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for more details.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
