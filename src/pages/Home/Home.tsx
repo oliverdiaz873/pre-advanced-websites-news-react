@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import { BreakingNewsBanner } from '../../features/news/components';
 
 export const Home = () => {
   return (
@@ -7,9 +8,8 @@ export const Home = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Main Content Column (equivalent to col-lg-9) */}
         <div className="lg:col-span-9 space-y-8">
-          <section className="breaking-news">
-             {/* TODO: Breaking News Banner */}
-             <div className="p-4 bg-red-600 text-white rounded font-bold">TODO: Breaking News</div>
+          <section className="breaking-news-section">
+             <BreakingNewsBanner />
           </section>
 
           <section className="featured-news">

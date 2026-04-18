@@ -15,14 +15,14 @@ export const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-gray-100 border-b border-gray-200 dark:bg-gray-900 dark:border-gray-800 transition-colors duration-200">
+    <header className="sticky top-0 z-50 w-full bg-white dark:bg-gray-900 shadow-[0_2px_5px_rgba(0,0,0,0.1)] transition-colors duration-200">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-[70px]">
           {/* Logo Section */}
           <div className="flex items-center shrink-0">
             <Link to="/" className="flex items-center gap-2 text-decoration-none">
               <img src={logoImg} alt="Logo NewsHub" className="w-[45px] h-[45px] object-cover rounded-md" loading="lazy" />
-              <h1 className="text-2xl font-black tracking-tight text-gray-900 dark:text-white m-0 hidden sm:block">NewsHub</h1>
+              <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white m-0 hidden sm:block" style={{ fontFamily: "'Domine', Georgia, serif" }}>NewsHub</h1>
             </Link>
           </div>
 

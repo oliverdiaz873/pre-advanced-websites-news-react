@@ -27,10 +27,10 @@ export const ThemeToggle = () => {
   };
 
   return (
-    <button 
+    <button
       onClick={toggleTheme}
-      className="max-w-[40px] ml-0 mt-3 lg:mt-0 lg:ml-2 flex items-center justify-center p-2 text-blue-600 border border-blue-600 rounded-md hover:bg-blue-600 hover:text-white transition-colors dark:text-blue-400 dark:border-blue-400 dark:hover:bg-blue-400 dark:hover:text-gray-900"
-      aria-label="Cambiar modo oscuro"
+      className="w-[45px] h-[45px] flex items-center justify-center p-2 rounded-md text-black hover:text-[#dc3545] dark:text-gray-300 dark:hover:text-[#dc3545] transition-colors duration-300 focus:outline-none"
+      aria-label="Alternar modo oscuro"
       type="button"
     >
       <BrightnessIcon className="w-5 h-5 flex-shrink-0" />

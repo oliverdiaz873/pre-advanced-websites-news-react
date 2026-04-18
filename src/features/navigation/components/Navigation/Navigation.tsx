@@ -20,10 +20,10 @@ export const Navigation = () => {
           <NavLink
             to={item.path}
             className={({ isActive }) =>
-              `block py-2 lg:p-0 rounded lg:bg-transparent transition-colors ${
+              `block px-4 py-2 text-[16px] rounded lg:bg-transparent transition-all duration-300 ${
                 isActive
-                  ? 'text-blue-700 font-semibold dark:text-blue-400'
-                  : 'text-gray-700 hover:text-blue-700 dark:text-gray-300 dark:hover:text-blue-400'
+                  ? 'bg-[#ebebeb] text-[#dc3545] font-semibold dark:bg-gray-800 dark:text-[#dc3545] rounded-lg'
+                  : 'text-black hover:text-[#dc3545] dark:text-gray-300 dark:hover:text-[#dc3545]'
               }`
             }
           >
