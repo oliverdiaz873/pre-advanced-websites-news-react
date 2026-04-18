@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# Pre-Advanced Websites – News (React Edition)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pre-advanced level and fully responsive news website built with modern frontend technologies.
 
-Currently, two official plugins are available:
+## Project Overview
+Pre-Advanced Websites – News (React Edition) is a pre-advanced level web project focused on building a professional news website using modern frameworks like React and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project represents an evolution from traditional Bootstrap-based layouts to a more scalable, component-based architecture using React and TypeScript.
 
-## React Compiler
+The website simulates a digital news platform with a modern UI, prioritizing performance, responsiveness, and clean design.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
+- Fully responsive design for all screen sizes.
+- Component-based architecture using React.
+- News-oriented layout with sections for headlines and articles.
+- Styled using Tailwind CSS for a modern UI approach.
+- Type-safe development with TypeScript.
+- Interactive elements and dynamic rendering.
+- Frontend-only project (no backend).
 
-## Expanding the ESLint configuration
+## Technologies Used
+- HTML5 – Semantic markup structure.  
+- CSS3 – Base styling when needed.  
+- JavaScript (ES6+) – Core scripting language.  
+- React – JavaScript library for building user interfaces.  
+- TypeScript – Static typing for safer and more maintainable code.  
+- Tailwind CSS – Utility-first styling system.  
+- Vite / React Tooling – Fast development environment.  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Responsiveness
+This website is 100% responsive, adapting seamlessly to:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Mobile devices
+- Tablets
+- Laptops and desktops
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Responsiveness is achieved using:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Tailwind CSS utility classes
+- Flexible and adaptive layouts
+- Modern responsive design principles
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Project Purpose
+This project is part of the Pre-Advanced Websites series, designed to:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Strengthen modern frontend development skills
+- Apply React and TypeScript best practices
+- Build scalable and reusable UI components
+- Improve responsive web design techniques
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## License
+
+This project is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for more details.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
