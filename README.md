@@ -1,6 +1,6 @@
 # Pre-Advanced Websites – News (React Edition)
 
-An advanced and fully responsive news website built with modern frontend technologies.
+A pre-advanced level and fully responsive news website built with modern frontend technologies.
 
 ## Project Overview
 Pre-Advanced Websites – News (React Edition) is a pre-advanced level web project focused on building a professional news website using modern frameworks like React and Tailwind CSS.
