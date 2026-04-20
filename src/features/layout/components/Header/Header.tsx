@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import { MenuIcon, CloseIcon } from '../../../../shared/components/icons';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { SearchIcon } from '../../../../shared/components/icons';
 
 export const SearchBar = () => {
