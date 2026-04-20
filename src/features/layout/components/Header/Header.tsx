@@ -15,46 +15,42 @@ export const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white dark:bg-gray-900 shadow-[0_2px_5px_rgba(0,0,0,0.1)] transition-colors duration-200">
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-[70px]">
-          {/* Logo Section */}
-          <div className="flex items-center shrink-0">
-            <Link to="/" className="flex items-center gap-2 text-decoration-none">
-              <img src={logoImg} alt="Logo NewsHub" className="w-[45px] h-[45px] object-cover rounded-md" loading="lazy" />
-              <h1 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white m-0 hidden sm:block" style={{ fontFamily: "'Domine', Georgia, serif" }}>NewsHub</h1>
+    <header className="header-main">
+      <nav className="header-shell">
+        <div className="header-bar">
+          <div className="shrink-0">
+            <Link to="/" className="header-brand" aria-label="Ir a la página principal de NewsHub">
+              <img src={logoImg} alt="Logo NewsHub" className="header-brand-logo" loading="lazy" />
+              <h1 className="header-brand-title hidden sm:block">NewsHub</h1>
             </Link>
           </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-between lg:ml-10">
+          <div className="header-desktop">
             <Navigation />
-            <div className="flex items-center gap-2">
+            <div className="header-actions">
               <SearchBar />
               <ThemeToggle />
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="flex items-center lg:hidden">
             <button
               onClick={toggleMenu}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-200 dark:text-gray-300 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="header-mobile-toggle"
               aria-expanded={isMenuOpen}
+              aria-label="Toggle navigation"
             >
-              <span className="sr-only">Abrir menú principal</span>
-              {isMenuOpen ? <CloseIcon className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
+              {isMenuOpen ? <CloseIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu Panel */}
-        <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[500px] opacity-100 pb-4' : 'max-h-0 opacity-0'}`}>
-          <div className="pt-2 pb-3">
+        <div className={`header-mobile-panel ${isMenuOpen ? 'is-open' : 'is-closed'}`}>
+          <div className="header-mobile-nav">
             <Navigation />
           </div>
-          <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
+          <div className="header-mobile-actions">
             <div className="flex flex-col">
               <SearchBar />
               <ThemeToggle />

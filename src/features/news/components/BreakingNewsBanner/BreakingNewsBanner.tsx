@@ -7,7 +7,7 @@ export const BreakingNewsBanner = () => {
     <section className="breaking-news rounded-md">
       <div className="relative flex items-center overflow-hidden rounded-md bg-[#dc3545] p-2 text-white shadow-sm">
         <div className="z-10 mr-2 flex shrink-0 items-center gap-2 rounded-md bg-[#212529] px-4 py-[0.35em] text-[0.75em] font-bold uppercase">
-          ULTIMA HORA
+          ÚLTIMA HORA
           <span className="h-2 w-2 rounded-full bg-[#ff0000] animate-blink"></span>
         </div>
 

@@ -13,16 +13,16 @@ export const Navigation = () => {
   ];
 
   return (
-    <ul className="flex flex-col lg:flex-row lg:space-x-4 mb-2 lg:mb-0 m-0 p-0 list-none">
+    <ul className="m-0 mb-2 flex list-none flex-col p-0 lg:mb-0 lg:flex-row lg:items-center">
       {navItems.map((item) => (
         <li key={item.name}>
           <NavLink
             to={item.path}
             className={({ isActive }) =>
-              `block px-4 py-2 text-[16px] rounded lg:bg-transparent transition-all duration-300 ${
+              `block rounded px-3 py-2 text-[16px] text-black transition-all duration-300 dark:text-gray-300 ${
                 isActive
-                  ? 'bg-[#ebebeb] text-[#dc3545] font-semibold dark:bg-gray-800 dark:text-[#dc3545] rounded-lg'
-                  : 'text-black hover:text-[#dc3545] dark:text-gray-300 dark:hover:text-[#dc3545]'
+                  ? 'rounded-lg bg-[#ebebeb] text-[#dc3545] dark:bg-gray-800 dark:text-[#dc3545]'
+                  : 'hover:text-[#dc3545] dark:hover:text-[#dc3545]'
               }`
             }
           >
