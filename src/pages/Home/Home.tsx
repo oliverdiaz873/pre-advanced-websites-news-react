@@ -1,38 +1,33 @@
 import './Home.css';
-import { BreakingNewsBanner } from '../../features/news/components';
+import {
+  BreakingNewsBanner,
+  FeaturedNewsSection,
+  LatestNewsSection,
+  OpinionSidebar,
+} from '../../features/news/components';
 
+/** Representa la página principal del periódico y compone los bloques editoriales visibles en portada. */
 export const Home = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-6">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* Main Content Column (equivalent to col-lg-9) */}
-        <div className="lg:col-span-9 space-y-8">
-          <section className="breaking-news-section">
-             <BreakingNewsBanner />
-          </section>
+    <main className="home-main min-h-[calc(100vh-200px)] px-4 py-0 md:px-[0.1rem] lg:px-4">
+      <div className="mx-auto mt-3 max-w-[1600px]">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
+          <div className="lg:col-span-9">
+            <section className="mb-2">
+              <BreakingNewsBanner />
+            </section>
 
-          <section className="featured-news">
-             <h2 className="text-2xl font-bold mb-4 dark:text-white">Noticias Destacadas</h2>
-             {/* TODO: Featured News Component */}
-             <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded">TODO: Featured News Grid</div>
-          </section>
+            <div className="space-y-8">
+              <FeaturedNewsSection />
+              <LatestNewsSection />
+            </div>
+          </div>
 
-          <section className="latest-news">
-             <h2 className="text-2xl font-bold mb-4 dark:text-white">Noticias Recientes</h2>
-             {/* TODO: Latest News Grid Component */}
-             <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded">TODO: Latest News Grid</div>
-          </section>
-        </div>
-
-        {/* Sidebar Column (equivalent to col-lg-3) */}
-        <div className="lg:col-span-3">
-          <aside className="sticky top-24">
-            <h3 className="text-xl font-bold mb-4 dark:text-white">Opinión</h3>
-            {/* TODO: Opinion Sidebar Component */}
-            <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded h-64">TODO: Sidebar Content</div>
-          </aside>
+          <div className="lg:col-span-3">
+            <OpinionSidebar />
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };

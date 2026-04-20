@@ -1,0 +1,106 @@
+import {
+  featuredGrid,
+  featuredPrimary,
+  featuredSecondary,
+  type HomeArticle,
+} from '../../../../data';
+
+/** Muestra el bloque de metadatos editoriales de una noticia: fecha y categoría. */
+const ArticleMeta = ({ article }: { article: HomeArticle }) => (
+  <p className="mb-2 text-[0.85rem] leading-[1.5] text-[#5f6871] dark:text-[#adb5bd]">
+    Publicado el <time dateTime={article.datetime}>{article.date}</time> | {article.category}
+  </p>
+);
+
+/** Representa una tarjeta enlazable de noticia usada en las destacadas secundarias y en el grid. */
+const CardLink = ({
+  article,
+  titleClassName,
+  imageClassName,
+}: {
+  article: HomeArticle;
+  titleClassName: string;
+  imageClassName: string;
+}) => (
+  <a href={article.href} aria-label={`Leer noticia: ${article.title}`} className="block text-inherit no-underline">
+    <img src={article.imageUrl} alt={article.alt} loading="lazy" className={imageClassName} />
+    <h3 className={titleClassName}>{article.title}</h3>
+    <ArticleMeta article={article} />
+    <p className="text-[0.98rem] leading-[1.6] text-[#292f34] dark:text-[#ced4da]">{article.summary}</p>
+  </a>
+);
+
+/** Renderiza el bloque "Noticias Destacadas" de la home con la nota principal y sus apoyos editoriales. */
+export const FeaturedNewsSection = () => {
+  const [secondaryMain, secondarySide] = featuredSecondary;
+
+  return (
+    <section className="rounded-lg bg-white p-4 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:bg-gray-900">
+      <h2 className="section-title-home section-title-main mb-4">Noticias Destacadas</h2>
+
+      <div className="mb-2">
+        <article className="featured-article-home rounded-lg p-[10px] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_4px_8px_rgba(0,0,0,0.15)]">
+          <a
+            href={featuredPrimary.href}
+            aria-label={`Leer noticia: ${featuredPrimary.title}`}
+            className="block text-inherit no-underline xl:flex xl:items-start xl:gap-6"
+          >
+            <div className="mb-4 xl:order-2 xl:mb-0 xl:w-[60%]">
+              <div className="overflow-hidden rounded-lg">
+                <img
+                  src={featuredPrimary.imageUrl}
+                  alt={featuredPrimary.alt}
+                  className="h-auto w-full transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+            </div>
+            <div className="xl:w-[35%]">
+              <h3 className="mb-3 text-3xl font-semibold leading-tight text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-white">
+                {featuredPrimary.title}
+              </h3>
+              <ArticleMeta article={featuredPrimary} />
+              <p className="text-base leading-[1.6] text-[#292f34] dark:text-[#ced4da]">{featuredPrimary.summary}</p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <div className="mb-1 grid grid-cols-1 gap-4 lg:grid-cols-12">
+        <div className="lg:col-span-8">
+          <article className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-gray-900">
+            <CardLink
+              article={secondaryMain}
+              imageClassName="mb-3 w-full rounded-lg transition-transform duration-300 hover:scale-105"
+              titleClassName="mb-3 text-3xl font-semibold leading-tight text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-white"
+            />
+          </article>
+        </div>
+
+        <div className="lg:col-span-4">
+          <article className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-gray-900">
+            <CardLink
+              article={secondarySide}
+              imageClassName="mb-2 w-full rounded-lg transition-transform duration-300 hover:scale-105"
+              titleClassName="mb-2 text-xl font-semibold leading-snug text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-white"
+            />
+          </article>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+        {featuredGrid.map((article) => (
+          <article
+            key={article.id}
+            className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-gray-900"
+          >
+            <CardLink
+              article={article}
+              imageClassName="mb-3 w-full rounded-lg transition-transform duration-300 hover:scale-105"
+              titleClassName="mb-2 text-xl font-semibold leading-snug text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-white"
+            />
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+};
