@@ -1,43 +1,24 @@
-export interface HomeArticle {
-  id: string;
-  title: string;
-  href: string;
-  category: string;
-  date: string;
-  datetime: string;
-  summary: string;
-  imageUrl: string;
-  alt: string;
-}
-
-export interface OpinionArticle {
-  id: string;
-  title: string;
-  href: string;
-  summary: string;
-  imageUrl: string;
-  alt: string;
-}
+import type { NewsArticle, OpinionArticle } from './newsModels';
 
 export const breakingNews = {
   href: '/news/justicia/noticia-del-fraude',
   text: 'Detienen a exfuncionario acusado de fraude financiero millonario',
 };
 
-export const featuredPrimary: HomeArticle = {
+export const featuredPrimary: NewsArticle = {
   id: 'inflacion_mercados',
-  title: 'Incremento de la inflacion impacta a los mercados',
+  title: 'Incremento de la inflación impacta a los mercados',
   href: '/news/economia/noticia-de-la-inflacion',
-  category: 'Economia',
+  category: 'Economía',
   date: '4 de octubre de 2025',
   datetime: '2025-10-04',
   summary:
-    'El aumento sostenido de la inflacion genera incertidumbre en los mercados financieros y afecta el poder adquisitivo de los ciudadanos. Los precios de productos basicos y servicios esenciales continuan incrementandose, obligando a empresas y familias a ajustar presupuestos. Analistas advierten que, de no implementarse politicas economicas efectivas, esta tendencia podria persistir, impactando la inversion, el empleo y la estabilidad economica del pais a mediano plazo.',
+    'El aumento sostenido de la inflación genera incertidumbre en los mercados financieros y afecta el poder adquisitivo de los ciudadanos. Los precios de productos básicos y servicios esenciales continúan incrementándose, obligando a empresas y familias a ajustar presupuestos. Analistas advierten que, de no implementarse políticas económicas efectivas, esta tendencia podría persistir, impactando la inversión, el empleo y la estabilidad económica del país a mediano plazo.',
   imageUrl: '/images/news/economia/inflacion.jpg',
-  alt: 'Incremento de la inflacion impacta a los mercados',
+  alt: 'Incremento de la inflación impacta a los mercados',
 };
 
-export const featuredSecondary: HomeArticle[] = [
+export const featuredSecondary: [NewsArticle, NewsArticle] = [
   {
     id: 'victoria_equipo_local',
     title: 'Gran victoria del equipo local',
@@ -46,7 +27,7 @@ export const featuredSecondary: HomeArticle[] = [
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
     summary:
-      'El equipo local consiguio una importante victoria que lo acerca a la clasificacion tras un intenso partido. Los jugadores mostraron un rendimiento excepcional, con goles decisivos y una defensa solida que mantuvo al rival en constante presion durante todo el encuentro.',
+      'El equipo local consiguió una importante victoria que lo acerca a la clasificación tras un intenso partido. Los jugadores mostraron un rendimiento excepcional, con goles decisivos y una defensa sólida que mantuvo al rival en constante presión durante todo el encuentro.',
     imageUrl: '/images/news/deporte/futbol.jpg',
     alt: 'Gran victoria del equipo local',
   },
@@ -58,36 +39,36 @@ export const featuredSecondary: HomeArticle[] = [
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
     summary:
-      'Tras meses de negociaciones diplomaticas, el conflicto llega a su fin generando expectativas de estabilidad y reconstruccion en la region.',
+      'Tras meses de negociaciones diplomáticas, el conflicto llega a su fin generando expectativas de estabilidad y reconstrucción en la región.',
     imageUrl: '/images/news/internacional/guerra.jpg',
     alt: 'La guerra de Ucrania llega a su fin',
   },
 ];
 
-export const featuredGrid: HomeArticle[] = [
+export const featuredGrid: NewsArticle[] = [
   {
     id: 'protestas_corrupcion',
-    title: 'Protestas por corrupcion',
+    title: 'Protestas por corrupción',
     href: '/news/politica/noticia-de-protestas',
-    category: 'Politica',
+    category: 'Política',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
     summary:
       'Miles de ciudadanos se manifestaron en distintas ciudades exigiendo transparencia y sanciones contra los responsables.',
     imageUrl: '/images/news/politica/protestas.jpg',
-    alt: 'Protestas por corrupcion en el pais',
+    alt: 'Protestas por corrupción en el país',
   },
   {
     id: 'descubrimiento_virus',
-    title: 'Descubren un nuevo virus que alerta a cientificos',
+    title: 'Descubren un nuevo virus que alerta a científicos',
     href: '/news/salud/noticia-del-virus',
     category: 'Salud',
     date: '9 de octubre de 2025',
     datetime: '2025-10-09',
     summary:
-      'Investigadores internacionales analizan un nuevo virus que podria representar un riesgo para la salud publica global.',
+      'Investigadores internacionales analizan un nuevo virus que podría representar un riesgo para la salud pública global.',
     imageUrl: '/images/news/salud/virus.jpg',
-    alt: 'Descubren un nuevo virus que alerta a cientificos',
+    alt: 'Descubren un nuevo virus que alerta a científicos',
   },
   {
     id: 'investigacion_homicidio',
@@ -97,21 +78,21 @@ export const featuredGrid: HomeArticle[] = [
     date: '11 de octubre de 2025',
     datetime: '2025-10-11',
     summary:
-      'Las autoridades iniciaron una investigacion para esclarecer las circunstancias del crimen ocurrido en una zona concurrida.',
+      'Las autoridades iniciaron una investigación para esclarecer las circunstancias del crimen ocurrido en una zona concurrida.',
     imageUrl: '/images/news/justicia/homicidio.jpg',
     alt: 'Investigan homicidio en el centro de la ciudad',
   },
   {
     id: 'huracan_atlantico',
-    title: 'Huracan se fortalece en el Atlantico y genera alertas en la costa este de EE.UU.',
+    title: 'Huracán se fortalece en el Atlántico y genera alertas en la costa este de EE.UU.',
     href: '/news/clima/noticia-sobre-huracan',
     category: 'Clima',
     date: '11 de octubre de 2025',
     datetime: '2025-10-11',
     summary:
-      'El fenomeno meteorologico continua intensificandose y obliga a emitir alertas preventivas en varias zonas costeras.',
+      'El fenómeno meteorológico continúa intensificándose y obliga a emitir alertas preventivas en varias zonas costeras.',
     imageUrl: '/images/news/clima/ciclon.jpg',
-    alt: 'Huracan se fortalece en el Atlantico y genera alertas en la costa este de EE.UU.',
+    alt: 'Huracán se fortalece en el Atlántico y genera alertas en la costa este de EE.UU.',
   },
   {
     id: 'detencion_fraude',
@@ -121,7 +102,7 @@ export const featuredGrid: HomeArticle[] = [
     date: '11 de octubre de 2025',
     datetime: '2025-10-11',
     summary:
-      'El exfuncionario fue arrestado tras ser vinculado a un esquema de fraude que habria causado perdidas millonarias al Estado.',
+      'El exfuncionario fue arrestado tras ser vinculado a un esquema de fraude que habría causado pérdidas millonarias al Estado.',
     imageUrl: '/images/news/justicia/arrested.jpg',
     alt: 'Detienen a exfuncionario acusado de fraude financiero millonario',
   },
@@ -129,26 +110,26 @@ export const featuredGrid: HomeArticle[] = [
     id: 'bolsa_valores_alza',
     title: 'La bolsa de valores cierra en alza tras jornada de optimismo inversor',
     href: '/news/economia/noticia-de-la-bolsa',
-    category: 'Economia',
+    category: 'Economía',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
     summary:
-      'Los mercados cerraron la jornada con ganancias impulsadas por el optimismo de los inversores y buenos indicadores economicos.',
+      'Los mercados cerraron la jornada con ganancias impulsadas por el optimismo de los inversores y buenos indicadores económicos.',
     imageUrl: '/images/news/economia/bolsa-de-valores.avif',
     alt: 'La bolsa de valores cierra en alza tras jornada de optimismo inversor',
   },
 ];
 
-export const latestNews: HomeArticle[] = [
+export const latestNews: NewsArticle[] = [
   {
     id: 'tormenta_caribe',
-    title: 'Tormenta tropical se aproxima al Caribe y alerta a varios paises',
+    title: 'Tormenta tropical se aproxima al Caribe y alerta a varios países',
     href: '/news/clima/noticia-de-la-tormenta',
     category: 'Clima',
     date: '11 de octubre de 2025',
     datetime: '2025-10-11',
     summary:
-      'Una tormenta tropical se aproxima al Caribe, generando alerta en varios paises de la region. Las autoridades emiten avisos de lluvias intensas y vientos fuertes.',
+      'Una tormenta tropical se aproxima al Caribe, generando alerta en varios países de la región. Las autoridades emiten avisos de lluvias intensas y vientos fuertes.',
     imageUrl: '/images/news/clima/tormenta.jpg',
     alt: 'Tormenta tropical se aproxima al Caribe',
   },
@@ -160,7 +141,7 @@ export const latestNews: HomeArticle[] = [
     date: '7 de octubre de 2025',
     datetime: '2025-10-07',
     summary:
-      'En un emocionante enfrentamiento, los Lakers lograron imponerse a los Celtics con marcador de 112-107. LeBron James lidero con 28 puntos y 9 asistencias.',
+      'En un emocionante enfrentamiento, los Lakers lograron imponerse a los Celtics con marcador de 112-107. LeBron James lideró con 28 puntos y 9 asistencias.',
     imageUrl: '/images/news/deporte/NBA.jpg',
     alt: 'Los Lakers vencen a los Celtics',
   },
@@ -168,49 +149,49 @@ export const latestNews: HomeArticle[] = [
     id: 'popularidad_presidente',
     title: 'Encuestas revelan incremento en la popularidad del presidente',
     href: '/news/politica/noticia-de-encuesta',
-    category: 'Politica',
+    category: 'Política',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
     summary:
-      'Las ultimas encuestas muestran un aumento significativo en la popularidad del presidente, reflejando respaldo creciente hacia sus politicas y gestion gubernamental.',
+      'Las últimas encuestas muestran un aumento significativo en la popularidad del presidente, reflejando respaldo creciente hacia sus políticas y gestión gubernamental.',
     imageUrl: '/images/news/politica/presidente.avif',
     alt: 'Encuesta de popularidad presidencial',
   },
   {
     id: 'olimpiadas_apertura',
-    title: 'Atletas internacionales brillan en ceremonia inaugural de los Juegos Olimpicos',
+    title: 'Atletas internacionales brillan en ceremonia inaugural de los Juegos Olímpicos',
     href: '/news/deporte/noticia-de-atletas',
     category: 'Deporte',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
     summary:
-      'La ceremonia inaugural reunio a atletas de mas de 200 paises en un espectaculo que combino tradicion, arte y emocion deportiva con el encendido del pebetero.',
+      'La ceremonia inaugural reunió a atletas de más de 200 países en un espectáculo que combinó tradición, arte y emoción deportiva con el encendido del pebetero.',
     imageUrl: '/images/news/deporte/atletismo.jpg',
-    alt: 'Ceremonia inaugural Juegos Olimpicos',
+    alt: 'Ceremonia inaugural Juegos Olímpicos',
   },
   {
     id: 'resistencia_antibioticos',
-    title: 'Aumenta la preocupacion por la resistencia a los antibioticos',
+    title: 'Aumenta la preocupación por la resistencia a los antibióticos',
     href: '/news/salud/noticia-de-antibioticos',
     category: 'Salud',
     date: '9 de octubre de 2025',
     datetime: '2025-10-09',
     summary:
-      'La resistencia a los antibioticos continua siendo una amenaza creciente para la salud publica. Expertos alertan sobre el uso excesivo e inadecuado de estos medicamentos.',
+      'La resistencia a los antibióticos continúa siendo una amenaza creciente para la salud pública. Expertos alertan sobre el uso excesivo e inadecuado de estos medicamentos.',
     imageUrl: '/images/news/salud/antibioticos.avif',
-    alt: 'Resistencia a antibioticos',
+    alt: 'Resistencia a antibióticos',
   },
   {
     id: 'dolar_fortalece',
-    title: 'El dolar se fortalece ante incertidumbre economica global',
+    title: 'El dólar se fortalece ante incertidumbre económica global',
     href: '/news/economia/noticia-del-dolar',
-    category: 'Economia',
+    category: 'Economía',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
     summary:
-      'El dolar estadounidense se fortalecio frente a las principales divisas, impulsado por la incertidumbre economica global y la busqueda de refugio por parte de los inversores.',
+      'El dólar estadounidense se fortaleció frente a las principales divisas, impulsado por la incertidumbre económica global y la búsqueda de refugio por parte de los inversores.',
     imageUrl: '/images/news/economia/dolar.avif',
-    alt: 'El dolar se fortalece',
+    alt: 'El dólar se fortalece',
   },
 ];
 
@@ -220,25 +201,25 @@ export const opinionArticles: OpinionArticle[] = [
     title: 'La democracia y el reto de la transparencia',
     href: '/opiniones/opinion-politica',
     summary:
-      'La confianza ciudadana depende cada vez mas de instituciones abiertas y responsables.',
+      'La confianza ciudadana depende cada vez más de instituciones abiertas y responsables.',
     imageUrl: '/images/news/politica/congreso.avif',
     alt: 'La democracia y el reto de la transparencia',
   },
   {
     id: 'opinion_economia',
-    title: 'Hacia donde va la economia global?',
+    title: 'Hacia dónde va la economía global?',
     href: '/opiniones/opinion-economia',
     summary:
-      'Analizamos los factores que marcaran el rumbo economico en los proximos anos.',
+      'Analizamos los factores que marcarán el rumbo económico en los próximos años.',
     imageUrl: '/images/opiniones/opinion_economia.jpg',
-    alt: 'Hacia donde va la economia global?',
+    alt: 'Hacia dónde va la economía global?',
   },
   {
     id: 'opinion_salud',
     title: 'La importancia de la salud preventiva',
     href: '/opiniones/opinion-salud',
     summary:
-      'Invertir en prevencion es fundamental para mantener una poblacion saludable y reducir gastos sanitarios.',
+      'Invertir en prevención es fundamental para mantener una población saludable y reducir gastos sanitarios.',
     imageUrl: '/images/news/salud/antibioticos.avif',
     alt: 'La importancia de la salud preventiva',
   },

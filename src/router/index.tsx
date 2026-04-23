@@ -1,17 +1,31 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
+import { Article } from '../pages/Article';
+import { Category } from '../pages/Category';
 import { Home } from '../pages/Home';
+import { Opinion } from '../pages/Opinion';
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <Home />,
       },
-      // Aquí se agregarán las demás rutas como /category/:name, /news/:id, etc.
+      {
+        path: '/category/:slug',
+        element: <Category />,
+      },
+      {
+        path: '/news/:category/:slug',
+        element: <Article />,
+      },
+      {
+        path: '/opiniones/:slug',
+        element: <Opinion />,
+      },
     ],
   },
 ]);

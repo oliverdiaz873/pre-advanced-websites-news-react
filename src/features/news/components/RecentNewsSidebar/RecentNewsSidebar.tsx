@@ -1,23 +1,27 @@
 import { Link } from 'react-router-dom';
-import { opinionArticles, type OpinionArticle } from '../../../../data';
+import './RecentNewsSidebar.css';
+import type { NewsArticle } from '../../../../data';
 
-interface OpinionSidebarProps {
+interface RecentNewsSidebarProps {
   title?: string;
-  articles?: OpinionArticle[];
+  articles: NewsArticle[];
 }
 
-/** Representa una barra lateral editorial reusable para home y categorias. */
-export const OpinionSidebar = ({ title = 'Opinion', articles = opinionArticles }: OpinionSidebarProps) => {
+/** Representa una barra lateral de noticias recientes para páginas de categorías. */
+export const RecentNewsSidebar = ({ title = 'Noticias Recientes', articles }: RecentNewsSidebarProps) => {
+  // Limitar a máximo 5 artículos para el sidebar
+  const recentArticles = articles.slice(0, 5);
+
   return (
     <aside className="lg:sticky lg:top-24">
       <section className="rounded-lg border-l border-[#ddd] bg-white p-6 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:border-gray-700 dark:bg-gray-900">
         <h3 className="section-title-home section-title-sidebar mb-3">{title}</h3>
 
         <div className="space-y-6">
-          {articles.map((article) => (
+          {recentArticles.map((article) => (
             <article
               key={article.id}
-              className="opinion-card-home rounded-lg p-2 transition-all duration-300 hover:translate-x-[5px]"
+              className="recent-news-card rounded-lg p-2 transition-all duration-300 hover:translate-x-[5px]"
             >
               <Link to={article.href} className="block text-inherit no-underline">
                 <img
@@ -29,6 +33,11 @@ export const OpinionSidebar = ({ title = 'Opinion', articles = opinionArticles }
                 <h4 className="mb-2 text-[0.95rem] font-bold leading-[1.3] text-[#212529] transition-colors duration-300 hover:text-[#dc3545] dark:text-white">
                   {article.title}
                 </h4>
+                <div className="metadata">
+                  <span className="category">{article.category}</span>
+                  <span>•</span>
+                  <time>{article.date}</time>
+                </div>
                 <p className="text-sm leading-[1.6] text-[#495057] dark:text-[#ced4da]">{article.summary}</p>
               </Link>
             </article>

@@ -1,0 +1,65 @@
+.recent-news-card {
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.recent-news-card:hover {
+  border-color: #dc3545;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.1);
+}
+
+.recent-news-card img {
+  transition: transform 0.3s ease;
+}
+
+.recent-news-card:hover img {
+  transform: scale(1.02);
+}
+
+.dark .recent-news-card {
+  border-color: #374151;
+}
+
+.dark .recent-news-card:hover {
+  border-color: #dc3545;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.2);
+}
+
+/* Estilos específicos para el título del sidebar */
+.recent-news-card h4 {
+  transition: color 0.3s ease;
+}
+
+/* Estilos para metadatos (categoría y fecha) */
+.recent-news-card .metadata {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.dark .recent-news-card .metadata {
+  color: #adb5bd;
+}
+
+.recent-news-card .metadata .category {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .recent-news-card img {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recent-news-card img {
+    height: 80px;
+  }
+}
