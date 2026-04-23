@@ -34,5 +34,6 @@ export interface CategoryPageContent {
   latestTitle: string;
   latestNews: NewsArticle[];
   sidebarTitle: string;
+  sidebarNews: NewsArticle[];
   opinionArticles: OpinionArticle[];
 }

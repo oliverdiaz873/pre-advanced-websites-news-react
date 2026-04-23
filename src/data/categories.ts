@@ -6,8 +6,8 @@ import {
   opinionArticles,
 } from './homeContent';
 import type { CategoryPageContent, NewsArticle, OpinionArticle } from './newsModels';
-
-const createNewsArticle = (article: NewsArticle): NewsArticle => article;
+import { sidebarNewsByCategory } from './sidebarNews';
+import { createNewsArticle } from './utils';
 
 const politicaArticles: NewsArticle[] = [
   createNewsArticle({
@@ -542,6 +542,7 @@ const buildCategoryContent = (
   label: string,
   description: string,
   articles: NewsArticle[],
+  sidebarNews: NewsArticle[],
 ): CategoryPageContent => ({
   slug,
   label,
@@ -555,13 +556,14 @@ const buildCategoryContent = (
   latestTitle: `Mas en ${label}`,
   latestNews: articles.slice(6),
   sidebarTitle: 'Opinion',
+  sidebarNews,
   opinionArticles,
 });
 
 export const categoryContent: Record<string, CategoryPageContent> = Object.fromEntries(
   categoryDefinitions.map(({ slug, label, description, articles }) => [
     slug,
-    buildCategoryContent(slug, label, description, articles),
+    buildCategoryContent(slug, label, description, articles, [...sidebarNewsByCategory[slug as keyof typeof sidebarNewsByCategory]]),
   ]),
 );
 

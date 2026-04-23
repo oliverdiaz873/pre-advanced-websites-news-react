@@ -44,7 +44,7 @@ export const Category = () => {
           </div>
 
           <div className="lg:col-span-3">
-            <RecentNewsSidebar articles={content.latestNews} />
+            <RecentNewsSidebar articles={content.sidebarNews} />
           </div>
         </div>
       </div>
