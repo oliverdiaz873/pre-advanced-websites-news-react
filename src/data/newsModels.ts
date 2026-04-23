@@ -17,6 +17,8 @@ export interface OpinionArticle {
   summary: string;
   imageUrl: string;
   alt: string;
+  date: string;
+  datetime: string;
 }
 
 export interface FeaturedSectionContent {

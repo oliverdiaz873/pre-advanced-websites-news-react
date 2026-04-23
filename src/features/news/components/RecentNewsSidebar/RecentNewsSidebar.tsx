@@ -13,7 +13,7 @@ export const RecentNewsSidebar = ({ title = 'Noticias Recientes', articles }: Re
   const recentArticles = articles.slice(0, 5);
 
   return (
-    <aside className="lg:sticky lg:top-24">
+    <aside>
       <section className="rounded-lg border-l border-[#ddd] bg-white p-6 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:border-gray-700 dark:bg-gray-900">
         <h3 className="section-title-home section-title-sidebar mb-3">{title}</h3>
 
@@ -34,9 +34,7 @@ export const RecentNewsSidebar = ({ title = 'Noticias Recientes', articles }: Re
                   {article.title}
                 </h4>
                 <div className="metadata">
-                  <span className="category">{article.category}</span>
-                  <span>•</span>
-                  <time>{article.date}</time>
+                  <time dateTime={article.datetime}>{article.date}</time>
                 </div>
                 <p className="text-sm leading-[1.6] text-[#495057] dark:text-[#ced4da]">{article.summary}</p>
               </Link>

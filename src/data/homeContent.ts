@@ -204,6 +204,8 @@ export const opinionArticles: OpinionArticle[] = [
       'La confianza ciudadana depende cada vez más de instituciones abiertas y responsables.',
     imageUrl: '/images/news/politica/congreso.avif',
     alt: 'La democracia y el reto de la transparencia',
+    date: '4 de octubre de 2025',
+    datetime: '2025-10-04',
   },
   {
     id: 'opinion_economia',
@@ -213,6 +215,8 @@ export const opinionArticles: OpinionArticle[] = [
       'Analizamos los factores que marcarán el rumbo económico en los próximos años.',
     imageUrl: '/images/opiniones/opinion_economia.jpg',
     alt: 'Hacia dónde va la economía global?',
+    date: '3 de octubre de 2025',
+    datetime: '2025-10-03',
   },
   {
     id: 'opinion_salud',
@@ -222,5 +226,7 @@ export const opinionArticles: OpinionArticle[] = [
       'Invertir en prevención es fundamental para mantener una población saludable y reducir gastos sanitarios.',
     imageUrl: '/images/news/salud/antibioticos.avif',
     alt: 'La importancia de la salud preventiva',
+    date: '2 de octubre de 2025',
+    datetime: '2025-10-02',
   },
 ];

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { opinionArticles, type OpinionArticle } from '../../../../data';
+import './OpinionSidebar.css';
 
 interface OpinionSidebarProps {
   title?: string;
@@ -9,7 +10,7 @@ interface OpinionSidebarProps {
 /** Representa una barra lateral editorial reusable para home y categorias. */
 export const OpinionSidebar = ({ title = 'Opinion', articles = opinionArticles }: OpinionSidebarProps) => {
   return (
-    <aside className="lg:sticky lg:top-24">
+    <aside>
       <section className="rounded-lg border-l border-[#ddd] bg-white p-6 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:border-gray-700 dark:bg-gray-900">
         <h3 className="section-title-home section-title-sidebar mb-3">{title}</h3>
 
@@ -29,6 +30,9 @@ export const OpinionSidebar = ({ title = 'Opinion', articles = opinionArticles }
                 <h4 className="mb-2 text-[0.95rem] font-bold leading-[1.3] text-[#212529] transition-colors duration-300 hover:text-[#dc3545] dark:text-white">
                   {article.title}
                 </h4>
+                <div className="metadata">
+                  <time dateTime={article.datetime}>{article.date}</time>
+                </div>
                 <p className="text-sm leading-[1.6] text-[#495057] dark:text-[#ced4da]">{article.summary}</p>
               </Link>
             </article>
