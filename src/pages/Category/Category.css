@@ -1,9 +1,3 @@
-.category-hero {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-}
-
 .category-kicker {
   color: #dc3545;
   font-size: 0.9rem;
@@ -27,10 +21,6 @@
   font-size: 1.05rem;
   line-height: 1.7;
   max-width: 60rem;
-}
-
-.dark .category-hero {
-  border-bottom-color: #374151;
 }
 
 .dark .category-title {
