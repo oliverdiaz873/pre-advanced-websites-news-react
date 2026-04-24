@@ -1,4 +1,5 @@
 export * from './homeContent';
 export * from './categories';
+export * from './legalContent';
 export * from './newsModels';
 export * from './utils';
