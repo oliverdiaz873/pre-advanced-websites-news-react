@@ -1,0 +1,40 @@
+/* Estilos para el Breadcrumb */
+.breadcrumb-container {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 0px;
+}
+
+.breadcrumb-item a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: #ff2929;
+}
+
+.dark .breadcrumb-container {
+  background-color: var(--dark-card-bg);
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.dark .breadcrumb {
+  color: var(--dark-text);
+}
+
+.dark .breadcrumb-item a {
+  color: #ffffff;
+}
+
+.dark .breadcrumb-item a:hover {
+  color: #ff2929;
+}
+
+.dark .breadcrumb-item + .breadcrumb-item::before {
+  color: #ffffff;
+}
+
+.dark .breadcrumb-item.active {
+  color: #adb5bd;
+}

@@ -1,38 +1,38 @@
-.recent-news-card {
+.opinion-card-home {
   background: transparent;
-  border: 1px solid #e5e7eb;
+  border: none;
   transition: all 0.3s ease;
 }
 
-.recent-news-card:hover {
-  border-color: #dc3545;
+.opinion-card-home:hover {
+  border: none;
   box-shadow: 0 2px 8px rgba(220, 53, 69, 0.1);
 }
 
-.recent-news-card img {
+.opinion-card-home img {
   transition: transform 0.3s ease;
 }
 
-.recent-news-card:hover img {
+.opinion-card-home:hover img {
   transform: scale(1.02);
 }
 
-.dark .recent-news-card {
-  border-color: #374151;
+.dark .opinion-card-home {
+  border: none;
 }
 
-.dark .recent-news-card:hover {
-  border-color: #dc3545;
+.dark .opinion-card-home:hover {
+  border: none;
   box-shadow: 0 2px 8px rgba(220, 53, 69, 0.2);
 }
 
 /* Estilos específicos para el título del sidebar */
-.recent-news-card h4 {
+.opinion-card-home h4 {
   transition: color 0.3s ease;
 }
 
-/* Estilos para metadatos (categoría y fecha) */
-.recent-news-card .metadata {
+/* Estilos para metadatos (fecha) - IGUALES que opinion-card-home */
+.opinion-card-home .metadata {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -41,25 +41,19 @@
   margin-bottom: 0.5rem;
 }
 
-.dark .recent-news-card .metadata {
+.dark .opinion-card-home .metadata {
   color: #adb5bd;
-}
-
-.recent-news-card .metadata .category {
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-  .recent-news-card img {
+  .opinion-card-home img {
     height: 100px;
   }
 }
 
 @media (max-width: 768px) {
-  .recent-news-card img {
+  .opinion-card-home img {
     height: 80px;
   }
 }

@@ -21,7 +21,7 @@ export const RecentNewsSidebar = ({ title = 'Noticias Recientes', articles }: Re
           {recentArticles.map((article) => (
             <article
               key={article.id}
-              className="recent-news-card rounded-lg p-2 transition-all duration-300 hover:translate-x-[5px]"
+              className="opinion-card-home rounded-lg p-2 transition-all duration-300 hover:translate-x-[5px]"
             >
               <Link to={article.href} className="block text-inherit no-underline">
                 <img
@@ -36,7 +36,9 @@ export const RecentNewsSidebar = ({ title = 'Noticias Recientes', articles }: Re
                 <div className="metadata">
                   <time dateTime={article.datetime}>{article.date}</time>
                 </div>
-                <p className="text-sm leading-[1.6] text-[#495057] dark:text-[#ced4da]">{article.summary}</p>
+                <p className="text-sm leading-[1.6] text-[#495057] dark:text-[#ced4da]">
+                  {article.summary}
+                </p>
               </Link>
             </article>
           ))}

@@ -10,6 +10,16 @@ export interface NewsArticle {
   alt: string;
 }
 
+export interface FullNewsArticle extends NewsArticle {
+  content: string[];
+  relatedNews: NewsArticle[];
+  breadcrumb: {
+    home: string;
+    category: string;
+    current: string;
+  };
+}
+
 export interface OpinionArticle {
   id: string;
   title: string;

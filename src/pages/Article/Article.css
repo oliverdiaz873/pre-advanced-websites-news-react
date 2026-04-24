@@ -1,75 +1,180 @@
-.article-shell {
-  margin: 0 auto;
-  max-width: 1080px;
+/* ================================
+   ESTILOS PARA LA NOTICIA INDIVIDUAL (Cuerpo)
+================================ */
+
+/* Estilos para el Breadcrumb */
+.breadcrumb-container {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 0px;
 }
 
-.article-header {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 2rem;
-  padding-bottom: 1.25rem;
+.breadcrumb-item a {
+  color: #000000;
+  text-decoration: none;
 }
 
-.article-category {
-  color: #dc3545;
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
+.breadcrumb-item a:hover {
+  color: #ff2929;
 }
 
-.article-title {
-  color: #111827;
-  font-family: var(--font-family-base);
-  font-size: clamp(2.1rem, 4vw, 3.4rem);
-  font-weight: 700;
-  line-height: 1.08;
-  margin-bottom: 0.75rem;
+.dark .breadcrumb-container {
+  background-color: var(--dark-card-bg);
+  border-bottom: 1px solid var(--dark-border);
 }
 
-.article-meta {
-  color: #5f6871;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
+.dark .breadcrumb {
+  color: var(--dark-text);
 }
 
-.article-summary {
-  color: #374151;
-  font-size: 1.08rem;
-  line-height: 1.8;
-  max-width: 58rem;
+.dark .breadcrumb-item a {
+  color: #ffffff;
 }
 
-.article-image {
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  margin-bottom: 2rem;
-  width: 100%;
+.dark .breadcrumb-item a:hover {
+  color: #ff2929;
 }
 
-.article-body {
-  color: #212529;
-  font-size: 1.02rem;
-  line-height: 1.85;
+.dark .breadcrumb-item + .breadcrumb-item::before {
+  color: #ffffff;
 }
 
-.article-body p + p {
-  margin-top: 1rem;
-}
-
-.dark .article-header {
-  border-bottom-color: #374151;
-}
-
-.dark .article-title {
-  color: #f9fafb;
-}
-
-.dark .article-meta {
+.dark .breadcrumb-item.active {
   color: #adb5bd;
 }
 
-.dark .article-summary,
-.dark .article-body {
-  color: #d1d5db;
+/* Margin para sidebar de noticias individuales - evitar contacto con footer */
+.aside-sidebar {
+  margin-bottom: 2rem;
+}
+
+/* Truncamiento para móviles */
+@media (max-width: 576px) {
+  .breadcrumb-item a {
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .breadcrumb-item.active {
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+/* Estilo para h1 en páginas de noticias */
+.article-wrapper .h1 {
+  font-family: sans-serif, Helvetica !important;
+  font-size: 30px !important;
+  line-height: 1.2 !important;
+}
+
+/* Contenedor unificado para que la cabecera y el cuerpo tengan el mismo fondo */
+.article-wrapper {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
+/* Cuerpo de la noticia: texto completo y lead uniforme */
+.article-body,
+.featured-article .lead {
+  font-size: 1.1rem !important;
+  /* Uniformidad total */
+  line-height: 1.8;
+  color: #333;
+}
+
+.article-body {
+  margin-top: -15px;
+  /* Reduce el espacio con la cabecera */
+}
+
+.article-body p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+/* Sobrescribir hover para que no tenga borde/sombra ni cambio de color en la página de noticia */
+.featured-article:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.dark .featured-article:hover {
+  background-color: var(--dark-card-bg) !important;
+  /* Mantiene el color de la tarjeta en modo oscuro */
+}
+
+/* figure caption (en caso de que se use en el cuerpo) */
+.article-body figure {
+  margin-bottom: 1.5rem;
+}
+
+.article-body figure img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Estilos adicionales para React */
+.article-wrapper .featured-article .content {
+  flex: 1;
+}
+
+.article-wrapper .featured-article .image-wrapper {
+  flex: 0 0 300px;
+}
+
+.article-wrapper .featured-article .image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.article-body {
+  padding: 0 0.25rem;
+}
+
+.main-content {
+  min-height: calc(100vh - 200px);
+}
+
+/* Estilos responsive */
+@media (max-width: 991px) {
+  .article-wrapper .featured-article .d-flex {
+    flex-direction: column;
+  }
+  
+  .article-wrapper .featured-article .image-wrapper {
+    flex: none;
+    margin-top: 1rem;
+  }
+}
+
+.dark .article-wrapper {
+  background-color: var(--dark-card-bg);
+}
+
+.dark .article-wrapper .featured-article h1 {
+  color: var(--dark-text);
+}
+
+.dark .article-wrapper .featured-article .text-muted {
+  color: var(--dark-muted) !important;
+}
+
+.dark .article-wrapper .featured-article .lead {
+  color: var(--dark-text);
+}
+
+.dark .article-body p {
+  color: var(--dark-text);
 }

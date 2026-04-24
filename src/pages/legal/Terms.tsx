@@ -1,5 +1,5 @@
 import React from 'react'
-import { LegalLayout } from '../../features/layout/components/LegalLayout'
+import { LegalLayout } from '../../features/layout/components'
 import { legalContent } from '../../data/legalContent'
 
 export const Terms: React.FC = () => {
