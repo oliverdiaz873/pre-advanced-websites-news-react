@@ -49,3 +49,5 @@ export interface CategoryPageContent {
   sidebarNews: NewsArticle[];
   opinionArticles: OpinionArticle[];
 }
+
+export interface ArticleContent extends FullNewsArticle {}

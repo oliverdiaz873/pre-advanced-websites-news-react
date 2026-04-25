@@ -5,3 +5,6 @@ export * from './newsModels';
 export * from './utils';
 export * from './articleContent';
 export * from './sidebarNews';
+export * from './opinionArticles';
+export * from './opinionDetails';
+

@@ -1,20 +1,29 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Opinion.css';
-import { opinionArticlesByRoute } from '../../data';
+import '../Home/Home.css';
+import '../Article/Article.css';
+import { Breadcrumb } from '../../features/navigation/components';
+import { RecentNewsSidebar, ArticleDetail, useOpinion } from '../../features/news';
+import { NewsLayout } from '../../shared/layouts';
 
+/**
+ * Opinion Page
+ * 
+ * Página que orquestra la visualización de una columna de opinión individual.
+ * Utiliza la misma plantilla que las noticias para mantener la consistencia visual.
+ */
 export const Opinion = () => {
-  const { slug } = useParams();
-  const href = slug ? `/opiniones/${slug}` : '';
-  const article = opinionArticlesByRoute[href];
+  const { article, sidebarOpinions } = useOpinion();
 
+  // Estado: Opinión no encontrada
   if (!article) {
     return (
       <main className="min-h-[calc(100vh-200px)] px-4 py-8 lg:px-4">
         <div className="mx-auto max-w-[900px] rounded-lg bg-white p-8 shadow-[0_2px_6px_rgba(0,0,0,0.1)] dark:bg-gray-900">
-          <p className="opinion-kicker">Opinion no encontrada</p>
-          <h1 className="opinion-title">No encontramos esta columna</h1>
-          <p className="opinion-summary mb-6">
-            La pieza solicitada aun no forma parte de la migracion o la ruta no coincide con los enlaces actuales.
+          <p className="text-[#dc3545] font-bold mb-2">Opinión no encontrada</p>
+          <h1 className="text-3xl font-bold mb-4 dark:text-white">Esta columna de opinión no está disponible</h1>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            El artículo que buscas no existe o ha sido movido.
           </p>
           <Link
             to="/"
@@ -28,27 +37,28 @@ export const Opinion = () => {
   }
 
   return (
-    <main className="min-h-[calc(100vh-200px)] px-4 py-6 lg:px-4">
-      <article className="opinion-shell">
-        <header className="opinion-header">
-          <p className="opinion-kicker">Opinion</p>
-          <h1 className="opinion-title">{article.title}</h1>
-          <p className="opinion-summary">{article.summary}</p>
-        </header>
+    <>
+      <Breadcrumb 
+        home="Inicio"
+        category="Opinión"
+        categoryPath="/"
+        current={article.title}
+      />
+      
+      <NewsLayout
+        sidebar={
+          <RecentNewsSidebar 
+            title="Otras Opiniones"
+            articles={sidebarOpinions as any}
+          />
+        }
+      >
+        <ArticleDetail article={article} />
+      </NewsLayout>
 
-        <img src={article.imageUrl} alt={article.alt} className="opinion-image" />
 
-        <div className="opinion-body">
-          <p>
-            {article.summary} Esta vista mantiene una presentacion editorial sobria para asegurar continuidad visual con
-            la portada y con las nuevas paginas de categoria.
-          </p>
-          <p>
-            La migracion de las columnas completas puede profundizarse despues, pero desde ahora la navegacion queda
-            resuelta y coherente con los enlaces ya visibles en el sitio.
-          </p>
-        </div>
-      </article>
-    </main>
+    </>
   );
 };
+
+

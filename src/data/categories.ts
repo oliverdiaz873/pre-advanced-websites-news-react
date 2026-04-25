@@ -2,12 +2,13 @@ import {
   featuredGrid,
   featuredPrimary,
   featuredSecondary,
-  latestNews as homeLatestNews,
-  opinionArticles,
+  latestNews as homeLatestNews
 } from './homeContent';
+import { opinionArticles } from './opinionArticles';
 import type { CategoryPageContent, NewsArticle, OpinionArticle } from './newsModels';
 import { sidebarNewsByCategory } from './sidebarNews';
 import { createNewsArticle } from './utils';
+
 
 const politicaArticles: NewsArticle[] = [
   createNewsArticle({

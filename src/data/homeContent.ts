@@ -1,4 +1,4 @@
-import type { NewsArticle, OpinionArticle } from './newsModels';
+import type { NewsArticle } from './newsModels';
 
 export const breakingNews = {
   href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
@@ -192,41 +192,5 @@ export const latestNews: NewsArticle[] = [
       'El dólar estadounidense se fortaleció frente a las principales divisas, impulsado por la incertidumbre económica global y la búsqueda de refugio por parte de los inversores.',
     imageUrl: '/images/news/economia/dolar.avif',
     alt: 'El dólar se fortalece',
-  },
-];
-
-export const opinionArticles: OpinionArticle[] = [
-  {
-    id: 'opinion_politica',
-    title: 'La democracia y el reto de la transparencia',
-    href: '/opiniones/opinion-politica',
-    summary:
-      'La confianza ciudadana depende cada vez más de instituciones abiertas y responsables.',
-    imageUrl: '/images/news/politica/congreso.avif',
-    alt: 'La democracia y el reto de la transparencia',
-    date: '4 de octubre de 2025',
-    datetime: '2025-10-04',
-  },
-  {
-    id: 'opinion_economia',
-    title: 'Hacia dónde va la economía global?',
-    href: '/opiniones/opinion-economia',
-    summary:
-      'Analizamos los factores que marcarán el rumbo económico en los próximos años.',
-    imageUrl: '/images/opiniones/opinion_economia.jpg',
-    alt: 'Hacia dónde va la economía global?',
-    date: '3 de octubre de 2025',
-    datetime: '2025-10-03',
-  },
-  {
-    id: 'opinion_salud',
-    title: 'La importancia de la salud preventiva',
-    href: '/opiniones/opinion-salud',
-    summary:
-      'Invertir en prevención es fundamental para mantener una población saludable y reducir gastos sanitarios.',
-    imageUrl: '/images/news/salud/antibioticos.avif',
-    alt: 'La importancia de la salud preventiva',
-    date: '2 de octubre de 2025',
-    datetime: '2025-10-02',
   },
 ];
