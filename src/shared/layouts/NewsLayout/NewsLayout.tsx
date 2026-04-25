@@ -2,7 +2,7 @@ import React from 'react';
 
 interface NewsLayoutProps {
   children: React.ReactNode;
-  sidebar: React.ReactNode;
+  sidebar?: React.ReactNode;
 }
 
 /**
@@ -10,7 +10,7 @@ interface NewsLayoutProps {
  * 
  * Layout estructural compartido para páginas de noticias.
  * Implementa una cuadrícula de dos columnas:
- * - Principal (9/12): Contenido de la noticia o listado de categoría.
+ * - Principal: Ocupa 9/12 si hay sidebar, o 12/12 (full width) si no lo hay.
  * - Lateral (3/12): Sidebar con noticias relacionadas o recientes.
  * 
  * Se ajusta automáticamente a 1320px de ancho máximo.
@@ -21,14 +21,16 @@ export const NewsLayout = ({ children, sidebar }: NewsLayoutProps) => {
       <div className="mx-auto max-w-[1320px]">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
           {/* Columna Principal */}
-          <div className="lg:col-span-9">
+          <div className={sidebar ? "lg:col-span-9" : "lg:col-span-12"}>
             {children}
           </div>
 
-          {/* Columna Lateral */}
-          <aside className="lg:col-span-3">
-            {sidebar}
-          </aside>
+          {/* Columna Lateral (Opcional) */}
+          {sidebar && (
+            <aside className="lg:col-span-3">
+              {sidebar}
+            </aside>
+          )}
         </div>
       </div>
     </main>

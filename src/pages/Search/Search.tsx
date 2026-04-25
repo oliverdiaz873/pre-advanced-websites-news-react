@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SearchIcon } from '../../shared/components/icons';
+
 import { NewsLayout } from '../../shared/layouts';
 import { useSearch } from '../../features/news/hooks/useSearch';
-import { SearchIcon } from '../../shared/components/icons';
+import { EmptyState } from '../../shared/components';
 
 /**
  * Search Page - Réplica exacta del proyecto Bootstrap
@@ -12,24 +14,19 @@ const Search = () => {
 
   return (
     <NewsLayout>
-      <div className="container py-5">
+      <div className="container mx-auto py-5">
         {hasQuery ? (
           isEmpty ? (
-            /* Vista: Sin Resultados (Clon de Bootstrap) */
-            <div className="text-center py-5">
-              <div className="mb-4">
-                <SearchIcon className="h-16 w-16 text-gray-400 mx-auto" />
-              </div>
-              <h3 className="text-2xl font-bold mb-2">No se encontraron resultados</h3>
-              <p className="text-muted mb-4">Intenta con otros términos como "economía", "deporte" o "inflación".</p>
-              <Link 
-                to="/" 
-                className="inline-block bg-[#dc3545] text-white px-8 py-3 rounded-md font-bold hover:bg-[#c82333] transition-all transform hover:-translate-y-px no-underline"
-              >
-                Volver al inicio
-              </Link>
-            </div>
+            /* Vista: Sin Resultados usando el nuevo componente */
+            <EmptyState 
+              icon={<SearchIcon className="h-16 w-16 text-gray-400" />}
+              title="No se encontraron resultados"
+              description={`Intenta con otros términos como "economía", "deporte" o "inflación".`}
+              buttonText="Volver al inicio"
+              buttonLink="/"
+            />
           ) : (
+
             /* Vista: Con Resultados (Clon de Bootstrap) */
             <>
               <div className="row mb-4">
