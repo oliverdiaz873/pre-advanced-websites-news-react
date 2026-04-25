@@ -10,7 +10,7 @@ import { useSearch } from '../../../features/news/hooks/useSearch';
  * Escritorio: [Input] [Lupa] (Input a la izquierda)
  * Móvil: [Lupa] [Input] (Input a la derecha)
  */
-export const SearchBar = () => {
+export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -44,6 +44,7 @@ export const SearchBar = () => {
       setShowResults(false);
       setSearchTerm('');
       setIsExpanded(false);
+      onSearchComplete?.();
     } else {
       setIsExpanded(false);
     }
@@ -53,6 +54,7 @@ export const SearchBar = () => {
     setShowResults(false);
     setSearchTerm('');
     setIsExpanded(false);
+    onSearchComplete?.();
   };
 
   return (
