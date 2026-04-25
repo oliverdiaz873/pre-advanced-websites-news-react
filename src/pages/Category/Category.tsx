@@ -1,25 +1,34 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Category.css';
 import '../Home/Home.css';
-import { categoryContent } from '../../data';
-import {
-  FeaturedNewsSection,
-  LatestNewsSection,
-  RecentNewsSidebar,
-} from '../../features/news/components';
+import { useCategory, RecentNewsSidebar, FeaturedNewsSection, LatestNewsSection } from '../../features/news';
+import { NewsLayout } from '../../shared/layouts';
 
+
+/**
+ * Category Page
+ * 
+ * Página que orquestra la visualización de una sección de noticias (Salud, Deporte, etc.).
+ * Utiliza el hook useCategory para abstraer la lógica de obtención de contenidos.
+ * 
+ * Componentes usados:
+ * - NewsLayout: Estructura de dos columnas (Main + Sidebar).
+ * - RecentNewsSidebar: Barra lateral con noticias de la sección.
+ * - FeaturedNewsSection: Grid de noticias destacadas de la categoría.
+ * - LatestNewsSection: Listado inferior de noticias adicionales.
+ */
 export const Category = () => {
-  const { slug } = useParams();
-  const content = slug ? categoryContent[slug] : undefined;
+  const { content, categoryName } = useCategory();
 
+  // Estado: Categoría no encontrada
   if (!content) {
     return (
       <main className="min-h-[calc(100vh-200px)] px-4 py-8 md:px-[0.1rem] lg:px-4">
         <div className="mx-auto max-w-[900px] rounded-lg bg-white p-8 shadow-[0_2px_6px_rgba(0,0,0,0.1)] dark:bg-gray-900">
-          <p className="category-kicker">Categoría no encontrada</p>
-          <h1 className="category-title">No encontramos esa sección editorial</h1>
-          <p className="category-description mb-6">
-            La ruta solicitada no coincide con las categorías disponibles en el header.
+          <p className="category-kicker text-[#dc3545] font-bold mb-2">Categoría no encontrada</p>
+          <h1 className="text-3xl font-bold mb-4 dark:text-white">No encontramos esa sección editorial</h1>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">
+            La ruta solicitada no coincide con las categorías disponibles en el sistema.
           </p>
           <Link
             to="/"
@@ -33,21 +42,28 @@ export const Category = () => {
   }
 
   return (
-    <main className="home-main min-h-[calc(100vh-200px)] px-4 py-0 md:px-[0.1rem] lg:px-4">
-      <div className="mx-auto mt-3 max-w-[1600px]">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
-          <div className="space-y-8 lg:col-span-9">
-            <FeaturedNewsSection content={content.featuredSection} />
-            {content.latestNews.length > 0 ? (
-              <LatestNewsSection title={content.latestTitle} articles={content.latestNews} />
-            ) : null}
-          </div>
-
-          <div className="lg:col-span-3">
-            <RecentNewsSidebar articles={content.sidebarNews} />
-          </div>
+    <>
+      <NewsLayout
+        sidebar={
+          <RecentNewsSidebar 
+            title="Noticias Recientes"
+            articles={content.sidebarNews} 
+          />
+        }
+      >
+        <div className="space-y-8">
+          {/* Sección de noticias destacadas de la categoría */}
+          <FeaturedNewsSection content={content.featuredSection} />
+          
+          {/* Listado de noticias adicionales si existen */}
+          {content.latestNews.length > 0 && (
+            <LatestNewsSection 
+              title={content.latestTitle} 
+              articles={content.latestNews} 
+            />
+          )}
         </div>
-      </div>
-    </main>
+      </NewsLayout>
+    </>
   );
 };

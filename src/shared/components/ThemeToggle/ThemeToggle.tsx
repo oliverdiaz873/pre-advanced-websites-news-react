@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
-import { BrightnessIcon } from '../../../../shared/components/icons';
+import { BrightnessIcon } from '../icons';
 
+/**
+ * ThemeToggle
+ * 
+ * Componente para alternar entre modo claro y oscuro.
+ */
 export const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(false);
 

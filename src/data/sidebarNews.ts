@@ -5,7 +5,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'politica_ley_ambiental_apoyo',
       title: 'Ley ambiental recibe apoyo internacional',
-      href: '/news/politica/noticia-de-ley-ambiental',
+      href: '/news/politica/aprobacion-historica-ley-proteccion-ambiental',
       category: 'Política',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -16,7 +16,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'politica_presidente_popularidad',
       title: 'Popularidad presidencial alcanza máximo histórico',
-      href: '/news/politica/noticia-de-encuesta',
+      href: '/news/politica/encuestas-revelan-incremento-popularidad-presidente',
       category: 'Política',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -27,7 +27,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'politica_movimientos_sociales',
       title: 'Movimientos sociales demandan acción gubernamental',
-      href: '/news/politica/noticia-de-protestas',
+      href: '/news/politica/protestas-corrupcion',
       category: 'Política',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -38,7 +38,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'politica_expertos_debate',
       title: 'Expertos analizan desempeño de candidatos en debate',
-      href: '/news/politica/noticia-del-debate',
+      href: '/news/politica/debate-presidencial-candidatos-confrontan-propuestas',
       category: 'Política',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -52,7 +52,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'internacional_paz_ucrania',
       title: 'Acuerdo de paz en Ucrania es celebrado mundialmente',
-      href: '/news/internacional/noticia-de-guerra',
+      href: '/news/internacional/guerra-ucrania-llega-fin',
       category: 'Internacional',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -63,7 +63,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'internacional_onu_emergencia',
       title: 'ONU convoca sesión de emergencia por crisis en Medio Oriente',
-      href: '/news/internacional/noticia-de-israel-e-iran',
+      href: '/news/internacional/tensiones-israel-iran-crecen',
       category: 'Internacional',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -74,7 +74,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'internacional_europa_energia',
       title: 'Europa avanza en plan de independencia energética',
-      href: '/news/internacional/noticia-de-la-union-europea',
+      href: '/news/internacional/union-europea-impulsa-energias-renovables-nuevas-directivas-ambiciosas',
       category: 'Internacional',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -85,7 +85,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'internacional_china_eeuu_cooperacion',
       title: 'Diálogo China-EEUU abre nueva etapa de cooperación',
-      href: '/news/internacional/noticia-de-china-y-usa',
+      href: '/news/internacional/conversaciones-china-estados-unidos-giro-politica-internacional',
       category: 'Internacional',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -99,7 +99,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'economia_inflacion_aumento',
       title: 'Inflación sigue en aumento y preocupa a expertos',
-      href: '/news/economia/noticia-de-la-inflacion',
+      href: '/news/economia/incremento-inflacion-impacta-mercados',
       category: 'Economía',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -110,7 +110,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'economia_dolar_maximo',
       title: 'Dólar alcanza máximo del año frente a otras monedas',
-      href: '/news/economia/noticia-del-dolar',
+      href: '/news/economia/dolar-alcanza-maximo-ano-frente-monedas',
       category: 'Economía',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -121,7 +121,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'economia_bolsa_positiva',
       title: 'Mercados bursátiles celebran jornada positiva',
-      href: '/news/economia/noticia-de-la-bolsa',
+      href: '/news/economia/bolsa-valores-cierra-alza-optimismo-inversor',
       category: 'Economía',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -132,7 +132,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'economia_pib_crecimiento',
       title: 'Crecimiento económico supera expectativas del gobierno',
-      href: '/news/economia/noticia-del-pib',
+      href: '/news/economia/pib-crece-35-ultimo-trimestre-impulsado-consumo-inversion',
       category: 'Economía',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -146,7 +146,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'salud_oms_alerta',
       title: 'OMS emite alerta global por nuevo virus',
-      href: '/news/salud/noticia-del-virus',
+      href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
       category: 'Salud',
       date: '9 de octubre de 2025',
       datetime: '2025-10-09',
@@ -157,7 +157,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'salud_terapia_cardiovascular',
       title: 'Terapia cardiovascular revoluciona tratamiento de enfermedades del corazón',
-      href: '/news/salud/noticia-de-salud-cardiovascular',
+      href: '/news/salud/avances-medicina-nueva-terapia-mejora-salud-cardiovascular',
       category: 'Salud',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -168,7 +168,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'salud_antibioticos_urgencia',
       title: 'Expertos piden acción urgente contra resistencia antibiótica',
-      href: '/news/salud/noticia-de-antibioticos',
+      href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
       category: 'Salud',
       date: '9 de octubre de 2025',
       datetime: '2025-10-09',
@@ -179,7 +179,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'salud_recursos_mental',
       title: 'Gobiernos destinan recursos a programas de salud mental',
-      href: '/news/salud/noticia-de-salud-mental',
+      href: '/news/salud/salud-mental-prioridad-aumento-estres-ansiedad',
       category: 'Salud',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -193,7 +193,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'deporte_equipo_local_victoria_casa',
       title: 'El equipo local celebra victoria en casa',
-      href: '/news/deporte/noticia-del-equipo-local',
+      href: '/news/deporte/gran-victoria-equipo-local-futbol',
       category: 'Deporte',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -204,7 +204,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'deporte_lebron_lakers',
       title: 'LeBron James lidera victoria de los Lakers',
-      href: '/news/deporte/noticia-de-NBA',
+      href: '/news/deporte/lakers-vencen-celtics-nba',
       category: 'Deporte',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -215,7 +215,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'deporte_espana_final',
       title: 'España hacia la final del Mundial',
-      href: '/news/deporte/noticia-spain-vs-germany',
+      href: '/news/deporte/espana-clasifica-final-mundial-futbol',
       category: 'Deporte',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -226,7 +226,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'deporte_olimpicos_ceremonia',
       title: 'Juegos Olímpicos: ceremonia inaugural impresiona',
-      href: '/news/deporte/noticia-de-atletas',
+      href: '/news/deporte/atletas-rompen-records-mundiales',
       category: 'Deporte',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -240,7 +240,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'clima_tormenta_atlantico',
       title: 'Tormenta tropical se intensifica en el Atlántico',
-      href: '/news/clima/noticia-de-la-tormenta',
+      href: '/news/clima/tormenta-tropical-aproxima-caribe-alerta-paises',
       category: 'Clima',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -251,7 +251,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'clima_ola_calor_europa',
       title: 'Ola de calor récord afecta el sur de Europa',
-      href: '/news/clima/noticia-del-calor',
+      href: '/news/clima/ola-calor-extremo-afecta-regiones-pais',
       category: 'Clima',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -262,7 +262,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'clima_inundaciones_asia',
       title: 'Inundaciones causan evacuaciones en Asia',
-      href: '/news/clima/noticia-sobre-inundaciones',
+      href: '/news/clima/inundaciones-afectan-miles-personas-sur',
       category: 'Clima',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -273,7 +273,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'clima_huracan_costa',
       title: 'Huracán categoría 4 se acerca a la costa este',
-      href: '/news/clima/noticia-sobre-huracan',
+      href: '/news/clima/huracan-se-forma-atlantico-amenaza-costa-este',
       category: 'Clima',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -287,7 +287,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'justicia_homicidio_testigos',
       title: 'Policía busca testigos de homicidio en centro comercial',
-      href: '/news/justicia/noticia-del-homicidio',
+      href: '/news/justicia/investigan-homicidio-centro-ciudad',
       category: 'Justicia',
       date: '11 de octubre de 2025',
       datetime: '2025-10-11',
@@ -298,7 +298,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'justicia_exfuncionario_audiencia',
       title: 'Exfuncionario niega cargos de fraude durante audiencia',
-      href: '/news/justicia/noticia-del-fraude',
+      href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
       category: 'Justicia',
       date: '11 de octubre de 2025',
       datetime: '2025-10-11',
@@ -309,7 +309,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'justicia_tribunal_precedente',
       title: 'Sentencia del Tribunal Supremo senta precedente legal importante',
-      href: '/news/justicia/noticia-del-tribunal',
+      href: '/news/justicia/tribunal-supremo-confirma-sentencia',
       category: 'Justicia',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',
@@ -320,7 +320,7 @@ export const sidebarNewsByCategory = {
     createNewsArticle({
       id: 'justicia_evasion_fiscal_reforma',
       title: 'Caso de evasión fiscal podría llevar a reforma tributaria',
-      href: '/news/justicia/noticia-sobre-empresa',
+      href: '/news/justicia/fiscalia-inicia-juicio-empresa-evasion-fiscal-millonaria',
       category: 'Justicia',
       date: '4 de octubre de 2025',
       datetime: '2025-10-04',

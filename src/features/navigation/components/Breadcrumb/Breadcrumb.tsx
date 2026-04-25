@@ -8,20 +8,48 @@ interface BreadcrumbProps {
   current: string;
 }
 
+/**
+ * Breadcrumb
+ * 
+ * Este componente es el encargado de la navegación jerárquica (miga de pan).
+ * Proporciona un camino claro desde el Inicio hasta la noticia actual,
+ * mejorando la usabilidad y el SEO de la página.
+ * 
+ * @param {Object} props - Propiedades del componente.
+ * @param {string} props.home - Texto para el enlace de inicio (ej. "Inicio").
+ * @param {string} props.category - Nombre visual de la categoría (ej. "Política").
+ * @param {string} props.categoryPath - Ruta URL a la página de la categoría.
+ * @param {string} props.current - Título de la noticia actual que se muestra sin enlace.
+ * @returns {JSX.Element} El componente de navegación por miga de pan.
+ */
 export const Breadcrumb = ({ home, category, categoryPath, current }: BreadcrumbProps) => {
   return (
-    <nav aria-label="breadcrumb" className="breadcrumb-container">
-      <ol className="breadcrumb">
-        <li className="breadcrumb-item">
-          <Link to="/">{home}</Link>
-        </li>
-        <li className="breadcrumb-item">
-          <Link to={categoryPath}>{category}</Link>
-        </li>
-        <li className="breadcrumb-item active" aria-current="page">
-          {current}
-        </li>
-      </ol>
+    <nav aria-label="breadcrumb" className="w-full bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+      <div className="mx-auto max-w-[1320px] px-4 md:px-[0.1rem] lg:px-4 py-3">
+        <ol className="flex flex-wrap list-none p-0 m-0 text-sm font-sans">
+          <li className="flex items-center">
+            <Link 
+              to="/" 
+              className="text-gray-600 dark:text-gray-400 hover:text-[#ff2929] transition-colors duration-200 font-medium"
+            >
+              {home}
+            </Link>
+            <span className="mx-2 text-gray-400 select-none">/</span>
+          </li>
+          <li className="flex items-center">
+            <Link 
+              to={categoryPath} 
+              className="text-gray-600 dark:text-gray-400 hover:text-[#ff2929] transition-colors duration-200 font-medium"
+            >
+              {category}
+            </Link>
+            <span className="mx-2 text-gray-400 select-none">/</span>
+          </li>
+          <li className="text-gray-900 dark:text-white font-bold truncate max-w-[200px] md:max-w-none" aria-current="page">
+            {current}
+          </li>
+        </ol>
+      </div>
     </nav>
   );
 };

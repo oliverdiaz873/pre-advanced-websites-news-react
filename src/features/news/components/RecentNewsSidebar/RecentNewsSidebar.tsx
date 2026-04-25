@@ -7,15 +7,26 @@ interface RecentNewsSidebarProps {
   articles: NewsArticle[];
 }
 
-/** Representa una barra lateral de noticias recientes para páginas de categorías. */
+/**
+ * RecentNewsSidebar
+ * 
+ * Este componente es el Sidebar de la página.
+ * Muestra una lista vertical de noticias relacionadas o recientes,
+ * permitiendo al usuario seguir navegando por temas similares sin volver a la portada.
+ * 
+ * @param {Object} props - Propiedades del componente.
+ * @param {string} [props.title='Noticias Recientes'] - Título que aparecerá en la cabecera del sidebar.
+ * @param {NewsArticle[]} props.articles - Arreglo de noticias a mostrar en la lista.
+ * @returns {JSX.Element} El componente de barra lateral.
+ */
 export const RecentNewsSidebar = ({ title = 'Noticias Recientes', articles }: RecentNewsSidebarProps) => {
   // Limitar a máximo 5 artículos para el sidebar
   const recentArticles = articles.slice(0, 5);
 
   return (
-    <aside>
+    <aside className="recent-news-sidebar">
       <section className="rounded-lg border-l border-[#ddd] bg-white p-6 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:border-gray-700 dark:bg-gray-900">
-        <h3 className="section-title-home section-title-sidebar mb-3">{title}</h3>
+        <h3 className="section-title-home section-title-sidebar mb-4 text-2xl font-bold dark:text-white">{title}</h3>
 
         <div className="space-y-6">
           {recentArticles.map((article) => (

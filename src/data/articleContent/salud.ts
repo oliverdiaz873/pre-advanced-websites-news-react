@@ -255,5 +255,56 @@ export const saludArticles: FullNewsArticle[] = [
       category: 'Salud',
       current: 'La salud mental se convierte en prioridad ante el aumento de estrés y ansiedad'
     }
+  },
+  {
+    id: 'salud-azucar',
+    title: 'El consumo excesivo de azúcares aumenta el riesgo de enfermedades metabólicas',
+    href: '/news/salud/noticia-sobre-azucar',
+    category: 'Salud',
+    date: '9 de octubre de 2025',
+    datetime: '2025-10-09',
+    summary: 'El consumo excesivo de azúcares añadidos se ha convertido en un problema crítico de salud pública, afectando a millones de personas en todo el mundo y contribuyendo al aumento de enfermedades crónicas graves.',
+    imageUrl: '/images/news/salud/azucar.jpg',
+    alt: 'El consumo excesivo de azúcares aumenta el riesgo de enfermedades metabólicas',
+    content: [
+      'Estudios recientes, validados por múltiples instituciones sanitarias, muestran que una ingesta elevada de azúcares añadidos está directamente relacionada con un mayor riesgo de desarrollar enfermedades metabólicas complejas, como diabetes tipo 2, obesidad severa y síndrome metabólico.',
+
+      'Los expertos advierten que el consumo frecuente de bebidas azucaradas, dulces y alimentos ultraprocesados puede alterar rápidamente los niveles de glucosa en la sangre y afectar la función de la insulina, creando una resistencia que contribuye al deterioro de la salud a largo plazo.',
+
+      'Además, la exposición temprana a dietas altas en azúcar durante la infancia puede generar hábitos alimenticios poco saludables y adictivos que se prolongan hasta la adultez, aumentando exponencialmente la probabilidad de complicaciones metabólicas en etapas posteriores de la vida.',
+
+      'Las autoridades sanitarias recomiendan encarecidamente moderar la ingesta de azúcares, leer cuidadosamente las etiquetas nutricionales y priorizar alimentos naturales como frutas, verduras y granos integrales, que aportan energía y nutrientes esenciales sin los riesgos asociados a los azúcares refinados.',
+
+      'En conclusión, reducir el consumo de azúcares no es solo una elección dietética, sino una medida preventiva clave para proteger la salud metabólica, mejorar la calidad de vida y disminuir la incidencia de enfermedades crónicas en la población mundial.'
+    ],
+    relatedNews: [
+      {
+        id: 'antibioticos',
+        title: 'Aumenta la preocupación por la resistencia a los antibióticos',
+        href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
+        category: 'Salud',
+        date: '9 de octubre de 2025',
+        datetime: '2025-10-09',
+        summary: 'Preocupación mundial por superbacterias.',
+        imageUrl: '/images/news/salud/antibioticos.avif',
+        alt: 'Resistencia a los antibióticos'
+      },
+      {
+        id: 'contaminacion',
+        title: 'La contaminación del aire aumenta el riesgo de enfermedades respiratorias',
+        href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
+        category: 'Salud',
+        date: '9 de octubre de 2025',
+        datetime: '2025-10-09',
+        summary: 'Riesgo de enfermedades respiratorias en alza.',
+        imageUrl: '/images/news/salud/contaminacion.avif',
+        alt: 'Contaminación del aire y salud'
+      }
+    ],
+    breadcrumb: {
+      home: 'Inicio',
+      category: 'Salud',
+      current: 'El consumo excesivo de azúcares aumenta el riesgo de enfermedades metabólicas'
+    }
   }
 ];

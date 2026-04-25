@@ -1,5 +1,10 @@
-import { SearchIcon } from '../../../../shared/components/icons';
+import { SearchIcon } from '../icons';
 
+/**
+ * SearchBar
+ * 
+ * Componente de búsqueda global reutilizable.
+ */
 export const SearchBar = () => {
   return (
     <form className="mt-3 flex w-full gap-1 lg:mt-0 lg:w-auto" role="search" onSubmit={(e) => e.preventDefault()}>

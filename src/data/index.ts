@@ -4,3 +4,4 @@ export * from './legalContent';
 export * from './newsModels';
 export * from './utils';
 export * from './articleContent';
+export * from './sidebarNews';

@@ -94,13 +94,17 @@ span {
 }
 
 .article-body {
-  margin-top: -15px;
-  /* Reduce el espacio con la cabecera */
+  padding: 1rem 0;
+  display: block;
+  width: 100%;
 }
 
 .article-body p {
   margin-bottom: 1.5rem;
   text-align: justify;
+  font-size: 1.1rem !important;
+  line-height: 1.8;
+  color: #333;
 }
 
 /* Sobrescribir hover para que no tenga borde/sombra ni cambio de color en la página de noticia */
@@ -127,11 +131,13 @@ span {
 
 /* Estilos adicionales para React */
 .article-wrapper .featured-article .content {
-  flex: 1;
+  flex: 0 0 35%;
+  max-width: 35%;
 }
 
 .article-wrapper .featured-article .image-wrapper {
-  flex: 0 0 300px;
+  flex: 0 0 60%;
+  max-width: 60%;
 }
 
 .article-wrapper .featured-article .image-wrapper img {

@@ -1,14 +1,14 @@
 import type { NewsArticle, OpinionArticle } from './newsModels';
 
 export const breakingNews = {
-  href: '/news/justicia/noticia-del-fraude',
+  href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
   text: 'Detienen a exfuncionario acusado de fraude financiero millonario',
 };
 
 export const featuredPrimary: NewsArticle = {
   id: 'inflacion_mercados',
   title: 'Incremento de la inflación impacta a los mercados',
-  href: '/news/economia/noticia-de-la-inflacion',
+  href: '/news/economia/incremento-inflacion-impacta-mercados',
   category: 'Economía',
   date: '4 de octubre de 2025',
   datetime: '2025-10-04',
@@ -22,7 +22,7 @@ export const featuredSecondary: [NewsArticle, NewsArticle] = [
   {
     id: 'victoria_equipo_local',
     title: 'Gran victoria del equipo local',
-    href: '/news/deporte/noticia-del-equipo-local',
+    href: '/news/deporte/gran-victoria-equipo-local-futbol',
     category: 'Deporte',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
@@ -34,7 +34,7 @@ export const featuredSecondary: [NewsArticle, NewsArticle] = [
   {
     id: 'guerra_ucrania_fin',
     title: 'La guerra de Ucrania llega a su fin',
-    href: '/news/internacional/noticia-de-guerra',
+    href: '/news/internacional/guerra-ucrania-llega-fin',
     category: 'Internacional',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
@@ -49,7 +49,7 @@ export const featuredGrid: NewsArticle[] = [
   {
     id: 'protestas_corrupcion',
     title: 'Protestas por corrupción',
-    href: '/news/politica/noticia-de-protestas',
+    href: '/news/politica/protestas-corrupcion',
     category: 'Política',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
@@ -61,7 +61,7 @@ export const featuredGrid: NewsArticle[] = [
   {
     id: 'descubrimiento_virus',
     title: 'Descubren un nuevo virus que alerta a científicos',
-    href: '/news/salud/noticia-del-virus',
+    href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
     category: 'Salud',
     date: '9 de octubre de 2025',
     datetime: '2025-10-09',
@@ -73,7 +73,7 @@ export const featuredGrid: NewsArticle[] = [
   {
     id: 'investigacion_homicidio',
     title: 'Investigan homicidio en el centro de la ciudad',
-    href: '/news/justicia/noticia-del-homicidio',
+    href: '/news/justicia/investigan-homicidio-centro-ciudad',
     category: 'Justicia',
     date: '11 de octubre de 2025',
     datetime: '2025-10-11',
@@ -85,7 +85,7 @@ export const featuredGrid: NewsArticle[] = [
   {
     id: 'huracan_atlantico',
     title: 'Huracán se fortalece en el Atlántico y genera alertas en la costa este de EE.UU.',
-    href: '/news/clima/noticia-sobre-huracan',
+    href: '/news/clima/huracan-se-forma-atlantico-amenaza-costa-este',
     category: 'Clima',
     date: '11 de octubre de 2025',
     datetime: '2025-10-11',
@@ -97,7 +97,7 @@ export const featuredGrid: NewsArticle[] = [
   {
     id: 'detencion_fraude',
     title: 'Detienen a exfuncionario acusado de fraude financiero millonario',
-    href: '/news/justicia/noticia-del-fraude',
+    href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
     category: 'Justicia',
     date: '11 de octubre de 2025',
     datetime: '2025-10-11',
@@ -109,7 +109,7 @@ export const featuredGrid: NewsArticle[] = [
   {
     id: 'bolsa_valores_alza',
     title: 'La bolsa de valores cierra en alza tras jornada de optimismo inversor',
-    href: '/news/economia/noticia-de-la-bolsa',
+    href: '/news/economia/bolsa-valores-cierra-alza-optimismo-inversor',
     category: 'Economía',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
@@ -124,7 +124,7 @@ export const latestNews: NewsArticle[] = [
   {
     id: 'tormenta_caribe',
     title: 'Tormenta tropical se aproxima al Caribe y alerta a varios países',
-    href: '/news/clima/noticia-de-la-tormenta',
+    href: '/news/clima/tormenta-tropical-aproxima-caribe-alerta-paises',
     category: 'Clima',
     date: '11 de octubre de 2025',
     datetime: '2025-10-11',
@@ -136,7 +136,7 @@ export const latestNews: NewsArticle[] = [
   {
     id: 'lakers_celtics',
     title: 'Los Lakers se imponen a los Celtics en un vibrante partido de la NBA',
-    href: '/news/deporte/noticia-de-NBA',
+    href: '/news/deporte/lakers-vencen-celtics-nba',
     category: 'Deporte',
     date: '7 de octubre de 2025',
     datetime: '2025-10-07',
@@ -148,7 +148,7 @@ export const latestNews: NewsArticle[] = [
   {
     id: 'popularidad_presidente',
     title: 'Encuestas revelan incremento en la popularidad del presidente',
-    href: '/news/politica/noticia-de-encuesta',
+    href: '/news/politica/encuestas-revelan-incremento-popularidad-presidente',
     category: 'Política',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
@@ -160,7 +160,7 @@ export const latestNews: NewsArticle[] = [
   {
     id: 'olimpiadas_apertura',
     title: 'Atletas internacionales brillan en ceremonia inaugural de los Juegos Olímpicos',
-    href: '/news/deporte/noticia-de-atletas',
+    href: '/news/deporte/atletas-rompen-records-mundiales',
     category: 'Deporte',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
@@ -172,7 +172,7 @@ export const latestNews: NewsArticle[] = [
   {
     id: 'resistencia_antibioticos',
     title: 'Aumenta la preocupación por la resistencia a los antibióticos',
-    href: '/news/salud/noticia-de-antibioticos',
+    href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
     category: 'Salud',
     date: '9 de octubre de 2025',
     datetime: '2025-10-09',
@@ -184,7 +184,7 @@ export const latestNews: NewsArticle[] = [
   {
     id: 'dolar_fortalece',
     title: 'El dólar se fortalece ante incertidumbre económica global',
-    href: '/news/economia/noticia-del-dolar',
+    href: '/news/economia/dolar-alcanza-maximo-ano-frente-monedas',
     category: 'Economía',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',

@@ -7,6 +7,12 @@ interface LegalLayoutProps {
   children: React.ReactNode
 }
 
+/**
+ * LegalLayout
+ * 
+ * Layout estructural para páginas legales (Privacidad, Términos).
+ * Centra el contenido y aplica estilos específicos de lectura legal.
+ */
 export const LegalLayout: React.FC<LegalLayoutProps> = ({ title, date, children }) => {
   return (
     <main className="legal-main">
@@ -22,5 +28,3 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ title, date, children 
     </main>
   )
 }
-
-export default LegalLayout

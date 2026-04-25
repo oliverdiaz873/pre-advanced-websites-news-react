@@ -1,7 +1,13 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import { FacebookIcon, TwitterIcon, InstagramIcon } from '../../../../shared/components/icons';
+import { FacebookIcon, TwitterIcon, InstagramIcon } from '../../components/icons';
 
+/**
+ * Footer
+ * 
+ * Componente de pie de página global.
+ * Contiene derechos reservados, redes sociales y enlaces legales.
+ */
 export const Footer = () => {
   return (
     <footer className="w-full bg-[rgba(0,0,0,0.85)] text-white py-5 md:pt-4 md:pb-6 lg:pt-5 lg:px-7 lg:pb-7 text-center">

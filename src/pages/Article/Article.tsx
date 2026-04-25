@@ -1,36 +1,27 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Article.css';
-import { 
-  newsArticles, 
-  politicaArticles, 
-  deporteArticles, 
-  economiaArticles, 
-  internacionalArticles, 
-  justiciaArticles, 
-  climaArticles, 
-  saludArticles 
-} from '../../data';
+import '../Home/Home.css';
 import { Breadcrumb } from '../../features/navigation/components';
-import { RecentNewsSidebar } from '../../features/news/components';
-import type { FullNewsArticle } from '../../data';
+import { RecentNewsSidebar, ArticleDetail, useNewsArticle } from '../../features/news';
+import { NewsLayout } from '../../shared/layouts';
 
+
+/**
+ * Article Page
+ * 
+ * Página que orquestra la visualización de una noticia individual.
+ * Delega la lógica de búsqueda al hook useNewsArticle para mantener un diseño limpio.
+ * 
+ * Componentes usados:
+ * - Breadcrumb: Navegación jerárquica (Inicio > Categoría > Noticia).
+ * - NewsLayout: Estructura de dos columnas.
+ * - RecentNewsSidebar: Barra lateral con noticias relacionadas.
+ * - ArticleDetail: Componente que renderiza el cuerpo y metadatos de la noticia.
+ */
 export const Article = () => {
-  const { category, slug } = useParams();
-  const href = category && slug ? `/news/${category}/${slug}` : '';
-  
-  // Combinar todos los artículos existentes
-  const allArticles = [
-    ...newsArticles, 
-    ...politicaArticles, 
-    ...deporteArticles, 
-    ...economiaArticles, 
-    ...internacionalArticles, 
-    ...justiciaArticles, 
-    ...climaArticles, 
-    ...saludArticles
-  ];
-  const article = allArticles.find((item) => item.href === href) as FullNewsArticle | undefined;
+  const { article, categoryName, categorySlug } = useNewsArticle();
 
+  // Estado: Noticia no encontrada
   if (!article) {
     return (
       <main className="min-h-[calc(100vh-200px)] px-4 py-8 lg:px-4">
@@ -38,7 +29,7 @@ export const Article = () => {
           <p className="article-category">Noticia no encontrada</p>
           <h1 className="article-title">No encontramos este articulo</h1>
           <p className="article-summary mb-6">
-            La nota solicitada todavia no esta disponible o la ruta no coincide con el contenido migrado.
+            La nota solicitada todavía no está disponible o la ruta no coincide con el contenido migrado.
           </p>
           <Link
             to="/"
@@ -55,53 +46,21 @@ export const Article = () => {
     <>
       <Breadcrumb 
         home={article?.breadcrumb?.home || "Inicio"}
-        category={article?.breadcrumb?.category || article?.category || ""}
-        categoryPath={`/category/${category}`}
+        category={categoryName}
+        categoryPath={`/category/${categorySlug}`}
         current={article?.breadcrumb?.current || article?.title || ""}
       />
-      <main className="main-content">
-        <div className="container-fluid mt-3">
-          <div className="row">
-            {/* Main Content Column */}
-            <div className="col-lg-9">
-              <div className="article-wrapper shadow-sm mb-5">
-                <article className="featured-article mb-4">
-                  <div className="d-flex align-items-start gap-4">
-                    <div className="content">
-                      <h1 className="h1 mb-3">{article.title}</h1>
-                      <p className="text-muted mb-2">
-                        <small>Publicado el <time dateTime={article.datetime}>{article.date}</time> | {article.category}</small>
-                      </p>
-                      <p className="lead fw-normal">
-                        {article.summary}
-                      </p>
-                    </div>
-                    <div className="image-wrapper shadow-sm">
-                      <img src={article.imageUrl} alt={article.alt} className="img-fluid rounded" />
-                    </div>
-                  </div>
-                </article>
-
-                <div className="article-body px-1">
-                  {article.content?.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Sidebar Column */}
-            <div className="col-lg-3">
-              <aside className="aside-sidebar">
-                <RecentNewsSidebar 
-                  title="Noticias Recientes"
-                  articles={article.relatedNews || []}
-                />
-              </aside>
-            </div>
-          </div>
-        </div>
-      </main>
+      
+      <NewsLayout
+        sidebar={
+          <RecentNewsSidebar 
+            title="Noticias Relacionadas"
+            articles={article.relatedNews || []}
+          />
+        }
+      >
+        <ArticleDetail article={article} />
+      </NewsLayout>
     </>
   );
 };

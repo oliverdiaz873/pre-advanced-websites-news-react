@@ -1,12 +1,17 @@
 import { useState } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import { MenuIcon, CloseIcon } from '../../../../shared/components/icons';
-import logoImg from '../../../../assets/images/logo/logo.jpg';
-import { Navigation } from '../../../navigation/components';
-import { SearchBar } from '../SearchBar';
-import { ThemeToggle } from '../ThemeToggle';
+import { MenuIcon, CloseIcon } from '../../components/icons';
+import logoImg from '../../../assets/images/logo/logo.jpg';
+import { Navigation } from '../../../features/navigation/components';
+import { SearchBar, ThemeToggle } from '../../components';
 
+/**
+ * Header
+ * 
+ * Componente de cabecera global.
+ * Gestiona el menú móvil y contiene la navegación principal, búsqueda y cambio de tema.
+ */
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
