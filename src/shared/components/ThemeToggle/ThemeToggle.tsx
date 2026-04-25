@@ -33,11 +33,13 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="flex h-[45px] w-[45px] items-center justify-center rounded-md border border-transparent p-0 text-black transition-all duration-300 hover:bg-[#dc3545] hover:text-white dark:text-gray-300 dark:hover:bg-[#dc3545]"
+      className="flex h-[45px] w-[45px] items-center justify-center rounded-md border border-transparent p-0 text-black transition-all duration-300 hover:bg-[#dc3545] hover:text-white dark:text-gray-300 dark:hover:bg-[#dc3545] dark:hover:text-white"
+
       aria-label="Cambiar modo oscuro"
       type="button"
     >
       <BrightnessIcon className="h-[1.3rem] w-[1.3rem] shrink-0" />
     </button>
+
   );
 };

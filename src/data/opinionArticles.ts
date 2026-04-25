@@ -1,6 +1,5 @@
 import type { OpinionArticle } from './newsModels';
 
-
 /**
  * Listado centralizado de artículos de opinión.
  * Estos datos alimentan el OpinionSidebar en la Home y otras secciones.
@@ -8,8 +7,10 @@ import type { OpinionArticle } from './newsModels';
 export const opinionArticles: OpinionArticle[] = [
   {
     id: 'opinion_politica',
-    title: 'La democracia y el reto de la transparencia',
+    title: 'La democracia y el resto de la transparencia',
     href: '/opiniones/opinion-politica',
+    category: 'Opinión',
+    slug: 'opinion-politica',
     summary:
       'La confianza ciudadana depende cada vez más de instituciones abiertas y responsables.',
     imageUrl: '/images/news/politica/congreso.avif',
@@ -21,6 +22,8 @@ export const opinionArticles: OpinionArticle[] = [
     id: 'opinion_economia',
     title: 'Hacia dónde va la economía global?',
     href: '/opiniones/opinion-economia',
+    category: 'Opinión',
+    slug: 'opinion-economia',
     summary:
       'Analizamos los factores que marcarán el rumbo económico en los próximos años.',
     imageUrl: '/images/opiniones/opinion_economia.jpg',
@@ -32,6 +35,8 @@ export const opinionArticles: OpinionArticle[] = [
     id: 'opinion_salud',
     title: 'La importancia de la salud preventiva',
     href: '/opiniones/opinion-salud',
+    category: 'Opinión',
+    slug: 'opinion-salud',
     summary:
       'Invertir en prevención es fundamental para mantener una población saludable y reducir gastos sanitarios.',
     imageUrl: '/images/news/salud/antibioticos.avif',

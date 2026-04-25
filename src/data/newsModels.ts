@@ -24,12 +24,15 @@ export interface OpinionArticle {
   id: string;
   title: string;
   href: string;
+  category: string;
+  slug?: string;
   summary: string;
   imageUrl: string;
   alt: string;
   date: string;
   datetime: string;
 }
+
 
 export interface FeaturedSectionContent {
   title: string;

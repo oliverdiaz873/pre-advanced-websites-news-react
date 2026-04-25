@@ -55,8 +55,10 @@
 .header-actions {
   align-items: center;
   display: flex;
-  gap: 0.125rem;
+  gap: 0.4rem;
+  justify-content: flex-end;
 }
+
 
 .header-mobile-toggle {
   align-items: center;
@@ -96,6 +98,10 @@
 
 .header-mobile-actions {
   padding-top: 0.35rem;
+}
+
+.header-mobile-actions .flex-col {
+  gap: 1rem;
 }
 
 .dark .header-main {
