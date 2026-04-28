@@ -19,7 +19,7 @@
   font-weight: 500;
 }
 
-.dark .section-title-home {
+html[data-theme='dark'] .section-title-home {
   color: #fff;
 }
 

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { newsArticles, opinionArticles, type NewsArticle } from '../../../data';
+import { newsArticles, opinionArticles } from '../../../data';
 import { hasSearchQuery, matchesSearchQuery } from '../../../shared/utils/searchUtils';
 
 /**

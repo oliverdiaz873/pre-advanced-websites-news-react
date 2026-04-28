@@ -23,10 +23,10 @@
   max-width: 60rem;
 }
 
-.dark .category-title {
+html[data-theme='dark'] .category-title {
   color: #f9fafb;
 }
 
-.dark .category-description {
+html[data-theme='dark'] .category-description {
   color: #d1d5db;
 }

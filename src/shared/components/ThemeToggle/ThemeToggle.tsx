@@ -1,45 +1,47 @@
-import { useEffect, useState } from 'react';
-import { BrightnessIcon } from '../icons';
+import type { ReactElement } from 'react';
+import './ThemeToggle.css';
+import { SystemIcon, MoonIcon, SunIcon } from '../icons';
+import { useTheme, type ThemePreference } from '../../../theme';
 
-/**
- * ThemeToggle
- * 
- * Componente para alternar entre modo claro y oscuro.
- */
+const iconByTheme: Record<ThemePreference, ReactElement> = {
+  light: <SunIcon className="h-[1rem] w-[1rem] shrink-0" />,
+  dark: <MoonIcon className="h-[1rem] w-[1rem] shrink-0" />,
+  system: <SystemIcon className="h-[1rem] w-[1rem] shrink-0" />,
+};
+
+const options: Array<{ value: ThemePreference; label: string }> = [
+  { value: 'light', label: 'Claro' },
+  { value: 'dark', label: 'Oscuro' },
+  { value: 'system', label: 'Sistema' },
+];
+
 export const ThemeToggle = () => {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-      setIsDark(true);
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    const nextIsDark = !isDark;
-    setIsDark(nextIsDark);
-    if (nextIsDark) {
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = 'light';
-    }
-  };
+  const { theme, setTheme, resolvedTheme } = useTheme();
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="flex h-[45px] w-[45px] items-center justify-center rounded-md border border-transparent p-0 text-black transition-all duration-300 hover:bg-[#dc3545] hover:text-white dark:text-gray-300 dark:hover:bg-[#dc3545] dark:hover:text-white"
-
-      aria-label="Cambiar modo oscuro"
-      type="button"
+    <div
+      className="theme-toggle"
+      role="group"
+      aria-label={`Selector de tema. Tema activo: ${theme}. Tema aplicado: ${resolvedTheme}.`}
     >
-      <BrightnessIcon className="h-[1.3rem] w-[1.3rem] shrink-0" />
-    </button>
-
+      {options.map((option) => (
+        <button
+          key={option.value}
+          type="button"
+          className={`theme-toggle-option ${theme === option.value ? 'is-active' : ''}`}
+          onClick={() => setTheme(option.value)}
+          aria-pressed={theme === option.value}
+          aria-label={
+            option.value === 'system'
+              ? `Usar tema del sistema. Actualmente se aplica ${resolvedTheme}.`
+              : `Activar tema ${option.label.toLowerCase()}.`
+          }
+          title={option.value === 'system' ? `Sistema (${resolvedTheme})` : option.label}
+        >
+          {iconByTheme[option.value]}
+          <span className="theme-toggle-label">{option.label}</span>
+        </button>
+      ))}
+    </div>
   );
 };

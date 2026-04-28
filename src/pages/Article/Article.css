@@ -18,28 +18,28 @@
   color: #ff2929;
 }
 
-.dark .breadcrumb-container {
+html[data-theme='dark'] .breadcrumb-container {
   background-color: var(--dark-card-bg);
   border-bottom: 1px solid var(--dark-border);
 }
 
-.dark .breadcrumb {
+html[data-theme='dark'] .breadcrumb {
   color: var(--dark-text);
 }
 
-.dark .breadcrumb-item a {
+html[data-theme='dark'] .breadcrumb-item a {
   color: #ffffff;
 }
 
-.dark .breadcrumb-item a:hover {
+html[data-theme='dark'] .breadcrumb-item a:hover {
   color: #ff2929;
 }
 
-.dark .breadcrumb-item + .breadcrumb-item::before {
+html[data-theme='dark'] .breadcrumb-item + .breadcrumb-item::before {
   color: #ffffff;
 }
 
-.dark .breadcrumb-item.active {
+html[data-theme='dark'] .breadcrumb-item.active {
   color: #adb5bd;
 }
 
@@ -114,7 +114,7 @@ span {
   background-color: transparent !important;
 }
 
-.dark .featured-article:hover {
+html[data-theme='dark'] .featured-article:hover {
   background-color: var(--dark-card-bg) !important;
   /* Mantiene el color de la tarjeta en modo oscuro */
 }
@@ -165,22 +165,22 @@ span {
   }
 }
 
-.dark .article-wrapper {
+html[data-theme='dark'] .article-wrapper {
   background-color: var(--dark-card-bg);
 }
 
-.dark .article-wrapper .featured-article h1 {
+html[data-theme='dark'] .article-wrapper .featured-article h1 {
   color: var(--dark-text);
 }
 
-.dark .article-wrapper .featured-article .text-muted {
+html[data-theme='dark'] .article-wrapper .featured-article .text-muted {
   color: var(--dark-muted) !important;
 }
 
-.dark .article-wrapper .featured-article .lead {
+html[data-theme='dark'] .article-wrapper .featured-article .lead {
   color: var(--dark-text);
 }
 
-.dark .article-body p {
+html[data-theme='dark'] .article-body p {
   color: var(--dark-text);
 }

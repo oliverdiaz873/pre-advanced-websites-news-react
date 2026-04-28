@@ -9,7 +9,7 @@ import {
 
 /** Muestra el bloque de metadatos editoriales de una noticia: fecha y categoria. */
 const ArticleMeta = ({ article }: { article: NewsArticle }) => (
-  <p className="mb-2 text-[0.85rem] leading-[1.5] text-[#5f6871] dark:text-[#adb5bd]">
+  <p className="mb-2 text-[0.85rem] leading-[1.5] text-[#5f6871] dark:text-[var(--color-text-secondary)]">
     Publicado el <time dateTime={article.datetime}>{article.date}</time> | {article.category}
   </p>
 );
@@ -28,7 +28,7 @@ const CardLink = ({
     <img src={article.imageUrl} alt={article.alt} loading="lazy" className={imageClassName} />
     <h3 className={titleClassName}>{article.title}</h3>
     <ArticleMeta article={article} />
-    <p className="text-[0.98rem] leading-[1.6] text-[#292f34] dark:text-[#ced4da]">{article.summary}</p>
+    <p className="text-[0.98rem] leading-[1.6] text-[#292f34] dark:text-[var(--color-text-primary)]">{article.summary}</p>
   </Link>
 );
 
@@ -47,7 +47,7 @@ export const FeaturedNewsSection = ({ content }: FeaturedNewsSectionProps) => {
   const [secondary1, secondary2, secondary3] = sectionContent.secondary;
 
   return (
-    <section className="rounded-lg bg-white p-4 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:bg-gray-900">
+    <section className="rounded-lg bg-white p-4 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:bg-[var(--color-surface-base)]">
       <h2 className="section-title-home section-title-main mb-4">{sectionContent.title}</h2>
 
       <div className="mb-2">
@@ -67,11 +67,11 @@ export const FeaturedNewsSection = ({ content }: FeaturedNewsSectionProps) => {
               </div>
             </div>
             <div className="xl:w-[35%]">
-              <h3 className="mb-3 text-3xl font-semibold leading-tight text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-white">
+              <h3 className="mb-3 text-3xl font-semibold leading-tight text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-[var(--color-text-primary)]">
                 {sectionContent.primary.title}
               </h3>
               <ArticleMeta article={sectionContent.primary} />
-              <p className="text-base leading-[1.6] text-[#292f34] dark:text-[#ced4da]">
+              <p className="text-base leading-[1.6] text-[#292f34] dark:text-[var(--color-text-primary)]">
                 {sectionContent.primary.summary}
               </p>
             </div>
@@ -80,25 +80,25 @@ export const FeaturedNewsSection = ({ content }: FeaturedNewsSectionProps) => {
       </div>
 
       <div className="mb-1 grid grid-cols-1 gap-4 md:grid-cols-3">
-        <article className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-gray-900">
+        <article className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-[var(--color-surface-base)]">
           <CardLink
             article={secondary1}
             imageClassName="mb-3 w-full rounded-lg transition-transform duration-300 hover:scale-105"
-            titleClassName="mb-2 text-xl font-semibold leading-snug text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-white"
+            titleClassName="mb-2 text-xl font-semibold leading-snug text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-[var(--color-text-primary)]"
           />
         </article>
-        <article className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-gray-900">
+        <article className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-[var(--color-surface-base)]">
           <CardLink
             article={secondary2}
             imageClassName="mb-3 w-full rounded-lg transition-transform duration-300 hover:scale-105"
-            titleClassName="mb-2 text-xl font-semibold leading-snug text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-white"
+            titleClassName="mb-2 text-xl font-semibold leading-snug text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-[var(--color-text-primary)]"
           />
         </article>
-        <article className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-gray-900">
+        <article className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-[var(--color-surface-base)]">
           <CardLink
             article={secondary3}
             imageClassName="mb-3 w-full rounded-lg transition-transform duration-300 hover:scale-105"
-            titleClassName="mb-2 text-xl font-semibold leading-snug text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-white"
+            titleClassName="mb-2 text-xl font-semibold leading-snug text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-[var(--color-text-primary)]"
           />
         </article>
       </div>
@@ -107,12 +107,12 @@ export const FeaturedNewsSection = ({ content }: FeaturedNewsSectionProps) => {
         {sectionContent.grid.map((article) => (
           <article
             key={article.id}
-            className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-gray-900"
+            className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-[var(--color-surface-base)]"
           >
             <CardLink
               article={article}
               imageClassName="mb-3 w-full rounded-lg transition-transform duration-300 hover:scale-105"
-              titleClassName="mb-2 text-xl font-semibold leading-snug text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-white"
+              titleClassName="mb-2 text-xl font-semibold leading-snug text-neutral-900 transition-colors duration-300 hover:text-[#dc3545] dark:text-[var(--color-text-primary)]"
             />
           </article>
         ))}

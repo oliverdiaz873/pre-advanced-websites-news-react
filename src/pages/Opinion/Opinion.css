@@ -60,20 +60,20 @@
 }
 
 /* Modo Oscuro */
-.dark .opinion-page-container {
+html[data-theme='dark'] .opinion-page-container {
   background-color: #111827;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.dark .opinion-title-h1 {
+html[data-theme='dark'] .opinion-title-h1 {
   color: #f3f4f6;
 }
 
-.dark .opinion-meta {
+html[data-theme='dark'] .opinion-meta {
   border-color: #374151;
   color: #9ca3af;
 }
 
-.dark .opinion-text-content {
+html[data-theme='dark'] .opinion-text-content {
   color: #d1d5db;
 }

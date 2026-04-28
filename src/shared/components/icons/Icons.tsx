@@ -18,6 +18,24 @@ export const BrightnessIcon = ({ className }: IconProps) => (
   </svg>
 );
 
+export const SunIcon = ({ className }: IconProps) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+    <path d="M8 3.25a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5ZM8 4.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7Zm0-4a.625.625 0 0 1 .625.625v1.5a.625.625 0 1 1-1.25 0v-1.5A.625.625 0 0 1 8 .5Zm0 12.875A.625.625 0 0 1 8.625 14.5V16a.625.625 0 1 1-1.25 0v-1.5A.625.625 0 0 1 8 13.375ZM15.5 8a.625.625 0 0 1-.625.625h-1.5a.625.625 0 1 1 0-1.25h1.5A.625.625 0 0 1 15.5 8ZM2.625 8A.625.625 0 0 1 2 8.625H.5a.625.625 0 1 1 0-1.25H2A.625.625 0 0 1 2.625 8Zm10.15-5.275a.625.625 0 0 1 .884 0l1.06 1.06a.625.625 0 0 1-.884.884l-1.06-1.06a.625.625 0 0 1 0-.884Zm-9.55 9.55a.625.625 0 0 1 .884 0l1.06 1.06a.625.625 0 0 1-.884.884l-1.06-1.06a.625.625 0 0 1 0-.884Zm10.61.884a.625.625 0 0 1-.884-.884l1.06-1.06a.625.625 0 0 1 .884.884l-1.06 1.06Zm-9.55-9.55a.625.625 0 0 1-.884.884l-1.06-1.06a.625.625 0 1 1 .884-.884l1.06 1.06Z" />
+  </svg>
+);
+
+export const MoonIcon = ({ className }: IconProps) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+    <path d="M8.75.5a.75.75 0 0 1 .67 1.086A6.5 6.5 0 1 0 14.414 8.58a.75.75 0 0 1 1.086-.67.75.75 0 0 1 .46.69 7.75 7.75 0 1 1-8.52-8.56A.75.75 0 0 1 8.75.5Z" />
+  </svg>
+);
+
+export const SystemIcon = ({ className }: IconProps) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+    <path d="M2.25 2A1.75 1.75 0 0 0 .5 3.75v7.5C.5 12.216 1.284 13 2.25 13h4.875v1.5H5.5a.625.625 0 1 0 0 1.25h5a.625.625 0 1 0 0-1.25H8.875V13h4.875a1.75 1.75 0 0 0 1.75-1.75v-7.5A1.75 1.75 0 0 0 13.75 2h-11.5Zm-.5 1.75a.5.5 0 0 1 .5-.5h11.5a.5.5 0 0 1 .5.5v6.875H1.75V3.75Zm0 8.125h12.5v-.625H1.75v.625Z" />
+  </svg>
+);
+
 export const MenuIcon = ({ className }: IconProps) => (
   <svg className={className} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
     <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />

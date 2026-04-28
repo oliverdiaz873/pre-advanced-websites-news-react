@@ -1,20 +1,24 @@
 import type { ArticleContent } from '../newsModels';
 
-
 export const opinionEconomiaContent: ArticleContent = {
-  title: 'Hacia dónde va la economía global?',
+  id: 'opinion_economia',
+  title: 'Hacia donde va la economia global?',
+  href: '/opiniones/opinion-economia',
   date: '3 de octubre de 2025',
   datetime: '2025-10-03',
-  category: 'Opinión',
+  category: 'Opinion',
+  summary: 'Analizamos los factores que marcaran el rumbo economico en los proximos anos.',
   imageUrl: '/images/opiniones/opinion_economia.jpg',
-  alt: 'Hacia dónde va la economía global?',
+  alt: 'Hacia donde va la economia global?',
   breadcrumb: {
     home: 'Inicio',
-    current: 'Opinión Económica'
+    category: 'Opinion',
+    current: 'Opinion economica',
   },
   content: [
-    'Nos encontramos en un punto de inflexión sin precedentes en la historia económica contemporánea. La globalización, tal como la conocíamos, está siendo redefinida por tensiones geopolíticas, la transición energética y la irrupción masiva de la inteligencia artificial. Estos factores no solo están cambiando el "qué" producimos, sino el "cómo" y "dónde" lo hacemos.',
-    'La inflación, aunque parece estar bajo control en algunas regiones, ha dejado una huella profunda en la estructura de costes de las empresas y en el presupuesto de las familias. El gran reto de los bancos centrales será navegar este nuevo entorno sin sofocar el crecimiento necesario para financiar la transición hacia una economía verde.',
-    'A largo plazo, la sostenibilidad será el motor principal del valor económico. Aquellos países y empresas que no logren adaptar sus modelos de negocio a los límites del planeta se verán marginados. La economía global del futuro no será solo digital, será fundamentalmente regenerativa o no será.'
-  ]
+    'Nos encontramos en un punto de inflexion sin precedentes en la historia economica contemporanea. La globalizacion, tal como la conociamos, esta siendo redefinida por tensiones geopoliticas, la transicion energetica y la irrupcion masiva de la inteligencia artificial. Estos factores no solo estan cambiando el que producimos, sino el como y donde lo hacemos.',
+    'La inflacion, aunque parece estar bajo control en algunas regiones, ha dejado una huella profunda en la estructura de costes de las empresas y en el presupuesto de las familias. El gran reto de los bancos centrales sera navegar este nuevo entorno sin sofocar el crecimiento necesario para financiar la transicion hacia una economia verde.',
+    'A largo plazo, la sostenibilidad sera el motor principal del valor economico. Aquellos paises y empresas que no logren adaptar sus modelos de negocio a los limites del planeta se veran marginados. La economia global del futuro no sera solo digital, sera fundamentalmente regenerativa o no sera.',
+  ],
+  relatedNews: [],
 };

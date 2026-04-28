@@ -18,7 +18,7 @@ import { NewsLayout } from '../../shared/layouts';
  * - LatestNewsSection: Listado inferior de noticias adicionales.
  */
 export const Category = () => {
-  const { content, categoryName } = useCategory();
+  const { content } = useCategory();
 
   // Estado: Categoría no encontrada
   if (!content) {

@@ -4,7 +4,7 @@ import { Header, Footer } from './shared/layouts';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white transition-colors duration-200 flex flex-col dark:bg-gray-950">
+    <div className="flex min-h-screen flex-col bg-[var(--color-bg-primary)] text-[var(--color-text-primary)]">
       <Header />
       <main className="flex-grow">
         <Outlet />
