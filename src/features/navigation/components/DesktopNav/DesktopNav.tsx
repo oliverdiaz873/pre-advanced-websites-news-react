@@ -16,10 +16,10 @@ export const DesktopNav = () => {
             <NavLink
               to={item.path}
               className={({ isActive }) =>
-                `block rounded px-2 py-2 text-[16px] text-black transition-all duration-300 dark:text-gray-300 ${
+                `block rounded px-2 py-2 text-[16px] text-black transition-all duration-300 dark:text-[var(--color-text-primary)] ${
                   isActive
-                    ? 'bg-[#ebebeb] text-[#dc3545] dark:bg-gray-800 dark:text-[#dc3545]'
-                    : 'hover:text-[#dc3545] dark:hover:text-[#dc3545] hover:bg-gray-50 dark:hover:bg-gray-800/50'
+                    ? 'bg-[#ebebeb] text-[#dc3545] dark:bg-[#ebebeb] dark:text-black'
+                    : 'hover:text-[#dc3545] dark:hover:text-[#dc3545]'
                 }`
               }
             >

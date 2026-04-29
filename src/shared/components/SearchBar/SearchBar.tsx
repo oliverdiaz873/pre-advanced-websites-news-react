@@ -77,7 +77,7 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
           {/* Botón de la lupa */}
           <button
             className={`flex h-[45px] w-[45px] flex-shrink-0 items-center justify-center rounded-md border border-transparent transition-all duration-300 ${
-              isExpanded ? 'bg-[#dc3545] text-white' : 'text-black hover:bg-[#dc3545] hover:text-white dark:text-gray-300 dark:hover:bg-[#dc3545] dark:hover:text-white'
+              isExpanded ? 'bg-[#dc3545] text-white' : 'text-black hover:bg-[#dc3545] hover:text-white dark:text-white dark:hover:bg-[#dc3545] dark:hover:text-white'
             }`}
             type="submit"
             aria-label={isExpanded ? 'Ejecutar búsqueda' : 'Abrir buscador'}
