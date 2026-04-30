@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { SearchIcon } from '../icons';
+import { SearchIcon, CloseIcon } from '../icons';
 import { useSearch } from '../../../features/news/hooks/useSearch';
 
 /**
@@ -80,9 +80,9 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
               isExpanded ? 'bg-[#dc3545] text-white' : 'text-black hover:bg-[#dc3545] hover:text-white dark:text-white dark:hover:bg-[#dc3545] dark:hover:text-white'
             }`}
             type="submit"
-            aria-label={isExpanded ? 'Ejecutar búsqueda' : 'Abrir buscador'}
+            aria-label={isExpanded ? 'Cerrar buscador' : 'Abrir buscador'}
           >
-            <SearchIcon className="h-[1.3rem] w-[1.3rem]" />
+            {isExpanded ? <CloseIcon className="h-[1.9rem] w-[1.9rem]" /> : <SearchIcon className="h-[1.3rem] w-[1.3rem]" />}
           </button>
 
           {/* Input */}
@@ -104,7 +104,7 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
                 setShowResults(true);
               }}
               onFocus={() => setShowResults(true)}
-              className="w-full rounded-md border border-gray-300 py-2 px-4 italic text-base focus:border-[#dc3545] focus:outline-none dark:border-gray-700 dark:bg-gray-800"
+              className="w-full rounded-md border py-2 px-4 italic text-base focus:outline-none dark:bg-[var(--color-surface-base)] dark:border-[var(--color-border-subtle)]"
             />
 
             {/* Dropdown de Resultados Rápidos */}
