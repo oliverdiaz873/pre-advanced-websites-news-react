@@ -8,7 +8,7 @@ interface OpinionSidebarProps {
 }
 
 /** Representa una barra lateral editorial reusable para home y categorias. */
-export const OpinionSidebar = ({ title = 'Opinion', articles = opinionArticles }: OpinionSidebarProps) => {
+export const OpinionSidebar = ({ title = 'Opinión', articles = opinionArticles }: OpinionSidebarProps) => {
   return (
     <aside>
       <section className="rounded-lg border-l border-[#ddd] bg-white p-6 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:border-[var(--color-border-subtle)] dark:bg-[var(--color-surface-elevated)]">

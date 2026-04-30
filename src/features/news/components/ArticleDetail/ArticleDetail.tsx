@@ -35,13 +35,13 @@ export const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
             
             <div className="space-y-6">
               {/* Resumen (Lead) */}
-              <p className="text-[1.1rem] leading-[1.8] text-[#333] dark:text-gray-200 text-justify">
+              <p className="text-[1.1rem] leading-[1.8] text-[#333] dark:text-[#d1d5db] text-justify">
                 {article.summary}
               </p>
               
               {/* Primer párrafo al lado de la imagen */}
               {firstParagraph && (
-                <p className="text-[1.1rem] leading-[1.8] text-[#333] dark:text-gray-300 text-justify border-t border-gray-100 dark:border-gray-800 pt-6">
+                <p className="text-[1.1rem] leading-[1.8] text-[#333] dark:text-[#d1d5db] text-justify border-t border-gray-100 dark:border-gray-800 pt-6">
                   {firstParagraph}
                 </p>
               )}
@@ -64,7 +64,7 @@ export const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
         {restParagraphs.map((paragraph, index) => (
           <p 
             key={index} 
-            className="mb-6 text-[1.1rem] leading-[1.8] text-[#333] dark:text-gray-300 text-justify"
+            className="mb-6 text-[1.1rem] leading-[1.8] text-[#333] dark:text-[#d1d5db] text-justify"
           >
             {paragraph}
           </p>

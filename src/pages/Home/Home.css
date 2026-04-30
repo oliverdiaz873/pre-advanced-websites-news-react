@@ -21,6 +21,7 @@
 
 html[data-theme='dark'] .section-title-home {
   color: #fff;
+  border-bottom: 1.5px solid var(--color-border-subtle);
 }
 
 .news-card-home img,

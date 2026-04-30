@@ -24,13 +24,13 @@ interface BreadcrumbProps {
  */
 export const Breadcrumb = ({ home, category, categoryPath, current }: BreadcrumbProps) => {
   return (
-    <nav aria-label="breadcrumb" className="w-full bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
+    <nav aria-label="breadcrumb" className="w-full bg-white dark:bg-[#242424] border-b border-gray-200 dark:border-[#404040]">
       <div className="mx-auto max-w-[1320px] px-4 md:px-[0.1rem] lg:px-4 py-3">
         <ol className="flex flex-wrap list-none p-0 m-0 text-sm font-sans">
           <li className="flex items-center">
             <Link 
               to="/" 
-              className="text-gray-600 dark:text-gray-400 hover:text-[#ff2929] transition-colors duration-200 font-medium"
+              className="text-gray-600 dark:text-[var(--color-text-primary)] hover:text-[#ff2929] transition-colors duration-200 font-medium"
             >
               {home}
             </Link>
@@ -39,13 +39,13 @@ export const Breadcrumb = ({ home, category, categoryPath, current }: Breadcrumb
           <li className="flex items-center">
             <Link 
               to={categoryPath} 
-              className="text-gray-600 dark:text-gray-400 hover:text-[#ff2929] transition-colors duration-200 font-medium"
+              className="text-gray-600 dark:text-[var(--color-text-primary)] hover:text-[#ff2929] transition-colors duration-200 font-medium"
             >
               {category}
             </Link>
             <span className="mx-2 text-gray-400 select-none">/</span>
           </li>
-          <li className="text-gray-900 dark:text-white font-bold truncate max-w-[200px] md:max-w-none" aria-current="page">
+          <li className="text-gray-500 dark:text-[#adb5bd] truncate max-w-[200px] md:max-w-none" aria-current="page">
             {current}
           </li>
         </ol>

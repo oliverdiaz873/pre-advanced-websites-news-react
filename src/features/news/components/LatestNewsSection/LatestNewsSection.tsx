@@ -9,7 +9,7 @@ interface LatestNewsSectionProps {
 /** Renderiza una cuadricula editorial reusable para portada y categorias. */
 export const LatestNewsSection = ({ title = 'Noticias Recientes', articles = latestNews }: LatestNewsSectionProps) => {
   return (
-    <section>
+    <section className="rounded-lg bg-white p-4 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:bg-[var(--color-surface-base)]">
       <h2 className="section-title-home section-title-main mb-4">{title}</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         {articles.map((article) => (

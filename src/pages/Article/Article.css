@@ -170,17 +170,17 @@ html[data-theme='dark'] .article-wrapper {
 }
 
 html[data-theme='dark'] .article-wrapper .featured-article h1 {
-  color: var(--dark-text);
+  color: var(--color-text-primary);
 }
 
 html[data-theme='dark'] .article-wrapper .featured-article .text-muted {
-  color: var(--dark-muted) !important;
+  color: var(--color-text-secondary) !important;
 }
 
 html[data-theme='dark'] .article-wrapper .featured-article .lead {
-  color: var(--dark-text);
+  color: #d1d5db;
 }
 
 html[data-theme='dark'] .article-body p {
-  color: var(--dark-text);
+  color: #d1d5db;
 }
