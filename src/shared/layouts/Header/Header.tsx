@@ -1,19 +1,21 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import { MenuIcon, CloseIcon } from '../../components/icons';
 import logoImg from '../../../assets/images/logo/logo.jpg';
 import { DesktopNav, TabletNav, MobileNav } from '../../../features/navigation/components';
-import { SearchBar, ThemeToggle } from '../../components';
+import { SearchBar, ThemeToggle, LanguageSelector } from '../../components';
 
 /**
  * Header
  * 
  * Componente de cabecera global.
- * Gestiona el menú móvil y contiene la navegación principal, búsqueda y cambio de tema.
+ * Gestiona el menú móvil y contiene la navegación principal, búsqueda, cambio de tema y selector de idioma.
  */
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation('navbar');
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,7 +26,7 @@ export const Header = () => {
       <nav className="header-shell">
         <div className="header-bar">
           <div className="shrink-0">
-            <Link to="/" className="header-brand" aria-label="Ir a la página principal de NewsHub">
+            <Link to="/" className="header-brand" aria-label={t('goToHomepage')}>
               <img src={logoImg} alt="Logo NewsHub" className="header-brand-logo" loading="lazy" />
               <h1 className="header-brand-title">NewsHub</h1>
             </Link>
@@ -35,6 +37,7 @@ export const Header = () => {
             <TabletNav />
             <div className="header-actions">
               <SearchBar />
+              <LanguageSelector />
               <ThemeToggle />
             </div>
           </div>
@@ -45,7 +48,7 @@ export const Header = () => {
               type="button"
               className="header-mobile-toggle"
               aria-expanded={isMenuOpen}
-              aria-label="Toggle navigation"
+              aria-label={t('toggleNavigation')}
             >
               {isMenuOpen ? <CloseIcon className="h-8 w-8" /> : <MenuIcon className="h-8 w-8" />}
             </button>
@@ -56,7 +59,8 @@ export const Header = () => {
           <div className="header-mobile-actions border-b border-gray-100 pb-4 mb-2 dark:border-gray-800">
             <div className="flex flex-col gap-4">
               <SearchBar onSearchComplete={() => setIsMenuOpen(false)} />
-              <div className="flex justify-start px-2">
+              <div className="flex justify-start px-2 gap-3">
+                <LanguageSelector />
                 <ThemeToggle />
               </div>
             </div>

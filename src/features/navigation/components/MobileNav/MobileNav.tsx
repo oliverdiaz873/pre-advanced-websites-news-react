@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { navItems } from '../../config/navItems';
 
 /**
@@ -8,11 +9,13 @@ import { navItems } from '../../config/navItems';
  * Diseño puramente vertical, pensado para vivir dentro de un menú lateral (drawer) o acordeón.
  */
 export const MobileNav = ({ onItemClick }: { onItemClick?: () => void }) => {
+  const { t } = useTranslation('navbar');
+
   return (
-    <nav aria-label="Navegación Móvil" className="md:hidden">
+    <nav aria-label={t('mobileNavLabel')} className="md:hidden">
       <ul className="m-0 flex list-none flex-col p-0 space-y-1">
         {navItems.map((item) => (
-          <li key={item.name}>
+          <li key={item.nameKey}>
             <NavLink
               to={item.path}
               onClick={onItemClick}
@@ -24,7 +27,7 @@ export const MobileNav = ({ onItemClick }: { onItemClick?: () => void }) => {
                 }`
               }
             >
-              {item.name}
+              {t(item.nameKey)}
             </NavLink>
           </li>
         ))}

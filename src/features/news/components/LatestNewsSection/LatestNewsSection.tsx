@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { latestNews, type NewsArticle } from '../../../../data';
 
 interface LatestNewsSectionProps {
@@ -7,17 +8,22 @@ interface LatestNewsSectionProps {
 }
 
 /** Renderiza una cuadricula editorial reusable para portada y categorias. */
-export const LatestNewsSection = ({ title = 'Noticias Recientes', articles = latestNews }: LatestNewsSectionProps) => {
+export const LatestNewsSection = ({ title, articles = latestNews }: LatestNewsSectionProps) => {
+  const { t } = useTranslation('home');
+  const { t: tCommon } = useTranslation('common');
+
+  const sectionTitle = title ?? t('latestNews');
+
   return (
     <section className="rounded-lg bg-white p-4 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:bg-[var(--color-surface-base)]">
-      <h2 className="section-title-home section-title-main mb-4">{title}</h2>
+      <h2 className="section-title-home section-title-main mb-4">{sectionTitle}</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         {articles.map((article) => (
           <article
             key={article.id}
             className="news-card-home h-full rounded-lg bg-white p-[10px] shadow-[0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(0,0,0,0.15)] dark:bg-[var(--color-surface-base)]"
           >
-            <Link to={article.href} aria-label={`Leer noticia: ${article.title}`} className="block text-inherit no-underline">
+            <Link to={article.href} aria-label={tCommon('readArticle', { title: article.title })} className="block text-inherit no-underline">
               <img
                 src={article.imageUrl}
                 alt={article.alt}
@@ -28,7 +34,7 @@ export const LatestNewsSection = ({ title = 'Noticias Recientes', articles = lat
                 {article.title}
               </h3>
               <p className="mb-2 text-[0.85rem] leading-[1.5] text-[#5f6871] dark:text-[var(--color-text-secondary)]">
-                {article.category} | Publicado el <time dateTime={article.datetime}>{article.date}</time>
+                {article.category} | {tCommon('publishedOn')} <time dateTime={article.datetime}>{article.date}</time>
               </p>
               <p className="text-[0.98rem] leading-[1.6] text-[#292f34] dark:text-[var(--color-text-primary)]">{article.summary}</p>
             </Link>

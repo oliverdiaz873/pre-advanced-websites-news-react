@@ -7,6 +7,7 @@ import {
   type FeaturedSectionContent,
   type NewsArticle
 } from '../../../data';
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -17,9 +18,11 @@ import {
  * permitiendo que la página Home sea puramente estructural.
  */
 export const useHome = () => {
+  const { t } = useTranslation('home');
+
   // Estructuramos el contenido de la sección destacada
   const featuredSection: FeaturedSectionContent = {
-    title: 'Noticias Destacadas',
+    title: t('featuredNews'),
     primary: featuredPrimary,
     secondary: [featuredSecondary[0], featuredSecondary[1], featuredGrid[0]] as [NewsArticle, NewsArticle, NewsArticle],
 

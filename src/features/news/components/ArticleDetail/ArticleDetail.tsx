@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import type { FullNewsArticle } from '../../../../data';
 
 interface ArticleDetailProps {
@@ -18,6 +19,7 @@ interface ArticleDetailProps {
  * @returns {JSX.Element} El componente de detalle de la noticia.
  */
 export const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
+  const { t } = useTranslation('common');
   // Separamos el primer párrafo del resto para mejorar el diseño visual
   const [firstParagraph, ...restParagraphs] = article.content || [];
 
@@ -30,7 +32,7 @@ export const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
               {article.title}
             </h1>
             <p className="text-gray-500 dark:text-gray-400 text-sm mb-3 italic">
-              Publicado el <time dateTime={article.datetime}>{article.date}</time> | {article.category}
+              {t('publishedOn')} <time dateTime={article.datetime}>{article.date}</time> | {article.category}
             </p>
             
             <div className="space-y-6">
@@ -74,4 +76,3 @@ export const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
     </div>
   );
 };
-

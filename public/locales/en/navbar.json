@@ -1,0 +1,18 @@
+{
+  "home": "Home",
+  "politics": "Politics",
+  "international": "International",
+  "economy": "Economy",
+  "health": "Health",
+  "sports": "Sports",
+  "weather": "Weather",
+  "justice": "Justice",
+  "desktopNavLabel": "Desktop Navigation",
+  "tabletNavLabel": "Tablet Navigation",
+  "mobileNavLabel": "Mobile Navigation",
+  "openSearch": "Open search",
+  "closeSearch": "Close search",
+  "searchPlaceholder": "Search...",
+  "toggleNavigation": "Toggle navigation menu",
+  "goToHomepage": "Go to NewsHub homepage"
+}

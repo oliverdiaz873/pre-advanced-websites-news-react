@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './RecentNewsSidebar.css';
 import type { NewsArticle } from '../../../../data';
 
@@ -15,18 +16,21 @@ interface RecentNewsSidebarProps {
  * permitiendo al usuario seguir navegando por temas similares sin volver a la portada.
  * 
  * @param {Object} props - Propiedades del componente.
- * @param {string} [props.title='Noticias Recientes'] - Título que aparecerá en la cabecera del sidebar.
+ * @param {string} [props.title] - Título que aparecerá en la cabecera del sidebar.
  * @param {NewsArticle[]} props.articles - Arreglo de noticias a mostrar en la lista.
  * @returns {JSX.Element} El componente de barra lateral.
  */
-export const RecentNewsSidebar = ({ title = 'Noticias Recientes', articles }: RecentNewsSidebarProps) => {
+export const RecentNewsSidebar = ({ title, articles }: RecentNewsSidebarProps) => {
+  const { t } = useTranslation('news');
   // Limitar a máximo 5 artículos para el sidebar
   const recentArticles = articles.slice(0, 5);
+
+  const sectionTitle = title ?? t('recentNews');
 
   return (
     <aside className="recent-news-sidebar">
       <section className="rounded-lg border-l border-[#ddd] bg-white p-6 shadow-[0_2px_4px_rgba(0,0,0,0.1)] dark:border-[var(--color-border-subtle)] dark:bg-[var(--color-surface-elevated)]">
-        <h3 className="section-title-home section-title-sidebar mb-4 text-2xl font-bold dark:text-[var(--color-text-primary)]">{title}</h3>
+        <h3 className="section-title-home section-title-sidebar mb-4 text-2xl font-bold dark:text-[var(--color-text-primary)]">{sectionTitle}</h3>
 
         <div className="space-y-6">
           {recentArticles.map((article) => (

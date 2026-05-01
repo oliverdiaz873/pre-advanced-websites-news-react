@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { SearchIcon, CloseIcon } from '../icons';
 import { useSearch } from '../../../features/news/hooks/useSearch';
 
@@ -17,6 +18,7 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
   const navigate = useNavigate();
   const searchRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const { t } = useTranslation('navbar');
   
   const { results, hasQuery } = useSearch();
 
@@ -64,11 +66,6 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
         role="search" 
         onSubmit={handleSearch}
       >
-        {/* Lupa: Primero en el DOM para móvil, pero se puede mover en desktop si es necesario. 
-            Sin embargo, para mantener el input a la izquierda en desktop, el input debe ir antes en el DOM 
-            y usar flex-row-reverse o similar.
-        */}
-
         {/* Desktop: El input va antes [Input][Lupa]
             Mobile: Queremos [Lupa][Input]
         */}
@@ -80,7 +77,7 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
               isExpanded ? 'bg-[#dc3545] text-white' : 'text-black hover:bg-[#dc3545] hover:text-white dark:text-white dark:hover:bg-[#dc3545] dark:hover:text-white'
             }`}
             type="submit"
-            aria-label={isExpanded ? 'Cerrar buscador' : 'Abrir buscador'}
+            aria-label={isExpanded ? t('closeSearch') : t('openSearch')}
           >
             {isExpanded ? <CloseIcon className="h-[1.9rem] w-[1.9rem]" /> : <SearchIcon className="h-[1.3rem] w-[1.3rem]" />}
           </button>
@@ -96,7 +93,7 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
             <input
               ref={inputRef}
               type="search"
-              placeholder="Buscar..."
+              placeholder={t('searchPlaceholder')}
               aria-label="Search"
               value={searchTerm}
               onChange={(e) => {

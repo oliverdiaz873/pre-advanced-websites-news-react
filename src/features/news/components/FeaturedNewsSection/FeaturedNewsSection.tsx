@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   featuredGrid,
   featuredPrimary,
@@ -8,11 +9,14 @@ import {
 } from '../../../../data';
 
 /** Muestra el bloque de metadatos editoriales de una noticia: fecha y categoria. */
-const ArticleMeta = ({ article }: { article: NewsArticle }) => (
-  <p className="mb-2 text-[0.85rem] leading-[1.5] text-[#5f6871] dark:text-[var(--color-text-secondary)]">
-    Publicado el <time dateTime={article.datetime}>{article.date}</time> | {article.category}
-  </p>
-);
+const ArticleMeta = ({ article }: { article: NewsArticle }) => {
+  const { t } = useTranslation('common');
+  return (
+    <p className="mb-2 text-[0.85rem] leading-[1.5] text-[#5f6871] dark:text-[var(--color-text-secondary)]">
+      {t('publishedOn')} <time dateTime={article.datetime}>{article.date}</time> | {article.category}
+    </p>
+  );
+};
 
 /** Representa una tarjeta enlazable de noticia usada en las destacadas secundarias y en el grid. */
 const CardLink = ({
@@ -23,14 +27,17 @@ const CardLink = ({
   article: NewsArticle;
   titleClassName: string;
   imageClassName: string;
-}) => (
-  <Link to={article.href} aria-label={`Leer noticia: ${article.title}`} className="block text-inherit no-underline">
-    <img src={article.imageUrl} alt={article.alt} loading="lazy" className={imageClassName} />
-    <h3 className={titleClassName}>{article.title}</h3>
-    <ArticleMeta article={article} />
-    <p className="text-[0.98rem] leading-[1.6] text-[#292f34] dark:text-[var(--color-text-primary)]">{article.summary}</p>
-  </Link>
-);
+}) => {
+  const { t } = useTranslation('common');
+  return (
+    <Link to={article.href} aria-label={t('readArticle', { title: article.title })} className="block text-inherit no-underline">
+      <img src={article.imageUrl} alt={article.alt} loading="lazy" className={imageClassName} />
+      <h3 className={titleClassName}>{article.title}</h3>
+      <ArticleMeta article={article} />
+      <p className="text-[0.98rem] leading-[1.6] text-[#292f34] dark:text-[var(--color-text-primary)]">{article.summary}</p>
+    </Link>
+  );
+};
 
 interface FeaturedNewsSectionProps {
   content?: FeaturedSectionContent;
@@ -38,8 +45,11 @@ interface FeaturedNewsSectionProps {
 
 /** Renderiza un bloque editorial destacado reusable para portada y categorias. */
 export const FeaturedNewsSection = ({ content }: FeaturedNewsSectionProps) => {
+  const { t } = useTranslation('home');
+  const { t: tCommon } = useTranslation('common');
+
   const sectionContent: FeaturedSectionContent = content ?? {
-    title: 'Noticias Destacadas',
+    title: t('featuredNews'),
     primary: featuredPrimary,
     secondary: [featuredSecondary[0], featuredSecondary[1], featuredGrid[0]],
     grid: [featuredGrid[1], featuredGrid[2]],
@@ -54,7 +64,7 @@ export const FeaturedNewsSection = ({ content }: FeaturedNewsSectionProps) => {
         <article className="featured-article-home rounded-lg p-[10px] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_4px_8px_rgba(0,0,0,0.15)]">
           <Link
             to={sectionContent.primary.href}
-            aria-label={`Leer noticia: ${sectionContent.primary.title}`}
+            aria-label={tCommon('readArticle', { title: sectionContent.primary.title })}
             className="block text-inherit no-underline xl:flex xl:items-start xl:gap-6"
           >
             <div className="mb-4 xl:order-2 xl:mb-0 xl:w-[60%]">

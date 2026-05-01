@@ -1,4 +1,4 @@
-export * from './icons';
-export * from './SearchBar/SearchBar';
-export * from './ThemeToggle/ThemeToggle';
-export * from './EmptyState/EmptyState';
+export { SearchBar } from './SearchBar/SearchBar';
+export { ThemeToggle } from './ThemeToggle/ThemeToggle';
+export { EmptyState } from './EmptyState/EmptyState';
+export { LanguageSelector } from './LanguageSelector/LanguageSelector';

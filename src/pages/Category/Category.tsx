@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './Category.css';
 import '../Home/Home.css';
 import { useCategory, RecentNewsSidebar, FeaturedNewsSection, LatestNewsSection } from '../../features/news';
@@ -19,22 +20,24 @@ import { NewsLayout } from '../../shared/layouts';
  */
 export const Category = () => {
   const { content } = useCategory();
+  const { t } = useTranslation('news');
+  const { t: tCommon } = useTranslation('common');
 
   // Estado: Categoría no encontrada
   if (!content) {
     return (
       <main className="min-h-[calc(100vh-200px)] px-4 py-8 md:px-[0.1rem] lg:px-4">
         <div className="mx-auto max-w-[900px] rounded-lg bg-white p-8 shadow-[0_2px_6px_rgba(0,0,0,0.1)] dark:bg-gray-900">
-          <p className="category-kicker text-[#dc3545] font-bold mb-2">Categoría no encontrada</p>
-          <h1 className="text-3xl font-bold mb-4 dark:text-white">No encontramos esa sección editorial</h1>
+          <p className="category-kicker text-[#dc3545] font-bold mb-2">{t('category.notFoundLabel')}</p>
+          <h1 className="text-3xl font-bold mb-4 dark:text-white">{t('category.notFoundTitle')}</h1>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
-            La ruta solicitada no coincide con las categorías disponibles en el sistema.
+            {t('category.notFoundDescription')}
           </p>
           <Link
             to="/"
             className="inline-flex rounded-md bg-[#dc3545] px-5 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#b52a37]"
           >
-            Volver a la portada
+            {tCommon('backToHome')}
           </Link>
         </div>
       </main>
@@ -46,7 +49,7 @@ export const Category = () => {
       <NewsLayout
         sidebar={
           <RecentNewsSidebar 
-            title="Noticias Recientes"
+            title={t('category.recentNews')}
             articles={content.sidebarNews} 
           />
         }

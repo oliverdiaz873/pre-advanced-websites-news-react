@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { navItems } from '../../config/navItems';
 
 /**
@@ -8,11 +9,13 @@ import { navItems } from '../../config/navItems';
  * Diseño horizontal amplio.
  */
 export const DesktopNav = () => {
+  const { t } = useTranslation('navbar');
+
   return (
-    <nav aria-label="Navegación de Escritorio" className="hidden lg:block">
+    <nav aria-label={t('desktopNavLabel')} className="hidden lg:block">
       <ul className="m-0 flex list-none items-center p-0">
         {navItems.map((item) => (
-          <li key={item.name}>
+          <li key={item.nameKey}>
             <NavLink
               to={item.path}
               className={({ isActive }) =>
@@ -23,7 +26,7 @@ export const DesktopNav = () => {
                 }`
               }
             >
-              {item.name}
+              {t(item.nameKey)}
             </NavLink>
           </li>
         ))}

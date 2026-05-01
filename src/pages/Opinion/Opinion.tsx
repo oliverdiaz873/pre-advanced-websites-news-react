@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './Opinion.css';
 import '../Home/Home.css';
 import '../Article/Article.css';
@@ -14,22 +15,24 @@ import { NewsLayout } from '../../shared/layouts';
  */
 export const Opinion = () => {
   const { article, sidebarOpinions } = useOpinion();
+  const { t } = useTranslation('news');
+  const { t: tCommon } = useTranslation('common');
 
   // Estado: Opinión no encontrada
   if (!article) {
     return (
       <main className="min-h-[calc(100vh-200px)] px-4 py-8 lg:px-4">
         <div className="mx-auto max-w-[900px] rounded-lg bg-white p-8 shadow-[0_2px_6px_rgba(0,0,0,0.1)] dark:bg-gray-900">
-          <p className="text-[#dc3545] font-bold mb-2">Opinión no encontrada</p>
-          <h1 className="text-3xl font-bold mb-4 dark:text-white">Esta columna de opinión no está disponible</h1>
+          <p className="text-[#dc3545] font-bold mb-2">{t('opinion.notFoundLabel')}</p>
+          <h1 className="text-3xl font-bold mb-4 dark:text-white">{t('opinion.notFoundTitle')}</h1>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
-            El artículo que buscas no existe o ha sido movido.
+            {t('opinion.notFoundDescription')}
           </p>
           <Link
             to="/"
             className="inline-flex rounded-md bg-[#dc3545] px-5 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#b52a37]"
           >
-            Volver a la portada
+            {tCommon('backToHome')}
           </Link>
         </div>
       </main>
@@ -39,8 +42,8 @@ export const Opinion = () => {
   return (
     <>
       <Breadcrumb 
-        home="Inicio"
-        category="Opinión"
+        home={t('breadcrumbHome')}
+        category={t('opinion.breadcrumbCategory')}
         categoryPath="/"
         current={article.title}
       />
@@ -48,7 +51,7 @@ export const Opinion = () => {
       <NewsLayout
         sidebar={
           <RecentNewsSidebar 
-            title="Otras Opiniones"
+            title={t('opinion.sidebarTitle')}
             articles={sidebarOpinions as any}
           />
         }

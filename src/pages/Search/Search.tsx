@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { SearchIcon } from '../../shared/components/icons';
 
 import { NewsLayout } from '../../shared/layouts';
@@ -6,10 +7,12 @@ import { useSearch } from '../../features/news/hooks/useSearch';
 import { EmptyState } from '../../shared/components';
 
 /**
- * Search Page - Réplica exacta del proyecto Bootstrap
+ * Search Page - Internacionalizada
  */
 const Search = () => {
   const { query, results, count, hasQuery, isEmpty } = useSearch();
+  const { t } = useTranslation('search');
+  const { t: tCommon } = useTranslation('common');
 
   return (
     <NewsLayout>
@@ -19,21 +22,21 @@ const Search = () => {
             /* Vista: Sin Resultados usando el nuevo componente */
             <EmptyState 
               icon={<SearchIcon className="h-16 w-16 text-gray-400" />}
-              title="No se encontraron resultados"
-              description={`Intenta con otros términos como "economía", "deporte" o "inflación".`}
-              buttonText="Volver al inicio"
+              title={t('noResults')}
+              description={t('noResultsHint')}
+              buttonText={tCommon('backToHomeAlt')}
               buttonLink="/"
             />
           ) : (
 
-            /* Vista: Con Resultados (Clon de Bootstrap) */
+            /* Vista: Con Resultados */
             <>
               <div className="row mb-4 mt-0">
                 <div className="col-12 border-bottom pb-3">
                   <h2 className="text-2xl font-bold">
-                    Resultados de búsqueda para: <span className="text-[#dc3545]">"{query}"</span>
+                    {t('resultsFor')} <span className="text-[#dc3545]">"{query}"</span>
                   </h2>
-                  <p className="text-muted mt-2">Se encontraron {count} noticias relacionadas.</p>
+                  <p className="text-muted mt-2">{t('foundCount', { count })}</p>
                 </div>
               </div>
 
@@ -60,7 +63,7 @@ const Search = () => {
                           {article.summary}
                         </p>
                         <span className="text-[#dc3545] font-bold mt-auto flex items-center gap-1 group" style={{fontSize: '15px'}}>
-                          Leer más 
+                          {tCommon('readMore')} 
                           <span className="transition-transform group-hover:translate-x-1">→</span>
                         </span>
                       </div>
@@ -73,13 +76,13 @@ const Search = () => {
         ) : (
           /* Vista: Sin Búsqueda Activa */
           <div className="container py-5 text-center">
-            <h2 className="text-2xl font-bold mb-4">¿Qué estás buscando?</h2>
-            <p className="text-muted mb-8">Usa el buscador para encontrar las últimas noticias</p>
+            <h2 className="text-2xl font-bold mb-4">{t('noActiveSearch')}</h2>
+            <p className="text-muted mb-8">{t('useSearchHint')}</p>
             <Link 
               to="/" 
               className="inline-block bg-[#dc3545] text-white px-8 py-3 rounded-md font-bold hover:bg-[#c82333] transition-all no-underline"
             >
-              Volver al inicio
+              {tCommon('backToHomeAlt')}
             </Link>
           </div>
         )}
