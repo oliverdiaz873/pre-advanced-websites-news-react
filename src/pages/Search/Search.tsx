@@ -13,7 +13,7 @@ const Search = () => {
 
   return (
     <NewsLayout>
-      <div className="container mx-auto py-5">
+      <div className="container mx-auto pt-1 pb-2">
         {hasQuery ? (
           isEmpty ? (
             /* Vista: Sin Resultados usando el nuevo componente */
@@ -28,7 +28,7 @@ const Search = () => {
 
             /* Vista: Con Resultados (Clon de Bootstrap) */
             <>
-              <div className="row mb-4">
+              <div className="row mb-4 mt-0">
                 <div className="col-12 border-bottom pb-3">
                   <h2 className="text-2xl font-bold">
                     Resultados de búsqueda para: <span className="text-[#dc3545]">"{query}"</span>
@@ -37,17 +37,17 @@ const Search = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-6 lg:gap-6">
                 {results.map((article) => (
-                  <article key={article.id} className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-800 flex flex-col h-full">
+                  <article key={article.id} className="bg-white dark:bg-[#242424] rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-800 flex flex-col h-full p-2.5">
                     <Link to={article.href} className="no-underline text-inherit flex flex-col h-full">
                       <img 
                         src={article.imageUrl} 
                         alt={article.alt} 
-                        className="w-full h-[200px] object-cover"
+                        className="w-full h-[200px] object-cover rounded-t-lg"
                       />
                       <div className="p-4 flex flex-col flex-grow">
-                        <span className="inline-block bg-[#dc3545] text-white text-xs font-bold px-2 py-1 rounded mb-2 self-start uppercase">
+                        <span className="inline-block bg-[#dc3545] text-white text-xs font-bold px-1.5 py-0.5 rounded mb-2 self-start uppercase">
                           {article.category}
                         </span>
                         <h3 className="text-xl font-bold mb-2 leading-tight dark:text-white">
@@ -59,7 +59,7 @@ const Search = () => {
                         <p className="text-sm text-gray-700 dark:text-gray-300 flex-grow mb-4">
                           {article.summary}
                         </p>
-                        <span className="text-[#dc3545] font-bold mt-auto flex items-center gap-1 group">
+                        <span className="text-[#dc3545] font-bold mt-auto flex items-center gap-1 group" style={{fontSize: '15px'}}>
                           Leer más 
                           <span className="transition-transform group-hover:translate-x-1">→</span>
                         </span>
