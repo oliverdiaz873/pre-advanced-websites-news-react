@@ -12,7 +12,7 @@ import { createNewsArticle } from './utils';
 
 const politicaArticles: NewsArticle[] = [
   createNewsArticle({
-    id: 'politica_ley_ambiental_aprobacion',
+    id: 'politica-ley-ambiental',
     title: 'Aprobación Histórica: El Congreso Da Luz Verde a la Ley de Protección Ambiental',
     href: '/news/politica/aprobacion-historica-ley-proteccion-ambiental',
     category: 'Política',
@@ -23,7 +23,7 @@ const politicaArticles: NewsArticle[] = [
     alt: 'Aprobación Histórica: El Congreso Da Luz Verde a la Ley de Protección Ambiental',
   }),
   createNewsArticle({
-    id: 'politica_encuestas_presidente',
+    id: 'politica-encuesta',
     title: 'Encuestas Revelan Incremento en la Popularidad del Presidente',
     href: '/news/politica/encuestas-revelan-incremento-popularidad-presidente',
     category: 'Política',
@@ -34,7 +34,7 @@ const politicaArticles: NewsArticle[] = [
     alt: 'Encuestas Revelan Incremento en la Popularidad del Presidente',
   }),
   createNewsArticle({
-    id: 'politica_protestas_corrupcion',
+    id: 'politica-protestas',
     title: 'Protestas por corrupción',
     href: '/news/politica/protestas-corrupcion',
     category: 'Política',
@@ -45,7 +45,7 @@ const politicaArticles: NewsArticle[] = [
     alt: 'Protestas por corrupción',
   }),
   createNewsArticle({
-    id: 'politica_casa_blanca_cumbre',
+    id: 'politica-casa-blanca',
     title: 'Casa Blanca Confirma Cumbre Internacional para Esta Semana',
     href: '/news/politica/casa-blanca-confirma-cumbre-internacional',
     category: 'Política',
@@ -56,7 +56,7 @@ const politicaArticles: NewsArticle[] = [
     alt: 'Casa Blanca Confirma Cumbre Internacional para Esta Semana',
   }),
   createNewsArticle({
-    id: 'politica_senado_reforma',
+    id: 'politica-senado',
     title: 'El Senado Debate Nueva Propuesta de Reforma Constitucional',
     href: '/news/politica/senado-debate-nueva-propuesta-reforma-constitucional',
     category: 'Política',
@@ -67,7 +67,7 @@ const politicaArticles: NewsArticle[] = [
     alt: 'El Senado Debate Nueva Propuesta de Reforma Constitucional',
   }),
   createNewsArticle({
-    id: 'politica_debate_presidencial',
+    id: 'politica-debate',
     title: 'Debate Presidencial: Candidatos Confrontan sus Propuestas Frente al País',
     href: '/news/politica/debate-presidencial-candidatos-confrontan-propuestas',
     category: 'Política',
@@ -81,7 +81,7 @@ const politicaArticles: NewsArticle[] = [
 
 const internacionalArticles: NewsArticle[] = [
   createNewsArticle({
-    id: 'internacional_guerra_ucrania_fin',
+    id: 'internacional-guerra',
     title: 'La guerra de Ucrania llega a su fin',
     href: '/news/internacional/guerra-ucrania-llega-fin',
     category: 'Internacional',
@@ -92,7 +92,7 @@ const internacionalArticles: NewsArticle[] = [
     alt: 'La guerra de Ucrania llega a su fin',
   }),
   createNewsArticle({
-    id: 'internacional_israel_iran_tensiones',
+    id: 'internacional-israel-iran',
     title: 'Israel e Irán: Crecen las Tensiones en Medio de Conflictos Regionales',
     href: '/news/internacional/tensiones-israel-iran-crecen',
     category: 'Internacional',
@@ -103,7 +103,7 @@ const internacionalArticles: NewsArticle[] = [
     alt: 'Israel e Irán: Crecen las Tensiones en Medio de Conflictos Regionales',
   }),
   createNewsArticle({
-    id: 'internacional_otan_ejercicios',
+    id: 'internacional-otan',
     title: 'La OTAN anuncia nuevos ejercicios militares en Europa del Este',
     href: '/news/internacional/otan-anuncia-nuevos-ejercicios-militares-europa-este',
     category: 'Internacional',
@@ -114,7 +114,7 @@ const internacionalArticles: NewsArticle[] = [
     alt: 'La OTAN anuncia nuevos ejercicios militares en Europa del Este',
   }),
   createNewsArticle({
-    id: 'internacional_ue_renovables',
+    id: 'internacional-union-europea',
     title: 'Unión Europea impulsa energías renovables con nuevas directivas ambiciosas',
     href: '/news/internacional/union-europea-impulsa-energias-renovables-nuevas-directivas-ambiciosas',
     category: 'Internacional',
@@ -125,7 +125,7 @@ const internacionalArticles: NewsArticle[] = [
     alt: 'Unión Europea impulsa energías renovables con nuevas directivas ambiciosas',
   }),
   createNewsArticle({
-    id: 'internacional_china_usa',
+    id: 'internacional-china-usa',
     title: 'Nuevas conversaciones entre China y Estados Unidos marcan un giro en la política internacional',
     href: '/news/internacional/conversaciones-china-estados-unidos-giro-politica-internacional',
     category: 'Internacional',
@@ -136,7 +136,7 @@ const internacionalArticles: NewsArticle[] = [
     alt: 'Nuevas conversaciones entre China y Estados Unidos marcan un giro en la política internacional',
   }),
   createNewsArticle({
-    id: 'internacional_accidente_alemania',
+    id: 'internacional-accidente',
     title: 'Tragedia en carretera en Alemania: Grave accidente provoca caos y luto',
     href: '/news/internacional/tragedia-carretera-alemania-grave-accidente-provoca-caos-luto',
     category: 'Internacional',
@@ -148,9 +148,10 @@ const internacionalArticles: NewsArticle[] = [
   }),
 ];
 
+
 const economiaArticles: NewsArticle[] = [
   createNewsArticle({
-    id: 'economia_inflacion_aumento',
+    id: 'economia-inflacion',
     title: 'Incremento de la inflación impacta a los mercados',
     href: '/news/economia/incremento-inflacion-impacta-mercados',
     category: 'Economía',
@@ -161,7 +162,7 @@ const economiaArticles: NewsArticle[] = [
     alt: 'Incremento de la inflación impacta a los mercados',
   }),
   createNewsArticle({
-    id: 'economia_dolar_fortalece',
+    id: 'economia-dolar',
     title: 'El dólar se fortalece ante incertidumbre económica global',
     href: '/news/economia/dolar-alcanza-maximo-ano-frente-monedas',
     category: 'Economía',
@@ -172,7 +173,7 @@ const economiaArticles: NewsArticle[] = [
     alt: 'El dólar se fortalece ante incertidumbre económica global',
   }),
   createNewsArticle({
-    id: 'economia_euro_maximo',
+    id: 'economia-euro',
     title: 'El euro alcanza su valor más alto frente al dólar en seis meses',
     href: '/news/economia/euro-alcanza-valor-mas-alto-frente-dolar-seis-meses',
     category: 'Economía',
@@ -183,7 +184,7 @@ const economiaArticles: NewsArticle[] = [
     alt: 'El euro alcanza su valor más alto frente al dólar en seis meses',
   }),
   createNewsArticle({
-    id: 'economia_petroleo_repunte',
+    id: 'economia-petroleo',
     title: 'Petróleo registra fuerte repunte y preocupa a consumidores y empresas',
     href: '/news/economia/petroleo-registra-fuerte-repunte-preocupa-consumidores-empresas',
     category: 'Economía',
@@ -194,7 +195,7 @@ const economiaArticles: NewsArticle[] = [
     alt: 'Petróleo registra fuerte repunte y preocupa a consumidores y empresas',
   }),
   createNewsArticle({
-    id: 'economia_bolsa_alza',
+    id: 'economia-bolsa',
     title: 'La bolsa de valores cierra en alza tras jornada de optimismo inversor',
     href: '/news/economia/bolsa-valores-cierra-alza-optimismo-inversor',
     category: 'Economía',
@@ -205,7 +206,7 @@ const economiaArticles: NewsArticle[] = [
     alt: 'La bolsa de valores cierra en alza tras jornada de optimismo inversor',
   }),
   createNewsArticle({
-    id: 'economia_pib_crecimiento',
+    id: 'economia-pib',
     title: 'El PIB crece un 3,5% en el último trimestre impulsado por el consumo y la inversión',
     href: '/news/economia/pib-crece-35-ultimo-trimestre-impulsado-consumo-inversion',
     category: 'Economía',
@@ -219,7 +220,7 @@ const economiaArticles: NewsArticle[] = [
 
 const saludArticles: NewsArticle[] = [
   createNewsArticle({
-    id: 'salud_antibioticos_resistencia',
+    id: 'salud-antibioticos',
     title: 'Aumenta la preocupación por la resistencia a los antibióticos a nivel mundial',
     href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
     category: 'Salud',
@@ -230,7 +231,7 @@ const saludArticles: NewsArticle[] = [
     alt: 'Aumenta la preocupación por la resistencia a los antibióticos a nivel mundial',
   }),
   createNewsArticle({
-    id: 'salud_contaminacion_riesgos',
+    id: 'salud-contaminacion',
     title: 'La contaminación del aire aumenta el riesgo de enfermedades respiratorias',
     href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
     category: 'Salud',
@@ -241,7 +242,7 @@ const saludArticles: NewsArticle[] = [
     alt: 'La contaminación del aire aumenta el riesgo de enfermedades respiratorias',
   }),
   createNewsArticle({
-    id: 'salud_cardiovascular_terapia',
+    id: 'salud-cardiovascular',
     title: 'Nueva terapia cardiovascular promete mejorar la salud del corazón',
     href: '/news/salud/nueva-terapia-cardiovascular-mejora-salud-corazon',
     category: 'Salud',
@@ -252,7 +253,7 @@ const saludArticles: NewsArticle[] = [
     alt: 'Nueva terapia cardiovascular promete mejorar la salud del corazón',
   }),
   createNewsArticle({
-    id: 'salud_mental_prioridad',
+    id: 'salud-mental',
     title: 'La salud mental se convierte en prioridad ante el aumento de estrés y ansiedad',
     href: '/news/salud/salud-mental-prioridad-aumento-estres-ansiedad',
     category: 'Salud',
@@ -263,7 +264,7 @@ const saludArticles: NewsArticle[] = [
     alt: 'La salud mental se convierte en prioridad ante el aumento de estrés y ansiedad',
   }),
   createNewsArticle({
-    id: 'salud_azucar_riesgos',
+    id: 'salud-azucar',
     title: 'El consumo excesivo de azúcares aumenta el riesgo de enfermedades metabólicas',
     href: '/news/salud/noticia-sobre-azucar',
     category: 'Salud',
@@ -274,7 +275,7 @@ const saludArticles: NewsArticle[] = [
     alt: 'El consumo excesivo de azúcares aumenta el riesgo de enfermedades metabólicas',
   }),
   createNewsArticle({
-    id: 'salud_avances_cardiovascular',
+    id: 'salud-cardiovascular',
     title: 'Avances en medicina: nueva terapia promete mejorar la salud cardiovascular',
     href: '/news/salud/avances-medicina-nueva-terapia-mejora-salud-cardiovascular',
     category: 'Salud',
@@ -288,7 +289,7 @@ const saludArticles: NewsArticle[] = [
 
 const deporteArticles: NewsArticle[] = [
   createNewsArticle({
-    id: 'deporte_equipo_local_victoria',
+    id: 'deporte-equipo-local',
     title: 'Gran victoria del equipo local en un emocionante partido de fútbol',
     href: '/news/deporte/gran-victoria-equipo-local-futbol',
     category: 'Deporte',
@@ -299,7 +300,7 @@ const deporteArticles: NewsArticle[] = [
     alt: 'Gran victoria del equipo local en un emocionante partido de fútbol',
   }),
   createNewsArticle({
-    id: 'deporte_lakers_celtics',
+    id: 'deporte-nba',
     title: 'Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA',
     href: '/news/deporte/lakers-vencen-celtics-nba',
     category: 'Deporte',
@@ -310,7 +311,7 @@ const deporteArticles: NewsArticle[] = [
     alt: 'Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA',
   }),
   createNewsArticle({
-    id: 'deporte_espana_alemania',
+    id: 'deporte-espana-alemania',
     title: 'España se clasifica para la final del Mundial de Fútbol tras vencer a Alemania',
     href: '/news/deporte/espana-clasifica-final-mundial-futbol',
     category: 'Deporte',
@@ -321,7 +322,7 @@ const deporteArticles: NewsArticle[] = [
     alt: 'España se clasifica para la final del Mundial de Fútbol tras vencer a Alemania',
   }),
   createNewsArticle({
-    id: 'deporte_mets_braves',
+    id: 'deporte-mlb',
     title: 'Los Mets vencen a los Braves en un partido decisivo de la MLB',
     href: '/news/deporte/mets-vencen-braves-partido-decisivo-mlb',
     category: 'Deporte',
@@ -332,7 +333,7 @@ const deporteArticles: NewsArticle[] = [
     alt: 'Los Mets vencen a los Braves en un partido decisivo de la MLB',
   }),
   createNewsArticle({
-    id: 'deporte_juegos_olimpicos',
+    id: 'deporte-atletas',
     title: 'Atletas Rompen Récords Mundiales en Campeonato Internacional',
     href: '/news/deporte/atletas-rompen-records-mundiales',
     category: 'Deporte',
@@ -343,7 +344,7 @@ const deporteArticles: NewsArticle[] = [
     alt: 'Atletas Rompen Récords Mundiales en Campeonato Internacional',
   }),
   createNewsArticle({
-    id: 'deporte_natacion_eeuu',
+    id: 'deporte-natacion',
     title: 'La selección estadounidense domina el relevo 4x100 metros en el Mundial de Natación',
     href: '/news/deporte/seleccion-estadounidense-dominia-relevo-4x100-metros-mundial-natacion',
     category: 'Deporte',
@@ -357,7 +358,7 @@ const deporteArticles: NewsArticle[] = [
 
 const climaArticles: NewsArticle[] = [
   createNewsArticle({
-    id: 'clima_tormenta_caribe_principal',
+    id: 'clima-tormenta',
     title: 'Tormenta tropical se aproxima al Caribe y alerta a varios países',
     href: '/news/clima/tormenta-tropical-aproxima-caribe-alerta-paises',
     category: 'Clima',
@@ -368,7 +369,7 @@ const climaArticles: NewsArticle[] = [
     alt: 'Tormenta tropical se aproxima al Caribe y alerta a varios países',
   }),
   createNewsArticle({
-    id: 'clima_ola_calor_europa',
+    id: 'clima-calor',
     title: 'Ola de calor extremo afecta a varias regiones del país',
     href: '/news/clima/ola-calor-extremo-afecta-regiones-pais',
     category: 'Clima',
@@ -379,7 +380,7 @@ const climaArticles: NewsArticle[] = [
     alt: 'Ola de calor extremo afecta a varias regiones del país',
   }),
   createNewsArticle({
-    id: 'clima_lluvias_sudamerica',
+    id: 'clima-inundaciones',
     title: 'Inundaciones afectan a miles de personas en el sur',
     href: '/news/clima/inundaciones-afectan-miles-personas-sur',
     category: 'Clima',
@@ -390,7 +391,7 @@ const climaArticles: NewsArticle[] = [
     alt: 'Inundaciones afectan a miles de personas en el sur',
   }),
   createNewsArticle({
-    id: 'clima_nevadas_europa',
+    id: 'clima-nevadas',
     title: 'Nevadas históricas paralizan el norte del país',
     href: '/news/clima/nevadas-historicas-paralizan-norte-pais',
     category: 'Clima',
@@ -401,7 +402,7 @@ const climaArticles: NewsArticle[] = [
     alt: 'Nevadas históricas paralizan el norte del país',
   }),
   createNewsArticle({
-    id: 'clima_huracan_atlantico',
+    id: 'clima-huracan',
     title: 'Huracán se forma en el Atlántico y amenaza la costa este',
     href: '/news/clima/huracan-se-forma-atlantico-amenaza-costa-este',
     category: 'Clima',
@@ -412,7 +413,7 @@ const climaArticles: NewsArticle[] = [
     alt: 'Huracán se forma en el Atlántico y amenaza la costa este',
   }),
   createNewsArticle({
-    id: 'clima_tornado_eeuu',
+    id: 'clima-tornado',
     title: 'Tornado causa graves daños en el centro del país',
     href: '/news/clima/tornado-causa-graves-danos-centro-pais',
     category: 'Clima',
@@ -426,7 +427,7 @@ const climaArticles: NewsArticle[] = [
 
 const justiciaArticles: NewsArticle[] = [
   createNewsArticle({
-    id: 'justicia_homicidio_centro',
+    id: 'justicia-homicidio',
     title: 'Investigan homicidio en el centro de la ciudad',
     href: '/news/justicia/investigan-homicidio-centro-ciudad',
     category: 'Justicia',
@@ -437,7 +438,7 @@ const justiciaArticles: NewsArticle[] = [
     alt: 'Investigan homicidio en el centro de la ciudad',
   }),
   createNewsArticle({
-    id: 'justicia_fraude_exfuncionario',
+    id: 'justicia-fraude',
     title: 'Detienen a exfuncionario acusado de fraude financiero millonario',
     href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
     category: 'Justicia',

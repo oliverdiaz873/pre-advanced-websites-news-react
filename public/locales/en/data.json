@@ -1,0 +1,720 @@
+{
+  "articles": {
+    "economia-inflacion": {
+      "title": "Rising inflation impacts markets",
+      "summary": "The sustained increase in inflation is creating uncertainty in financial markets and affecting citizens' purchasing power.",
+      "category": "Economy",
+      "alt": "[EN] Incremento de la inflación impacta a los mercados",
+      "content": [
+        "According to recent reports, annual inflation in major economies has exceeded analysts' expectations, driven by rising costs for energy, food, and transport. In several European countries, prices recorded their highest increase in over a year.",
+        "International stock markets reacted with volatility. The S&P 500 fell more than 1%, while the Euro Stoxx 50 and Japan's Nikkei recorded similar declines. Investors fear that central banks may delay interest rate cuts.",
+        "Jonathan Reeves, chief economist at the International Monetary Fund, noted that the persistence of inflation \"reflects structural imbalances that go beyond the economic cycle.\" He also warned that \"if inflationary expectations do not stabilize soon, markets could face a prolonged period of uncertainty.\"",
+        "In Latin America, the effects are also being felt. Countries with economies dependent on imports have seen how the cost of basic goods rises, directly affecting the purchasing power of families.",
+        "For their part, oil and natural gas prices remain high, which adds pressure to supply chains and production costs. Manufacturing and transport companies report tighter profit margins.",
+        "Analysts agree that, although inflation could moderate in the coming months, markets will remain exposed to uncertainty. Factors such as geopolitical instability, trade conflicts, and the global energy transition will continue to influence price behavior."
+      ]
+    },
+    "deporte-equipo-local": {
+      "title": "Great Victory for the Local Team in an Exciting Football Match",
+      "summary": "In a night full of emotion, the local team achieved an impressive victory against its main rival, consolidating its position as one of the favorites.",
+      "category": "Sports",
+      "alt": "[EN] Jugadores del equipo local celebrando una victoria",
+      "content": [
+        "With a final score of 3-1, the team showed an excellent offensive performance and a solid defense that prevented any attempt at a comeback by the adversary. The team coach highlighted the unity and commitment of the squad as keys to success.",
+        "Fans celebrated for hours in the streets, while social media was filled with messages of support and pride. Sports analysts agreed that this victory could mark a turning point in the season, strengthening team morale and fan confidence.",
+        "After the match, the coach stated in a press conference: \"The team showed character, discipline, and passion. Every player understood their role and fulfilled it perfectly. I am proud of what we achieved today and confident that we can keep improving.\"",
+        "Finally, the local community has begun organizing celebrations and tributes for the players, recognizing their effort and dedication. A week full of sporting enthusiasm is expected in the city."
+      ]
+    },
+    "internacional-guerra": {
+      "title": "The war in Ukraine comes to an end",
+      "summary": "After years of conflict, the war in Ukraine has ended, marking a historic moment for the region and the international community.",
+      "category": "International",
+      "alt": "[EN] La guerra de Ucrania llega a su fin",
+      "content": [
+        "The peace agreement was signed after intense negotiations between the involved parties, with mediation from international organizations and leaders from several countries seeking to end the violence and suffering of the civilian population.",
+        "The President of Ukraine declared that the nation will begin a process of reconstruction and reconciliation, emphasizing the need for unity and cooperation to overcome the challenges arising from the conflict.",
+        "For their part, Russian representatives stated that they will respect the terms of the agreement and committed to withdrawing their troops from the occupied territories, seeking stability and normalization of diplomatic relations.",
+        "The international community has celebrated the end of the war, highlighting the importance of dialogue and diplomacy in conflict resolution. Humanitarian aid and reconstruction programs are expected for the affected areas.",
+        "Analysts warn that, although the agreement ends hostilities, it will be crucial to implement security, justice, and economic development measures to ensure lasting peace and prevent future conflicts.",
+        "Citizens of Ukraine have begun to return to their homes, while local and international organizations work to provide assistance and rebuild critical infrastructure damaged during the war.",
+        "The agreement also includes provisions for international supervision and the establishment of regional cooperation mechanisms, with the aim of strengthening peace and preventing any future escalation.",
+        "The world watches this historic moment with hope, trusting that the end of the war in Ukraine marks the beginning of a period of stability, development, and reconciliation across the region."
+      ]
+    },
+    "politica-protestas": {
+      "title": "[EN] Protestas por corrupción",
+      "summary": "[EN] Protestas por corrupción se han intensificado en varias ciudades del país durante los últimos días, reuniendo a miles de ciudadanos que exigen transparencia y rendición de cuentas por parte de las autoridades.",
+      "category": "Politics",
+      "alt": "[EN] Protestas por corrupción",
+      "content": [
+        "[EN] Los manifestantes recorren las principales avenidas con pancartas y consignas, denunciando casos recientes de malversación de fondos y solicitando investigaciones imparciales.",
+        "[EN] Las fuerzas de seguridad han desplegado operativos para mantener el orden, aunque se han reportado algunos enfrentamientos aislados entre manifestantes y la policía.",
+        "[EN] Organizaciones civiles y grupos de la sociedad civil han respaldado las protestas, destacando la importancia de la participación ciudadana para fortalecer la democracia y combatir la corrupción.",
+        "[EN] El gobierno ha emitido un comunicado asegurando que se investigarán los casos denunciados y se tomarán medidas para garantizar la transparencia en la administración pública.",
+        "[EN] Mientras tanto, los ciudadanos continúan movilizándose, mostrando su descontento y exigiendo cambios concretos que mejoren la confianza en las instituciones del país."
+      ]
+    },
+    "salud-contaminacion": {
+      "title": "[EN] La contaminación del aire aumenta el riesgo de enfermedades respiratorias",
+      "summary": "[EN] La contaminación del aire se ha convertido en un problema creciente que afecta la salud de millones de personas en todo el mundo, agravando condiciones preexistentes y creando nuevos problemas de salud en la población general.",
+      "category": "Health",
+      "alt": "[EN] Contaminación del aire",
+      "content": [
+        "[EN] Estudios recientes indican que la exposición prolongada a contaminantes atmosféricos aumenta significativamente el riesgo de desarrollar enfermedades respiratorias, incluyendo asma, bronquitis y otras afecciones pulmonares crónicas.",
+        "[EN] Expertos en salud pública advierten que las partículas finas y los gases tóxicos presentes en el aire pueden dañar el sistema respiratorio y debilitar las defensas del organismo frente a infecciones virales y bacterianas.",
+        "[EN] Las autoridades ambientales han instado a implementar políticas más estrictas para reducir las emisiones industriales, promover el transporte limpio y concienciar a la población sobre la importancia de reducir la huella de carbono individual.",
+        "[EN] Los médicos recomiendan que las personas con problemas respiratorios preexistentes tomen precauciones adicionales, como evitar las zonas de alta contaminación durante las horas pico y usar mascarillas protectoras cuando sea necesario.",
+        "[EN] En conclusión, la contaminación del aire representa un riesgo serio para la salud respiratoria global y requiere un esfuerzo conjunto y sostenido de gobiernos, empresas y ciudadanos para mitigar sus efectos y proteger a las generaciones futuras."
+      ]
+    },
+    "justicia-homicidio": {
+      "title": "[EN] Investigan homicidio en el centro de la ciudad",
+      "summary": "[EN] La policía local ha iniciado una investigación tras un homicidio ocurrido en el centro de la ciudad durante la madrugada del viernes, generando alarma en la comunidad.",
+      "category": "Justice",
+      "alt": "[EN] Investigan homicidio en el centro de la ciudad",
+      "content": [
+        "[EN] Las autoridades informaron que el incidente tuvo lugar cerca de la intersección de las avenidas principales, en un área con alta actividad comercial. Testigos presentes en el lugar relataron haber escuchado gritos y detonaciones antes de que llegaran los primeros equipos de emergencia.",
+        "[EN] Los oficiales encontraron a la víctima con heridas graves y confirmaron su fallecimiento en el sitio. Las fuerzas del orden han acordonado la zona para preservar la evidencia y permitir que los peritos realicen las diligencias correspondientes.",
+        "[EN] Se espera que se tomen fotografías, huellas y grabaciones de cámaras de seguridad cercanas para ayudar en la identificación de los responsables. El alcalde de la ciudad emitió un comunicado expresando su preocupación por el aumento de la violencia en el área central.",
+        "[EN] La víctima, cuya identidad no ha sido revelada oficialmente, sería un hombre de entre 25 y 35 años. La policía hace un llamado a cualquier persona que haya presenciado los hechos a acercarse a las autoridades para brindar información.",
+        "[EN] Vecinos y comerciantes de la zona manifestaron su temor y pidieron mayor presencia policial durante la noche. El departamento de policía informó que se esperan actualizaciones sobre la investigación en las próximas horas.",
+        "[EN] Mientras tanto, se aconseja a los ciudadanos evitar transitar por la zona durante las horas nocturnas y reportar cualquier actividad sospechosa al número de emergencia local. Este hecho ha reabierto el debate sobre la seguridad urbana y las políticas de prevención del crimen."
+      ]
+    },
+    "clima-huracan": {
+      "title": "Hurricane Strengthens in the Atlantic, Threatening the East Coast",
+      "summary": "Authorities have issued evacuation alerts as a Category 3 hurricane approaches the coast with sustained winds exceeding 200 km/h.",
+      "category": "Weather",
+      "alt": "[EN] Huracán se forma en el Atlántico y amenaza la costa este",
+      "content": [
+        "The hurricane, which formed several days ago in the central Atlantic, has rapidly gained strength due to high sea temperatures and favorable atmospheric conditions. Meteorologists from the National Hurricane Center reported that the system could intensify further in the coming hours.",
+        "Sustained winds already exceed 200 kilometers per hour, with even stronger gusts in areas near the eye of the hurricane. The phenomenon is moving northwest at an approximate speed of 20 kilometers per hour, dangerously approaching the US East Coast.",
+        "Authorities in Florida, Georgia, South Carolina, and North Carolina have issued hurricane alerts and preventive evacuation warnings in the most exposed coastal areas. Storm surges are expected to reach heights of three to five meters."
+      ]
+    },
+    "justicia-fraude": {
+      "title": "Former Official Detained for Massive Financial Fraud",
+      "summary": "Authorities arrested a former public official this Friday accused of participating in a financial fraud scheme that allegedly diverted millions of dollars from state funds.",
+      "category": "Justice",
+      "alt": "[EN] Detienen a exfuncionario acusado de fraude financiero millonario",
+      "content": [
+        "The detention occurred after an extensive investigation led by the specialized economic crimes prosecutor's office. According to the preliminary report, the former official allegedly used a network of shell companies to divert resources intended for social development programs.",
+        "Authorities claim that the money was transferred to offshore accounts and used for the purchase of luxury properties. The detainee was moved to a preventive detention center, where he will remain in custody while charges are formalized.",
+        "The prosecution has requested preventive prison, considering there is a flight risk and the possibility of obstructing the investigation. During a press conference, the Attorney General stated that this arrest represents a significant step forward in the fight against corruption."
+      ]
+    },
+    "economia-bolsa": {
+      "title": "Stock Market Closes Higher After Session of Investor Optimism",
+      "summary": "The stock market closed higher this Thursday, driven by renewed optimism among investors and the release of positive financial results from several leading companies.",
+      "category": "Economy",
+      "alt": "[EN] La bolsa de valores cierra en alza tras jornada de optimismo inversor",
+      "content": [
+        "The S&P 500 index rose 1.2%, while the Dow Jones and Nasdaq recorded increases of 1% and 1.5% respectively. This behavior reflects investor confidence in economic stability and short-term corporate earnings prospects.",
+        "Analysts point out that the combination of monetary stimulus, progress in trade agreements, and the reduction of political uncertainties has contributed to the market recovery. Additionally, the technology sector led gains, with several companies exceeding analyst expectations.",
+        "For their part, foreign investors also showed interest in US markets, increasing the demand for stocks and strengthening the upward trend. This dynamic has reinforced the perception that the economy remains resilient against global challenges.",
+        "In conclusion, the positive session in the stock market reflects an environment of confidence and favorable expectations. However, experts warn that volatility could return if unexpected changes occur in economic policy or key financial indicators."
+      ]
+    },
+    "clima-tormenta": {
+      "title": "Tropical Storm Approaches the Caribbean and Alerts Several Countries",
+      "summary": "Meteorological authorities issue preventive alerts as a tropical storm with the potential to become a hurricane approaches.",
+      "category": "Weather",
+      "alt": "[EN] Tormenta tropical se aproxima al Caribe y alerta a varios países",
+      "content": [
+        "[EN] Una tormenta tropical se aproxima al Caribe, generando alertas en varios países de la región. Los meteorólogos han emitido avisos para que la población se prepare ante posibles lluvias intensas.",
+        "[EN] Las autoridades meteorológicas han emitido advertencias de evacuación y han recomendado a los ciudadanos tomar medidas de seguridad, especialmente en zonas costeras bajas. Se espera que la tormenta se debilite en las próximas horas.",
+        "[EN] Los expertos en ciclones tropicales monitorean de cerca la evolución del fenómeno, sugiriendo que podría convertirse en un huracán si las condiciones atmosféricas se mantienen. Los residentes están siendo instados a permanecer en refugios seguros hasta que pase el peligro.",
+        "[EN] Las aerolíneas han cancelado varios vuelos y han reprogramado rutas para evitar la tormenta. El turismo en la región se ha visto afectado, con cancelaciones de hoteles y cruceros que dependen del clima.",
+        "[EN] En resumen, la situación meteorológica actual requiere máxima atención de las autoridades y la población, ya que los efectos de la tormenta podrían ser devastadores si no se toman las precauciones necesarias."
+      ]
+    },
+    "deporte-nba": {
+      "title": "Lakers Defeat Celtics 112-107 in Thrilling NBA Matchup",
+      "summary": "The Los Angeles Lakers defeated the Boston Celtics 112-107 in a game filled with excitement and spectacular plays that kept fans on the edge of their seats.",
+      "category": "Sports",
+      "alt": "[EN] Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA",
+      "content": [
+        "The game began with unusual intensity from the first quarter, with both teams exchanging plays and showing why they are considered two of the greatest franchises in NBA history.",
+        "LeBron James was the standout figure for the Lakers, contributing 28 points, 8 rebounds, and 7 assists in a performance that proves he is still at the top of his game.",
+        "Jayson Tatum led the Celtics with 25 points and 10 rebounds, but it wasn't enough to avoid defeat in a game that was decided in the final minutes.",
+        "The third quarter was decisive, with the Lakers imposing their defensive rhythm and achieving a 32-24 run that gave them a comfortable lead for the final period."
+      ]
+    },
+    "politica-encuesta": {
+      "title": "Polls Reveal Increase in President's Popularity",
+      "summary": "The latest public opinion polls show a significant increase in the president's popularity, reflecting growing support from citizens for his policies and government management.",
+      "category": "Politics",
+      "alt": "[EN] Encuestas Revelan Incremento en la Popularidad del Presidente",
+      "content": [
+        "According to data collected by several polling firms, the leader's approval rating has risen several percentage points compared to recent months, indicating a positive perception of his performance.",
+        "Political analysts attribute this increase to recent government initiatives in key areas such as economy, health, and education, as well as the effective communication of achievements in media and social networks.",
+        "The increase in popularity is also observed in different population segments, including youth, professionals, and voters from urban and rural regions, showing broader and more diversified support.",
+        "On the other hand, some experts highlight that this increase could be influenced by external factors, such as international stability and media coverage of certain positive events related to the administration.",
+        "The president and his team have taken advantage of these polls to reinforce their communication strategy and continue promoting policies that connect with the needs and expectations of citizens.",
+        "Meanwhile, opposition parties analyze these results to adjust their campaigns and proposals, seeking to counter the growing popularity of the leader in the national political landscape."
+      ]
+    },
+    "deporte-atletas": {
+      "title": "Athletes Break World Records in International Championship",
+      "summary": "Athletes from different countries set new world records at the international athletics championship, surpassing marks that had stood for years.",
+      "category": "Sports",
+      "alt": "[EN] Atletas Rompen Récords Mundiales en Campeonato Internacional",
+      "content": [
+        "The Olympic Stadium witnessed historic moments when three athletes managed to overcome world records that seemed unbeatable, marking a milestone in modern athletics history.",
+        "In the 100-meter dash, Jamaican sprinter Devon Allen ran in 9.58 seconds, equaling the world mark and demonstrating extraordinary speed.",
+        "Polish hammer thrower Anita Włodarczyk broke her own world record with a throw of 82.98 meters, extending her dominance in the discipline.",
+        "The high jump also had its glorious moment with Sweden's Armand Duplantis, who cleared 6.23 meters to set a new world record and leave everyone in awe."
+      ]
+    },
+    "salud-antibioticos": {
+      "title": "Growing Concern Over Antibiotic Resistance Worldwide",
+      "summary": "Antibiotic resistance continues to be a growing threat to public health worldwide, generating concern among scientists and health authorities.",
+      "category": "Health",
+      "alt": "[EN] Resistencia a los antibióticos",
+      "content": [
+        "Experts warn that the excessive and inadequate use of antibiotics has accelerated the emergence of resistant bacteria, which makes it difficult to treat common infections and increases the risk of serious complications.",
+        "International organizations have urged the implementation of stricter policies to control antibiotic prescription, as well as promoting awareness campaigns about their responsible use.",
+        "Recent research shows that antibiotic resistance could cause millions of additional deaths in the coming decades if effective measures are not taken immediately.",
+        "Scientists highlight the importance of developing new drugs and alternative treatments, as well as strengthening epidemiological surveillance systems to detect and contain outbreaks of resistant bacteria.",
+        "In conclusion, antibiotic resistance represents one of the greatest challenges of modern medicine, and requires international cooperation and a firm commitment to protect global health."
+      ]
+    },
+    "economia-dolar": {
+      "title": "[EN] Dólar alcanza máximo del año frente a otras monedas",
+      "summary": "[EN] El dólar estadounidense ha alcanzado su máximo nivel del año frente a las principales divisas mundiales, impulsado por la incertidumbre global y las expectativas de política monetaria.",
+      "category": "Economy",
+      "alt": "[EN] Dólar alcanza máximo del año frente a otras monedas",
+      "content": [
+        "[EN] El índice del dólar, que mide el rendimiento de la moneda estadounidense frente a una cesta de seis divisas importantes, ha subido un 2.3% en la última semana, posicionándose en su nivel más alto desde enero.",
+        "[EN] Los analistas atribuyen este fortalecimiento a múltiples factores, incluyendo la persistente inflación que podría llevar a la Reserva Federal a mantener las tasas de interés altas por más tiempo de lo esperado.",
+        "[EN] El euro ha sido una de las monedas más afectadas, cayendo por debajo de 1.05 dólares por primera vez en varios meses. La libra esterlina y el yen japonés también han registrado pérdidas significativas frente al billete verde.",
+        "[EN] Los mercados emergentes están sintiendo particularmente el impacto, con varias monedas de América Latina y Asia alcanzando mínimos históricos frente al dólar, lo que aumenta la preocupación sobre la deuda externa y la inflación importada.",
+        "[EN] Los expertos financieros advierten que esta tendencia podría continuar si los datos económicos de Estados Unidos siguen mostrando resiliencia, mientras que otras economías enfrentan desaceleraciones más pronunciadas.",
+        "[EN] Las corporaciones multinacionales están ajustando sus proyecciones de ganancias ante la volatilidad cambiaria, mientras que los inversores buscan refugio en activos denominados en dólares."
+      ]
+    },
+    "politica-ley-ambiental": {
+      "title": "Historical Approval: Congress Gives Green Light to Environmental Protection Law",
+      "summary": "In a historic session, the National Congress approved by a broad majority the Environmental Protection Law, a regulation that establishes drastic measures to combat climate change and protect the country's ecosystems.",
+      "category": "Politics",
+      "alt": "[EN] Aprobación Histórica: El Congreso Da Luz Verde a la Ley de Protección Ambiental",
+      "content": [
+        "The vote had broad support from legislators, who highlighted the importance of this law to face the challenges of climate change and protect critical ecosystems for future generations.",
+        "The new regulation establishes strict measures for the preservation of forests, rivers, seas, and protected areas, as well as regulations on polluting emissions and responsible waste management.",
+        "Environmental experts and civil organizations celebrated the approval, noting that this law could serve as a model for other countries in the region regarding environmental protection.",
+        "Among the most prominent points are incentives for companies that adopt sustainable practices, environmental education programs, and severe sanctions for those who fail to comply with the established regulations.",
+        "The President of Congress stated that this law represents a fundamental step towards more responsible economic development, which does not compromise natural resources or the quality of life of future generations.",
+        "Civil society and citizens in general have shown great interest in the implementation of the law, hoping that its benefits will be reflected in the improvement of air and water quality and the conservation of biodiversity."
+      ]
+    },
+    "politica-casa-blanca": {
+      "title": "[EN] Casa Blanca Confirma Cumbre Internacional",
+      "summary": "[EN] La Casa Blanca confirma cumbre internacional para esta semana para abordar temas globales incluyendo cambio climático y seguridad económica.",
+      "category": "Politics",
+      "alt": "[EN] Casa Blanca Confirma Cumbre Internacional",
+      "content": [
+        "[EN] La Casa Blanca ha confirmado oficialmente la realización de una cumbre internacional que se llevará a cabo esta semana, con la participación de líderes de más de 50 países para abordar los desafíos más urgentes a nivel global.",
+        "[EN] Entre los temas principales de la agenda se encuentran el cambio climático, la seguridad económica, la cooperación en salud pública y la estabilidad geopolítica en regiones conflictivas.",
+        "[EN] El presidente anfitrión destacó que esta cumbre representa una oportunidad única para construir consensos y establecer compromisos concretos que beneficien a todas las naciones participantes.",
+        "[EN] Expertos internacionales consideran que este encuentro podría marcar un punto de inflexión en la diplomacia multilateral, especialmente después de años de tensiones comerciales y políticas entre potencias mundiales.",
+        "[EN] Las organizaciones no gubernamentales y la sociedad civil también han sido invitadas a participar en sesiones paralelas, asegurando una representación más amplia de los intereses globales.",
+        "[EN] Los resultados de la cumbre serán monitoreados de cerca por los mercados financieros y las agencias de calificación, que esperan señales claras sobre las políticas económicas y ambientales futuras."
+      ]
+    },
+    "politica-senado": {
+      "title": "[EN] El Senado Debate Nueva Propuesta de Reforma Constitucional",
+      "summary": "[EN] El Senado de la República inició esta semana el debate sobre una nueva propuesta de reforma constitucional que busca introducir cambios significativos en la estructura política del país.",
+      "category": "Politics",
+      "alt": "[EN] El Senado Debate Nueva Propuesta de Reforma Constitucional",
+      "content": [
+        "[EN] La iniciativa, presentada por un grupo de legisladores de diferentes partidos, plantea ajustes en temas clave como la distribución del poder, la transparencia en la gestión pública y el fortalecimiento de los mecanismos de participación ciudadana.",
+        "[EN] Durante la sesión plenaria, varios senadores expresaron sus posiciones respecto a los alcances de la reforma. Algunos destacaron la importancia de modernizar la Constitución para adaptarla a las demandas actuales de la sociedad, mientras que otros advirtieron sobre el riesgo de alterar artículos fundamentales sin el debido consenso político.",
+        "[EN] El presidente del Senado afirmó que el proceso se llevará a cabo de manera transparente y con la participación de expertos constitucionalistas, con el objetivo de garantizar un debate técnico y plural.",
+        "[EN] Entre los puntos más discutidos se encuentran la posible reducción del número de legisladores, la implementación de nuevos mecanismos de control institucional y la ampliación de derechos ciudadanos en materia electoral y de justicia social.",
+        "[EN] Organizaciones civiles han manifestado su interés en participar en las audiencias públicas que acompañarán el proceso de análisis, subrayando la necesidad de que cualquier cambio constitucional responda a los intereses de la población y no a agendas partidistas.",
+        "[EN] Por su parte, el Ejecutivo ha señalado que seguirá de cerca el desarrollo del debate, sin intervenir directamente, pero dispuesto a apoyar las iniciativas que fortalezcan la gobernabilidad democrática.",
+        "[EN] Analistas políticos coinciden en que esta reforma podría marcar un punto de inflexión en la historia institucional del país, dependiendo del nivel de consenso que logren alcanzar las diferentes fuerzas políticas representadas en el Congreso.",
+        "[EN] El debate continuará en las próximas semanas y se espera que, una vez concluido, la propuesta sea sometida a votación en el pleno del Senado antes de pasar a la Cámara de Diputados para su revisión final.",
+        "[EN] De ser aprobada, la reforma constitucional entraría en vigor el próximo año, modificando varios artículos clave de la Carta Magna y dando paso a una nueva etapa en el marco político y jurídico nacional."
+      ]
+    },
+    "politica-debate": {
+      "title": "[EN] Debate Presidencial: Candidatos Confrontan sus Propuestas Frente al País",
+      "summary": "[EN] El esperado debate presidencial se llevó a cabo anoche, reuniendo a los principales candidatos que aspiran a ocupar la primera magistratura del país. El evento, transmitido en cadena nacional, permitió a los aspirantes exponer y confrontar sus propuestas frente a millones de ciudadanos.",
+      "category": "Politics",
+      "alt": "[EN] Debate Presidencial: Candidatos Confrontan sus Propuestas Frente al País",
+      "content": [
+        "[EN] Desde el inicio, el debate estuvo marcado por un tono enérgico y momentos de tensión, especialmente en los temas económicos y sociales. Los candidatos intercambiaron críticas, pero también aprovecharon para presentar soluciones concretas a los desafíos actuales del país.",
+        "[EN] En materia económica, las posturas fueron diversas. Mientras algunos candidatos propusieron reducir impuestos para fomentar la inversión y el empleo, otros enfatizaron la necesidad de fortalecer los programas sociales y aumentar la recaudación fiscal de los sectores con mayores ingresos.",
+        "[EN] El tema de la seguridad ciudadana también generó intensos intercambios. Se discutieron estrategias para enfrentar la delincuencia, el narcotráfico y la corrupción en las instituciones. Cada candidato defendió su visión sobre cómo garantizar la paz y la confianza en las fuerzas del orden.",
+        "[EN] La educación y la salud fueron otros ejes centrales del encuentro. Algunos aspirantes propusieron una reforma integral del sistema educativo, con mayor inversión en tecnología y capacitación docente, mientras que otros plantearon mejorar la cobertura y calidad de los servicios de salud pública.",
+        "[EN] Durante el bloque ambiental, los candidatos debatieron sobre el cambio climático, la deforestación y el uso de energías renovables. Las diferencias fueron evidentes, aunque todos coincidieron en la importancia de adoptar políticas sostenibles que protejan los recursos naturales.",
+        "[EN] El debate también abordó temas de género, derechos humanos y transparencia gubernamental. Varios candidatos hicieron énfasis en la igualdad de oportunidades, la lucha contra la violencia y la necesidad de modernizar las instituciones del Estado.",
+        "[EN] La ciudadanía siguió atentamente cada intervención a través de la televisión, la radio y las redes sociales, donde el evento generó millones de interacciones y comentarios. Los analistas destacan que el desempeño de los candidatos podría influir significativamente en las próximas encuestas.",
+        "[EN] Al cierre del debate, los moderadores agradecieron la participación de todos los aspirantes e invitaron a la población a reflexionar sobre las propuestas presentadas. El próximo encuentro presidencial se celebrará dentro de dos semanas y abordará temas relacionados con política exterior y desarrollo regional.",
+        "[EN] El debate de anoche dejó en claro que la contienda electoral se encuentra en su punto más intenso, con candidatos decididos a convencer al electorado y con un país atento al rumbo que tomará su futuro político."
+      ]
+    },
+    "internacional-israel-iran": {
+      "title": "[EN] Crecen las tensiones entre Israel e Irán",
+      "summary": "[EN] La región del Medio Oriente se mantiene en alerta máxima ante el aumento de las tensiones diplomáticas y militares entre Israel e Irán, con amenazas mutuas que preocupan a la comunidad internacional.",
+      "category": "International",
+      "alt": "[EN] Crecen las tensiones entre Israel e Irán",
+      "content": [
+        "[EN] Las tensiones entre Israel e Irán han alcanzado su punto más alto en los últimos años, con ambos países intercambiando acusaciones y amenazas que han puesto a toda la región en estado de alerta.",
+        "[EN] Fuentes diplomáticas indican que el conflicto se ha intensificado tras supuestos ataques a instalaciones estratégicas y el desarrollo de programas militares que ambas naciones consideran amenazas directas a su seguridad nacional.",
+        "[EN] La comunidad internacional ha llamado a la calma y al diálogo, temiendo una escalada que podría involucrar a otros países de la región y afectar la estabilidad global del mercado energético.",
+        "[EN] Estados Unidos y potencias europeas han ofrecido mediar en el conflicto, mientras que las Naciones Unidas han convocado a sesiones de emergencia del Consejo de Seguridad para abordar la situación.",
+        "[EN] Analistas militares advierten que cualquier confrontación directa tendría consecuencias devastadoras para la región y podría desestabilizar los mercados financieros mundiales, especialmente los del petróleo.",
+        "[EN] Los ciudadanos de ambos países viven con creciente ansiedad ante la posibilidad de un conflicto abierto, mientras los gobiernos preparan planes de contingencia y refuerzan sus defensas.",
+        "[EN] Organizaciones humanitarias expresan su preocupación por el impacto potencial en la población civil y han pedido que se prioricen las vías diplomáticas sobre las militares."
+      ]
+    },
+    "internacional-otan": {
+      "title": "[EN] La OTAN anuncia nuevos ejercicios militares en Europa del Este",
+      "summary": "[EN] La Organización del Tratado del Atlántico Norte (OTAN) ha confirmado el despliegue de tropas y la realización de maniobras conjuntas en sus fronteras orientales, en respuesta a la inestabilidad geopolítica actual.",
+      "category": "International",
+      "alt": "[EN] La OTAN anuncia nuevos ejercicios militares en Europa del Este",
+      "content": [
+        "[EN] El secretario general de la alianza declaró que estos ejercicios tienen como objetivo fortalecer la capacidad defensiva de los países miembros y disuadir cualquier posible amenaza externa. Participarán miles de soldados de diferentes naciones, junto con unidades aéreas y navales.",
+        "[EN] Los simulacros incluirán operaciones tácticas, defensa cibernética y logística de despliegue rápido. Se espera que estas maniobras sean las más grandes de la última década en la región, enviando un mensaje claro de unidad y preparación.",
+        "[EN] Rusia ha criticado estos movimientos, calificándolos de provocación y advirtiendo que tomará medidas recíprocas para garantizar su seguridad nacional. La tensión en la zona sigue siendo alta, y analistas temen que cualquier error de cálculo pueda desencadenar un incidente mayor.",
+        "[EN] A pesar de la retórica agresiva, líderes occidentales han reiterado que la OTAN es una alianza defensiva y que sus acciones no buscan la confrontación, sino la protección de sus aliados y el mantenimiento de la paz en Europa.",
+        "[EN] La comunidad internacional sigue de cerca estos desarrollos, instando a todas las partes a mantener canales de diálogo abiertos para evitar una escalada innecesaria del conflicto."
+      ]
+    },
+    "internacional-union-europea": {
+      "title": "[EN] Unión Europea impulsa energías renovables con nuevas directivas ambiciosas",
+      "summary": "[EN] La Unión Europea ha aprobado una serie de directivas destinadas a acelerar la transición hacia fuentes de energía sostenibles, con el objetivo de reducir drásticamente las emisiones de carbono en la próxima década.",
+      "category": "International",
+      "alt": "[EN] Unión Europea impulsa energías renovables con nuevas directivas ambiciosas",
+      "content": [
+        "[EN] El plan, conocido como \"Pacto Verde Europeo 2.0\", establece metas obligatorias para que los estados miembros aumenten la proporción de energía solar, eólica e hidroeléctrica en su matriz energética. También se contempla la eliminación gradual de subsidios a los combustibles fósiles.",
+        "[EN] Líderes europeos destacaron la urgencia de estas medidas frente a la crisis climática global. \"No hay tiempo que perder\", afirmó la presidenta de la Comisión Europea, subrayando que la inversión en energías limpias también generará millones de empleos y fortalecerá la seguridad energética del continente.",
+        "[EN] Organizaciones ambientalistas han aplaudido la iniciativa, aunque advierten que la implementación será clave. Piden mecanismos de supervisión estrictos para asegurar que los países cumplan con los compromisos adquiridos y no recurran a soluciones falsas como el gas natural o la energía nuclear.",
+        "[EN] Por otro lado, algunos sectores industriales han expresado preocupación por los costos de transición, solicitando apoyo financiero y plazos realistas para adaptar sus infraestructuras a las nuevas normativas.",
+        "[EN] La Unión Europea se posiciona así como líder mundial en la lucha contra el cambio climático, buscando inspirar a otras potencias a adoptar medidas similares antes de la próxima cumbre climática de la ONU."
+      ]
+    },
+    "internacional-china-usa": {
+      "title": "[EN] Nuevas conversaciones entre China y Estados Unidos marcan un giro en la política internacional",
+      "summary": "[EN] Nuevas conversaciones entre China y Estados Unidos han marcado un giro significativo en la política internacional, con el objetivo de mejorar las relaciones bilaterales y abordar conflictos económicos y diplomáticos recientes.",
+      "category": "International",
+      "alt": "[EN] Nuevas conversaciones entre China y Estados Unidos marcan un giro en la política internacional",
+      "content": [
+        "[EN] Los líderes de ambos países se reunieron en un encuentro diplomático de alto nivel, donde discutieron temas clave como comercio, seguridad regional, cambio climático y cooperación tecnológica.",
+        "[EN] Fuentes oficiales indicaron que las negociaciones fueron constructivas, destacando la voluntad de ambas naciones de encontrar soluciones que eviten tensiones y promuevan la estabilidad global.",
+        "[EN] Analistas internacionales consideran que este acercamiento podría tener un impacto positivo en la economía mundial, al reducir incertidumbres en mercados financieros y fortalecer acuerdos comerciales estratégicos.",
+        "[EN] Se espera que, en las próximas semanas, se anuncien acuerdos específicos que faciliten intercambios económicos y tecnológicos, así como mecanismos de cooperación para abordar desafíos globales como la seguridad cibernética y la sostenibilidad ambiental.",
+        "[EN] Representantes de organizaciones internacionales han celebrado el inicio de estas conversaciones, subrayando la importancia del diálogo diplomático para mantener la paz y la cooperación entre potencias mundiales.",
+        "[EN] Ciudadanos y empresas en ambos países observan con interés los resultados de estas negociaciones, ya que podrían influir en inversiones, comercio y relaciones culturales entre China y Estados Unidos.",
+        "[EN] El mundo sigue atento a estos desarrollos, confiando en que el diálogo abierto y la negociación estratégica conduzcan a un escenario internacional más estable y colaborativo."
+      ]
+    },
+    "internacional-accidente": {
+      "title": "[EN] Tragedia en carretera en Alemania: Grave accidente provoca caos y luto",
+      "summary": "[EN] Un grave accidente múltiple ocurrido en una autopista cerca de Berlín ha dejado un saldo trágico y provocado un caos vehicular de varios kilómetros, poniendo en el foco la seguridad vial en las famosas Autobahns.",
+      "category": "International",
+      "alt": "[EN] Tragedia en carretera en Alemania",
+      "content": [
+        "[EN] Según informes policiales, el siniestro involucró a más de 15 vehículos, incluidos dos camiones de carga, y se produjo bajo condiciones climáticas adversas que redujeron la visibilidad en la vía.",
+        "[EN] Equipos de rescate y bomberos acudieron rápidamente al lugar para atender a los heridos, algunos de los cuales fueron trasladados en helicóptero a hospitales cercanos debido a la gravedad de sus lesiones. Las autoridades han confirmado varias víctimas mortales, aunque no se ha precisado el número exacto.",
+        "[EN] El tráfico en una de las principales arterias del país quedó paralizado durante horas, afectando el transporte de mercancías y el desplazamiento de miles de personas. Las autoridades han iniciado una investigación exhaustiva para determinar las causas exactas del accidente.",
+        "[EN] Este suceso ha reavivado el debate sobre la implementación de límites de velocidad más estrictos en ciertos tramos de las autopistas alemanas, así como la necesidad de mejorar los sistemas de alerta temprana para conductores en situaciones de emergencia.",
+        "[EN] Expertos en seguridad vial instan a extremar las precauciones durante los meses de otoño e invierno, cuando la niebla y el hielo convierten las carreteras en escenarios de alto riesgo. Se espera que en los próximos días se presenten nuevas propuestas legislativas para reforzar la seguridad en la red de transportes."
+      ]
+    },
+    "economia-euro": {
+      "title": "[EN] El euro alcanza su valor más alto frente al dólar en seis meses",
+      "summary": "[EN] El euro alcanzó este jueves su valor más alto frente al dólar en los últimos seis meses, superando la barrera de los 1,12 dólares por primera vez desde abril. Este fortalecimiento de la moneda europea refleja un cambio en la dinámica económica global y un aumento de la confianza de los mercados en la estabilidad de la zona euro.",
+      "category": "Economy",
+      "alt": "[EN] El euro alcanza su valor más alto frente al dólar en seis meses",
+      "content": [
+        "[EN] Los analistas atribuyen este repunte a una combinación de factores, entre ellos las señales de una posible pausa en las subidas de tasas de interés por parte de la Reserva Federal de Estados Unidos. La desaceleración económica en el país norteamericano ha reducido la demanda del dólar como activo refugio, lo que ha favorecido la recuperación del euro en los mercados internacionales.",
+        "[EN] Al mismo tiempo, los datos recientes de la economía europea han mostrado una ligera mejora en la actividad industrial y en los índices de confianza empresarial. Países como Alemania, Francia y España han presentado indicadores más sólidos de lo esperado, lo que ha impulsado el optimismo sobre el crecimiento en la eurozona durante los próximos meses.",
+        "[EN] Expertos del sector financiero destacan que el aumento del valor del euro también responde a una menor presión inflacionaria en Europa. El Banco Central Europeo (BCE) ha señalado que mantendrá una política monetaria prudente, aunque no descarta realizar ajustes si los precios vuelven a acelerarse. Esta postura ha sido interpretada por los mercados como una señal de estabilidad y control.",
+        "[EN] Por su parte, el dólar estadounidense ha mostrado debilidad ante los temores de una recesión leve y la posibilidad de que la Reserva Federal reduzca las tasas antes de lo previsto. El diferencial de políticas monetarias entre ambas regiones ha sido determinante para el fortalecimiento del euro.",
+        "[EN] En los mercados financieros, el movimiento ha sido bien recibido. Los inversores ven en el euro una oportunidad atractiva frente al dólar, especialmente en un contexto de volatilidad global. Algunas entidades financieras prevén que, si las condiciones actuales se mantienen, la moneda europea podría alcanzar los 1,15 dólares antes de que termine el año.",
+        "[EN] El repunte del euro tiene implicaciones directas para el comercio internacional, ya que encarece las exportaciones europeas pero abarata las importaciones. Esto podría beneficiar a los consumidores de la eurozona, aunque representa un desafío para las empresas exportadoras, que podrían ver reducida su competitividad en los mercados externos.",
+        "[EN] En conclusión, el fortalecimiento del euro frente al dólar refleja un reequilibrio en la economía global, donde la confianza en la estabilidad europea y la cautela de la Reserva Federal están marcando el rumbo de las principales divisas. Los próximos meses serán clave para determinar si esta tendencia alcista se consolida o si el dólar logra recuperar terreno."
+      ]
+    },
+    "economia-petroleo": {
+      "title": "[EN] Petróleo registra fuerte repunte y preocupa a consumidores y empresas",
+      "summary": "[EN] El precio del petróleo registró un fuerte repunte este jueves, alcanzando niveles no vistos en los últimos meses y generando preocupación tanto entre los consumidores como entre las empresas a nivel global. Este aumento se atribuye a una combinación de factores, incluyendo tensiones geopolíticas en regiones productoras y restricciones en la oferta por parte de algunos países miembros de la OPEP.",
+      "category": "Economy",
+      "alt": "[EN] Petróleo registra fuerte repunte y preocupa a consumidores y empresas",
+      "content": [
+        "[EN] Los analistas indican que la subida del crudo podría tener un impacto significativo en los costos de transporte y en los precios de bienes y servicios, afectando directamente el presupuesto de las familias. Los combustibles, que representan un gasto esencial en muchas economías, podrían registrar incrementos en el corto plazo, aumentando la presión sobre el poder adquisitivo de los ciudadanos.",
+        "[EN] Por el lado empresarial, las compañías de transporte, logística y producción enfrentan un aumento en sus costos operativos. Varias empresas han comenzado a ajustar precios y revisar contratos de suministro para mitigar los efectos del incremento del petróleo en sus márgenes de ganancia.",
+        "[EN] Los expertos advierten que, si el precio del crudo se mantiene en niveles elevados, podrían surgir presiones inflacionarias adicionales a nivel global. Esto también podría influir en las decisiones de los bancos centrales respecto a las tasas de interés y políticas monetarias, generando un escenario de incertidumbre en los mercados financieros.",
+        "[EN] En el plano internacional, el repunte del petróleo ha sido impulsado principalmente por la reducción de inventarios en Estados Unidos y la tensión política en Oriente Medio. Además, algunos países exportadores han optado por limitar temporalmente la producción para sostener los precios, lo que ha intensificado la preocupación de los mercados.",
+        "[EN] En conclusión, el alza del petróleo representa un desafío económico tanto para consumidores como para empresas. La evolución de los precios dependerá de factores geopolíticos, decisiones de los países productores y la capacidad de adaptación de los mercados ante la volatilidad de los costos energéticos."
+      ]
+    },
+    "economia-pib": {
+      "title": "[EN] El PIB crece un 3,5% en el último trimestre impulsado por el consumo y la inversión",
+      "summary": "[EN] El Producto Interno Bruto (PIB) creció un 3,5% en el último trimestre, según los datos publicados por el gobierno, impulsado principalmente por un aumento en el consumo interno y en la inversión privada.",
+      "category": "Economy",
+      "alt": "[EN] El PIB crece un 3,5% en el último trimestre impulsado por el consumo y la inversión",
+      "content": [
+        "[EN] El gasto de los hogares mostró un comportamiento positivo, con un incremento en la demanda de bienes duraderos y servicios, lo que refleja la confianza de los consumidores en la economía. Este crecimiento del consumo contribuyó significativamente al avance general del PIB.",
+        "[EN] Por su parte, la inversión empresarial también experimentó un aumento notable. Las empresas han incrementado sus gastos en infraestructura, tecnología y expansión de operaciones, lo que ha generado un efecto multiplicador sobre el empleo y la producción.",
+        "[EN] Los analistas destacan que la combinación de consumo sólido e inversión creciente ha permitido a la economía mantenerse en una senda de crecimiento estable, a pesar de la incertidumbre internacional y la volatilidad de los mercados financieros.",
+        "[EN] En conclusión, el incremento del PIB del 3,5% refleja un trimestre de dinamismo económico, impulsado tanto por la confianza de los consumidores como por la decisión de las empresas de fortalecer su capacidad productiva y su presencia en el mercado."
+      ]
+    },
+    "salud-cardiovascular": {
+      "title": "[EN] Avances en medicina: nueva terapia promete mejorar la salud cardiovascular",
+      "summary": "[EN] Un nuevo avance en medicina ha generado expectativas en la comunidad científica y entre los pacientes: una terapia innovadora promete mejorar la salud cardiovascular y reducir los riesgos asociados a enfermedades del corazón.",
+      "category": "Health",
+      "alt": "[EN] Salud Cardiovascular",
+      "content": [
+        "[EN] Los estudios iniciales muestran que la terapia puede ayudar a fortalecer el músculo cardíaco, mejorar la circulación y disminuir la inflamación en los vasos sanguíneos. Los investigadores destacan que este tratamiento podría complementar las estrategias tradicionales como dieta, ejercicio y medicamentos.",
+        "[EN] Los ensayos clínicos se encuentran en fases avanzadas, y los primeros resultados indican mejoras significativas en la presión arterial y la función cardíaca de los participantes. Los científicos aseguran que la seguridad del tratamiento ha sido una prioridad durante todo el proceso de investigación.",
+        "[EN] Especialistas en cardiología consideran que esta terapia podría cambiar la forma en que se abordan enfermedades como la insuficiencia cardíaca y la hipertensión, ofreciendo una alternativa que trabaja directamente sobre los factores fisiológicos que afectan el corazón.",
+        "[EN] A pesar del optimismo, los expertos advierten que aún se requieren estudios a largo plazo para confirmar la eficacia y seguridad del tratamiento antes de que pueda implementarse de forma masiva en el sistema de salud. No obstante, la comunidad médica ve con esperanza los avances alcanzados hasta ahora.",
+        "[EN] En conclusión, la nueva terapia cardiovascular representa un paso importante en la medicina moderna, ofreciendo la posibilidad de mejorar la calidad de vida de millones de personas y marcando un hito significativo en la investigación sobre la salud del corazón."
+      ]
+    },
+    "salud-mental": {
+      "title": "[EN] La salud mental se convierte en prioridad ante el aumento de estrés y ansiedad",
+      "summary": "[EN] El aumento de estrés y ansiedad en la población ha convertido la salud mental en una prioridad tanto para las autoridades sanitarias como para la sociedad en general, impulsando nuevas estrategias de apoyo y concientización.",
+      "category": "Health",
+      "alt": "[EN] Salud Mental",
+      "content": [
+        "[EN] Expertos señalan que factores como la vida laboral intensa, la incertidumbre económica y los rápidos cambios sociales han incrementado los niveles de ansiedad, afectando la calidad de vida y el bienestar emocional de millones de personas.",
+        "[EN] Los profesionales de la salud mental recomiendan implementar programas de prevención en escuelas y lugares de trabajo, promover hábitos saludables como el ejercicio y el mindfulness, y facilitar el acceso a terapias psicológicas.",
+        "[EN] Además, organizaciones internacionales han subrayado la importancia de concienciar a la población sobre la detección temprana de síntomas y la eliminación del estigma social asociado a buscar ayuda profesional para problemas mentales.",
+        "[EN] Se espera que la inclusión de la salud mental en las políticas de salud pública y la educación emocional contribuya a crear entornos más comprensivos y a reducir el impacto negativo del estrés crónico en la sociedad.",
+        "[EN] En conclusión, la salud mental se ha consolidado como un pilar fundamental del bienestar integral, requiriendo esfuerzos coordinados y sostenidos de gobiernos, instituciones y comunidades para enfrentar los desafíos actuales."
+      ]
+    },
+    "salud-azucar": {
+      "title": "[EN] El consumo excesivo de azúcares aumenta el riesgo de enfermedades metabólicas",
+      "summary": "[EN] El consumo excesivo de azúcares añadidos se ha convertido en un problema crítico de salud pública, afectando a millones de personas en todo el mundo y contribuyendo al aumento de enfermedades crónicas graves.",
+      "category": "Health",
+      "alt": "[EN] El consumo excesivo de azúcares aumenta el riesgo de enfermedades metabólicas",
+      "content": [
+        "[EN] Estudios recientes, validados por múltiples instituciones sanitarias, muestran que una ingesta elevada de azúcares añadidos está directamente relacionada con un mayor riesgo de desarrollar enfermedades metabólicas complejas, como diabetes tipo 2, obesidad severa y síndrome metabólico.",
+        "[EN] Los expertos advierten que el consumo frecuente de bebidas azucaradas, dulces y alimentos ultraprocesados puede alterar rápidamente los niveles de glucosa en la sangre y afectar la función de la insulina, creando una resistencia que contribuye al deterioro de la salud a largo plazo.",
+        "[EN] Además, la exposición temprana a dietas altas en azúcar durante la infancia puede generar hábitos alimenticios poco saludables y adictivos que se prolongan hasta la adultez, aumentando exponencialmente la probabilidad de complicaciones metabólicas en etapas posteriores de la vida.",
+        "[EN] Las autoridades sanitarias recomiendan encarecidamente moderar la ingesta de azúcares, leer cuidadosamente las etiquetas nutricionales y priorizar alimentos naturales como frutas, verduras y granos integrales, que aportan energía y nutrientes esenciales sin los riesgos asociados a los azúcares refinados.",
+        "[EN] En conclusión, reducir el consumo de azúcares no es solo una elección dietética, sino una medida preventiva clave para proteger la salud metabólica, mejorar la calidad de vida y disminuir la incidencia de enfermedades crónicas en la población mundial."
+      ]
+    },
+    "deporte-espana-alemania": {
+      "title": "[EN] España se clasifica para la final del Mundial de Fútbol tras vencer a Alemania",
+      "summary": "[EN] La selección española logró un histórico triunfo ante Alemania con gol de Pedri en los últimos minutos, asegurando su lugar en la gran final.",
+      "category": "Sports",
+      "alt": "[EN] España se clasifica para la final del Mundial de Fútbol tras vencer a Alemania"
+    },
+    "deporte-mlb": {
+      "title": "[EN] Los Mets vencen a los Braves en un partido decisivo de la MLB",
+      "summary": "[EN] Los New York Mets se impusieron 5-3 ante los Atlanta Braves en un juego emocionante que definió la serie de playoffs.",
+      "category": "Sports",
+      "alt": "[EN] Los Mets vencen a los Braves en un partido decisivo de la MLB"
+    },
+    "deporte-natacion": {
+      "title": "[EN] La selección estadounidense domina el relevo 4x100 metros en el Mundial de Natación",
+      "summary": "[EN] La selección estadounidense se consagró como la gran protagonista en el relevo 4x100 metros del Mundial de Natación, dominando la competencia de principio a fin y llevándose la medalla de oro con un tiempo impresionante.",
+      "category": "Sports",
+      "alt": "[EN] La selección estadounidense domina el relevo 4x100 metros en el Mundial de Natación",
+      "content": [
+        "[EN] El equipo, compuesto por cuatro nadadores de élite, mostró una coordinación perfecta y relevos precisos, dejando claro su superioridad frente a rivales de todo el mundo.",
+        "[EN] Desde la salida hasta el último tramo, los estadounidenses mantuvieron el liderazgo, con cada nadador realizando una performance destacada que contribuyó al récord personal del equipo y a su victoria contundente.",
+        "[EN] El público presente en la piscina y los millones de espectadores alrededor del mundo celebraron la actuación impecable del equipo, que reafirma la fortaleza histórica de Estados Unidos en pruebas de relevos.",
+        "[EN] Los nadadores expresaron su emoción tras la competencia, destacando la importancia del trabajo en equipo, la disciplina y la preparación física y mental que los llevó al triunfo.",
+        "[EN] La competencia fue seguida de cerca por las selecciones de Australia, Reino Unido y China, quienes también ofrecieron un alto nivel de desempeño, aunque no pudieron superar la ventaja de Estados Unidos.",
+        "[EN] Con este resultado, la selección estadounidense se consolida como favorita en futuras competencias internacionales y aumenta sus posibilidades de seguir batiendo récords en el ámbito mundial.",
+        "[EN] El triunfo en el relevo 4x100 metros no solo representa una medalla más para el país, sino también un ejemplo de estrategia, sincronización y talento que inspira a las nuevas generaciones de nadadores.",
+        "[EN] El Mundial de Natación continúa con otras pruebas emocionantes, donde los atletas de distintas naciones lucharán por medallas y por dejar su huella en esta prestigiosa competencia internacional.",
+        "[EN] Sin duda, la actuación de Estados Unidos en el relevo 4x100 metros será recordada como uno de los momentos más destacados del Mundial, demostrando el poderío y la dedicación de su selección de natación."
+      ]
+    },
+    "clima-calor": {
+      "title": "[EN] Ola de calor extremo afecta a varias regiones del país",
+      "summary": "[EN] Las temperaturas máximas superan los 40 grados en varias provincias, generando alertas por riesgos para la salud.",
+      "category": "Weather",
+      "alt": "[EN] Ola de calor extremo afecta a varias regiones del país",
+      "content": [
+        "[EN] Una ola de calor histórica afecta a gran parte de Europa, provocando temperaturas récord en varias ciudades.",
+        "[EN] Las autoridades han emitido alertas para extremar precauciones, especialmente para ancianos y personas con enfermedades crónicas.",
+        "[EN] Se esperan temperaturas superiores a los 40 °C en regiones del sur de Europa durante los próximos días.",
+        "[EN] Los servicios de salud recomiendan mantenerse hidratado, evitar la exposición prolongada al sol y seguir las instrucciones locales de protección.",
+        "[EN] Varios países han activado planes de emergencia para enfrentar los riesgos asociados al calor extremo, incluyendo el uso de refugios climáticos.",
+        "[EN] Se prevé que la ola de calor continúe durante al menos una semana, mientras los meteorólogos monitorean el avance y la intensidad del fenómeno."
+      ]
+    },
+    "clima-inundaciones": {
+      "title": "[EN] Inundaciones afectan a miles de personas en el sur",
+      "summary": "[EN] Las lluvias torrenciales han causado desbordamiento de ríos, afectando a comunidades enteras.",
+      "category": "Weather",
+      "alt": "[EN] Inundaciones afectan a miles de personas en el sur",
+      "content": [
+        "[EN] Fuertes lluvias han azotado en los últimos días a varias regiones de Sudamérica, provocando graves inundaciones que han afectado a miles de personas y dejado importantes daños materiales.",
+        "[EN] Los países más golpeados por las intensas precipitaciones son Brasil, Argentina, Paraguay, Bolivia y Perú, donde se han reportado desbordamientos de ríos, deslizamientos de tierra y cortes de carreteras.",
+        "[EN] En el sur de Brasil, las lluvias torrenciales causaron el desbordamiento del río Taquari, inundando decenas de municipios del estado de Rio Grande do Sul. Las autoridades locales informaron que cientos de familias tuvieron que ser evacuadas y se han habilitado refugios temporales para los damnificados.",
+        "[EN] En Paraguay, el río Paraguay superó su nivel crítico y anegó varias zonas de Asunción y localidades ribereñas. La Secretaría de Emergencia Nacional desplegó equipos de rescate y distribuyó alimentos y agua potable a las familias afectadas.",
+        "[EN] Mientras tanto, en Bolivia, las fuertes precipitaciones han ocasionado deslizamientos de tierra en zonas montañosas, bloqueando caminos y afectando comunidades rurales. El gobierno declaró alerta naranja en varios departamentos debido al riesgo de nuevos deslizamientos.",
+        "[EN] En el norte de Argentina, las provincias de Misiones y Corrientes también enfrentan serios problemas por la acumulación de agua. Los campos agrícolas se encuentran inundados, lo que genera preocupación en el sector agropecuario ante posibles pérdidas de cosechas.",
+        "[EN] Los servicios meteorológicos de la región advierten que las lluvias continuarán durante los próximos días debido a un sistema de baja presión combinado con corrientes cálidas provenientes del Atlántico, lo que podría agravar la situación en las zonas más vulnerables.",
+        "[EN] Las autoridades han recomendado a la población mantenerse informada, evitar circular por zonas inundadas y acatar las indicaciones de los organismos de emergencia.",
+        "[EN] Organizaciones internacionales, como la Cruz Roja y la ONU, han manifestado su disposición para brindar apoyo humanitario, enviando equipos de asistencia y recursos para atender a las comunidades afectadas.",
+        "[EN] Los gobiernos de la región trabajan de manera conjunta para coordinar esfuerzos y mitigar el impacto de las lluvias, mientras se evalúan los daños y se planifican estrategias de recuperación a largo plazo.",
+        "[EN] Las intensas precipitaciones ponen nuevamente sobre la mesa el debate sobre los efectos del cambio climático en Sudamérica, donde los eventos meteorológicos extremos se han vuelto cada vez más frecuentes e impredecibles.",
+        "[EN] La situación continúa siendo monitoreada de cerca por las autoridades, que piden solidaridad y cooperación para enfrentar una de las emergencias climáticas más severas de los últimos años en la región."
+      ]
+    },
+    "clima-nevadas": {
+      "title": "[EN] Nevadas históricas paralizan el norte del país",
+      "summary": "[EN] Las nevadas más intensas en décadas han dejado incomunicadas a varias poblaciones del norte.",
+      "category": "Weather",
+      "alt": "[EN] Nevadas históricas paralizan el norte del país",
+      "content": [
+        "[EN] Nevadas intensas están afectando el norte de Europa, causando interrupciones significativas en el transporte y generando riesgos para la población en varias regiones.",
+        "[EN] Las fuertes precipitaciones de nieve han acumulado grandes cantidades en carreteras, calles y autopistas, lo que ha obligado a las autoridades a implementar cierres temporales para garantizar la seguridad de los conductores.",
+        "[EN] Se han reportado retrasos y cancelaciones de vuelos en aeropuertos internacionales y regionales, así como interrupciones en servicios de trenes y transporte público debido a vías bloqueadas por la nieve y el hielo.",
+        "[EN] Las condiciones extremas han provocado accidentes de tráfico y dificultades para los vehículos de emergencia, lo que ha llevado a que los servicios de rescate y mantenimiento trabajen sin descanso para despejar las rutas principales.",
+        "[EN] Se recomienda a los ciudadanos evitar desplazamientos innecesarios y utilizar transporte público solo cuando sea seguro, además de seguir las indicaciones de las autoridades locales y los informes meteorológicos actualizados.",
+        "[EN] Los gobiernos regionales han activado planes de contingencia, que incluyen refugios temporales, asistencia a personas vulnerables y distribución de equipos de protección y suministros esenciales en zonas afectadas.",
+        "[EN] Los meteorólogos advierten que las nevadas podrían continuar durante varios días, y que se esperan bajas temperaturas y posibles tormentas de nieve que podrían agravar la situación, especialmente en zonas rurales y montañosas.",
+        "[EN] Las autoridades han solicitado colaboración de la población para reportar cualquier incidente, mantenerse informado a través de canales oficiales y tomar precauciones adicionales para protegerse del frío extremo.",
+        "[EN] Además, se ha recomendado a los conductores equipar sus vehículos con neumáticos de invierno, cadenas y kits de emergencia, y mantenerse alerta ante cambios bruscos en el clima que puedan afectar la seguridad en carretera.",
+        "[EN] En general, las nevadas están generando un impacto considerable en la vida cotidiana, obligando a muchas personas a trabajar desde casa y a planificar sus desplazamientos con anticipación para evitar riesgos innecesarios."
+      ]
+    },
+    "clima-tornado": {
+      "title": "[EN] Tornado causa graves daños en el centro del país",
+      "summary": "[EN] Un tornado de categoría F3 ha dejado un rastro de destrucción en varias comunidades del interior, causando daños materiales significativos y afectando a cientos de familias.",
+      "category": "Weather",
+      "alt": "[EN] Tornado causa graves daños en el centro del país",
+      "content": [
+        "[EN] Un poderoso tornado de categoría F3 azotó varias comunidades del centro del país, dejando un rastro de destrucción que ha afectado a más de 500 familias y causado daños estimados en millones de dólares.",
+        "[EN] Las autoridades de protección civil han desplegado equipos de rescate y asistencia humanitaria en las zonas más afectadas, donde numerosas viviendas han sido destruidas o dañadas severamente.",
+        "[EN] El servicio meteorológico nacional había emitido alertas de tormentas severas horas antes del paso del tornado, permitiendo que muchas personas pudieran buscar refugio a tiempo.",
+        "[EN] Los equipos de emergencia continúan trabajando en las labores de limpieza y evaluación de daños, mientras las autoridades locales establecen centros de acopio para los damnificados.",
+        "[EN] El gobierno ha declarado el estado de emergencia en las municipalidades más afectadas y ha prometido recursos para la reconstrucción y asistencia a las víctimas.",
+        "[EN] Expertos en fenómenos meteorológicos advierten sobre la posibilidad de nuevos eventos severos en las próximas horas debido a las condiciones atmosféricas inestables en la región."
+      ]
+    },
+    "justicia_tribunal_supremo": {
+      "title": "[EN] Tribunal Supremo confirma sentencia en caso de corrupción política",
+      "summary": "[EN] La máxima instancia judicial ratifica la condena contra el político implicado en el caso de desviación de fondos públicos.",
+      "category": "Justice",
+      "alt": "[EN] Tribunal Supremo confirma sentencia en caso de corrupción política"
+    },
+    "justicia_condena_criminal": {
+      "title": "[EN] Condenan a cadena perpetua a líder de organización criminal internacional",
+      "summary": "[EN] El tribunal impone la máxima pena por delitos de narcotráfico, lavado de dinero y organización criminal a nivel internacional.",
+      "category": "Justice",
+      "alt": "[EN] Condenan a cadena perpetua a líder de organización criminal internacional"
+    },
+    "justicia_fiscalia_empresa": {
+      "title": "[EN] Fiscalía inicia juicio contra empresa por evasión fiscal millonaria",
+      "summary": "[EN] La compañía enfrenta cargos por no declarar más de 50 millones en ingresos durante los últimos cinco ejercicios fiscales.",
+      "category": "Justice",
+      "alt": "[EN] Fiscalía inicia juicio contra empresa por evasión fiscal millonaria"
+    },
+    "justicia_juez_homicidio_multiple": {
+      "title": "[EN] Juez ordena prisión preventiva para acusado de homicidio múltiple",
+      "summary": "[EN] El sospechoso permanecerá detenido mientras se prepara el juicio por los tres asesinatos ocurridos en la última semana.",
+      "category": "Justice",
+      "alt": "[EN] Juez ordena prisión preventiva para acusado de homicidio múltiple"
+    },
+    "deporte-baseball": {
+      "title": "[EN] Los Mets vencen a los Braves en un partido decisivo de la MLB",
+      "summary": "[EN] Los Mets lograron una victoria impresionante sobre los Braves en un partido decisivo de la MLB, que mantuvo a los fanáticos al borde de sus asientos hasta el último out.",
+      "category": "Sports",
+      "alt": "[EN] Los Mets vencen a los Braves en un partido decisivo de la MLB",
+      "content": [
+        "[EN] El partido comenzó con ambos equipos mostrando un juego sólido en la ofensiva y defensiva, pero fueron los Mets quienes lograron abrir el marcador en la tercera entrada gracias a un home run de su estrella principal.",
+        "[EN] Los Braves intentaron reaccionar, conectando hits importantes en la quinta y sexta entrada, pero la excelente actuación del pitcher abridor de los Mets mantuvo a raya a los bateadores rivales.",
+        "[EN] En la séptima entrada, los Mets ampliaron su ventaja con una jugada estratégica de doble robo y un sencillo oportuno, asegurando un margen cómodo antes del cierre del juego.",
+        "[EN] El bullpen de los Mets demostró solidez, cerrando el partido sin permitir carreras adicionales y asegurando la victoria con un marcador final de 5-3.",
+        "[EN] Con este triunfo, los Mets fortalecen sus aspiraciones de llegar a la postemporada y colocan presión sobre los Braves en la clasificación de la división.",
+        "[EN] Los fanáticos celebraron con entusiasmo, mientras los jugadores de los Mets destacaron el esfuerzo colectivo y la concentración que mantuvieron durante todo el partido.",
+        "[EN] Los Braves, aunque decepcionados, prometieron recuperarse en los próximos encuentros y luchar hasta el final por mantener sus opciones en la temporada.",
+        "[EN] Este partido quedará como uno de los momentos más memorables de la temporada regular, mostrando el talento y la determinación de ambos equipos en la MLB."
+      ]
+    },
+    "deporte-espana-final": {
+      "title": "Spain Qualifies for World Cup Final After Defeating Germany",
+      "summary": "Spain secured its place in the World Cup final after defeating Germany in an intense match filled with memorable moments.",
+      "category": "Sports",
+      "alt": "[EN] España se clasifica para la final del Mundial de Fútbol tras vencer a Alemania",
+      "content": [
+        "The first half was marked by Germany's offensive pressure, but the Spanish defense held firm with outstanding saves from the goalkeeper and impeccable defensive coordination.",
+        "In the second half, Spain managed to impose its rhythm. The decisive goal came from a collective play that ended with a precise strike from a star player, sparking euphoria in the stands.",
+        "The German team didn't give up and sought the equalizer until the final minutes, but the solidity of the Spanish defense and quick counterattacks allowed them to maintain the lead.",
+        "The Spanish coach highlighted the discipline and teamwork of his players, stating that the victory is the result of collective effort and strategic preparation."
+      ]
+    },
+    "justicia-criminal": {
+      "title": "[EN] Condenan a cadena perpetua a líder de organización criminal internacional",
+      "summary": "[EN] El líder de una organización criminal internacional ha sido condenado a cadena perpetua tras un largo proceso judicial que se extendió por varios años.",
+      "category": "Justice",
+      "alt": "[EN] Condenan a cadena perpetua a líder de organización criminal internacional",
+      "content": [
+        "[EN] La sentencia fue dictada por un tribunal especializado en delitos de crimen organizado, luego de que se presentaran pruebas contundentes que vinculan al acusado con actividades ilícitas a nivel mundial, incluyendo tráfico de drogas, lavado de dinero y corrupción.",
+        "[EN] Durante el juicio, se presentaron testimonios de exintegrantes de la organización y evidencia financiera que demostró la magnitud de las operaciones ilegales lideradas por el condenado.",
+        "[EN] Las autoridades destacaron la importancia de esta condena como un paso clave en la lucha contra el crimen organizado internacional y aseguraron que continuarán trabajando para desmantelar las redes criminales asociadas.",
+        "[EN] El tribunal señaló que la severidad de la sentencia responde al alto riesgo que representaba el acusado para la seguridad pública y a la necesidad de enviar un mensaje contundente sobre la intolerancia hacia la criminalidad organizada.",
+        "[EN] Expertos legales han indicado que este fallo podría sentar un precedente para futuros casos de crimen internacional, reforzando la cooperación entre países y organismos internacionales en la persecución de delitos transnacionales.",
+        "[EN] La familia del condenado y sus abogados anunciaron que evaluarán posibles recursos, aunque reconocieron que las evidencias presentadas durante el juicio dificultan cualquier posibilidad de reducción de la pena.",
+        "[EN] La comunidad internacional ha recibido la noticia con atención, destacando la importancia de aplicar la justicia de manera efectiva y coordinada en casos de alta criminalidad y alcance global.",
+        "[EN] Mientras tanto, las autoridades continúan investigando y monitoreando las operaciones de la organización para asegurar que no queden cabos sueltos que puedan permitir la continuidad de actividades ilícitas."
+      ]
+    },
+    "justicia-tribunal": {
+      "title": "[EN] Tribunal Supremo confirma sentencia histórica en caso de corrupción",
+      "summary": "[EN] El Tribunal Supremo ha confirmado la sentencia dictada en un caso de corrupción política que ha conmocionado al país, estableciendo un precedente importante en la lucha contra la impunidad.",
+      "category": "Justice",
+      "alt": "[EN] Tribunal Supremo confirma sentencia histórica en caso de corrupción",
+      "content": [
+        "[EN] La decisión del máximo tribunal del país fue unánime y ratifica las condenas impuestas por tribunales inferiores contra varios funcionarios de alto nivel involucrados en actos de corrupción.",
+        "[EN] El caso, que se ha extendido por más de tres años, ha sido uno de los más mediáticos de la última década, revelando una red de sobornos y favoritismo que afectó la adjudicación de contratos públicos por millones de dólares.",
+        "[EN] Los magistrados del Tribunal Supremo destacaron en su fallo la importancia de mantener la integridad de la función pública y sendear un mensaje claro sobre las consecuencias de la corrupción.",
+        "[EN] Organizaciones de la sociedad civil han celebrado la decisión, considerándola una victoria para el estado de derecho y un paso fundamental en la consolidación de instituciones democráticas fuertes.",
+        "[EN] Los abogados defensores han anunciado que presentarán recursos internacionales, argumentando violaciones al debido proceso durante las diferentes etapas del juicio.",
+        "[EN] El gobierno ha destacado que esta sentencia demuestra la independencia del poder judicial y el compromiso de las instituciones con la transparencia y la rendición de cuentas.",
+        "[EN] Expertos legales consideran que este fallo fortalecerá los mecanismos de prevención de la corrupción y servirá como disuasivo para futuros funcionarios públicos."
+      ]
+    },
+    "justicia-empresa": {
+      "title": "[EN] Fiscalía inicia juicio contra empresa por evasión fiscal millonaria",
+      "summary": "[EN] La Fiscalía General ha iniciado un juicio contra una importante empresa nacional acusada de evasión fiscal millonaria, lo que podría derivar en sanciones históricas.",
+      "category": "Justice",
+      "alt": "[EN] Fiscalía inicia juicio contra empresa por evasión fiscal millonaria",
+      "content": [
+        "[EN] Según los informes preliminares, la compañía habría omitido declarar ingresos significativos durante varios años, generando un perjuicio económico al Estado. El caso se abrió luego de una investigación de la unidad especializada en delitos financieros.",
+        "[EN] Durante la audiencia inicial, los representantes de la empresa negaron las acusaciones, asegurando que todos los registros contables cumplen con la normativa vigente. Sin embargo, la Fiscalía presentó documentos y pruebas que evidencian la supuesta evasión.",
+        "[EN] El juez a cargo del caso estableció un calendario de audiencias para escuchar a testigos y expertos. La opinión pública ha mostrado gran interés en el caso, dada la relevancia de la empresa en la economía nacional.",
+        "[EN] Si se confirman las acusaciones, la empresa podría enfrentar multas millonarias y responsabilidades penales para sus directivos. Las autoridades recalcan la importancia de este juicio como un mensaje de rigor.",
+        "[EN] Se espera que las próximas semanas sean decisivas para determinar el futuro de la compañía y el impacto de este caso en el sector empresarial."
+      ]
+    },
+    "justicia-homicidio-multiple": {
+      "title": "[EN] Juez ordena prisión preventiva para acusado de homicidio múltiple",
+      "summary": "[EN] El juez del caso ha dictado prisión preventiva contra el acusado, considerando necesario asegurar su presencia en el juicio debido a la gravedad de los cargos y el riesgo de fuga.",
+      "category": "Justice",
+      "alt": "[EN] Juez ordena prisión preventiva para acusado de homicidio múltiple",
+      "content": [
+        "[EN] La decisión se tomó luego de una audiencia en la que se presentaron pruebas contundentes que vinculan al acusado con varios homicidios ocurridos en la ciudad durante los últimos meses. El fiscal argumentó que la libertad del imputado representaría un peligro para la sociedad.",
+        "[EN] La defensa del acusado manifestó que respetará la decisión del juez, pero adelantó que presentará recursos legales para solicitar una revisión de la medida. Mientras tanto, el acusado permanecerá en un centro de detención de máxima seguridad.",
+        "[EN] Familiares de las víctimas han recibido con alivio la decisión, destacando la importancia de que el proceso judicial avance sin contratiempos. Las autoridades han reforzado la seguridad en torno al caso para evitar incidentes.",
+        "[EN] Expertos legales señalan que la prisión preventiva es una medida excepcional pero justificada en casos de extrema gravedad como este. El juicio está programado para comenzar en los próximos meses, y se espera que sea uno de los más mediáticos del año.",
+        "[EN] La comunidad sigue atenta al desarrollo de los acontecimientos, esperando que se haga justicia para las víctimas y sus familias."
+      ]
+    },
+    "opinion_politica": {
+      "title": "[EN] La democracia y el reto de la transparencia",
+      "summary": "[EN] La confianza ciudadana depende cada vez mas de instituciones abiertas y responsables.",
+      "category": "Opinion",
+      "alt": "[EN] La democracia y el reto de la transparencia",
+      "content": [
+        "[EN] En el complejo escenario politico actual, la transparencia se ha consolidado no solo como un requisito etico, sino como el pilar fundamental que sostiene la legitimidad de las democracias modernas. La confianza de los ciudadanos en sus representantes e instituciones se ha visto erosionada por anos de opacidad y falta de rendicion de cuentas, creando una brecha que solo puede cerrarse con luz y honestidad.",
+        "[EN] La verdadera transparencia va mas alla de publicar documentos en portales web; implica una voluntad real de exponer los procesos de toma de decisiones al escrutinio publico. Cuando los gobiernos ocultan las razones detras de sus politicas o los detalles de su gasto, fomentan un clima de sospecha que alimenta el populismo y la desafeccion politica.",
+        "[EN] Es imperativo que nuestras instituciones adopten tecnologias abiertas y procesos de auditoria ciudadana. Una democracia que teme a la transparencia es una democracia que duda de su propio valor. El reto es enorme, pero el costo de la opacidad es, sencillamente, inasumible para una sociedad que aspira a ser verdaderamente libre."
+      ]
+    },
+    "opinion_economia": {
+      "title": "[EN] Hacia donde va la economia global?",
+      "summary": "[EN] Analizamos los factores que marcaran el rumbo economico en los proximos anos.",
+      "category": "Opinion",
+      "alt": "[EN] Hacia donde va la economia global?",
+      "content": [
+        "[EN] Nos encontramos en un punto de inflexion sin precedentes en la historia economica contemporanea. La globalizacion, tal como la conociamos, esta siendo redefinida por tensiones geopoliticas, la transicion energetica y la irrupcion masiva de la inteligencia artificial. Estos factores no solo estan cambiando el que producimos, sino el como y donde lo hacemos.",
+        "[EN] La inflacion, aunque parece estar bajo control en algunas regiones, ha dejado una huella profunda en la estructura de costes de las empresas y en el presupuesto de las familias. El gran reto de los bancos centrales sera navegar este nuevo entorno sin sofocar el crecimiento necesario para financiar la transicion hacia una economia verde.",
+        "[EN] A largo plazo, la sostenibilidad sera el motor principal del valor economico. Aquellos paises y empresas que no logren adaptar sus modelos de negocio a los limites del planeta se veran marginados. La economia global del futuro no sera solo digital, sera fundamentalmente regenerativa o no sera."
+      ]
+    },
+    "opinion_salud": {
+      "title": "[EN] La importancia de la salud preventiva",
+      "summary": "[EN] Invertir en prevencion es fundamental para mantener una poblacion saludable y reducir gastos sanitarios.",
+      "category": "Opinion",
+      "alt": "[EN] La importancia de la salud preventiva",
+      "content": [
+        "[EN] El sistema sanitario global ha estado historicamente enfocado en la cura, reaccionando ante la enfermedad una vez que esta se manifiesta. Sin embargo, la verdadera revolucion medica del siglo XXI reside en la prevencion. Invertir en salud preventiva no es solo una cuestion de bienestar individual, es una estrategia de supervivencia para los sistemas publicos de salud.",
+        "[EN] Cada euro invertido en campanas de vacunacion, deteccion temprana y promocion de habitos saludables ahorra miles de euros en tratamientos cronicos y hospitalizaciones complejas. La tecnologia hoy nos permite monitorear nuestra salud en tiempo real, ofreciendonos una oportunidad unica para intervenir antes de que el dano sea irreversible.",
+        "[EN] La salud preventiva requiere un cambio de paradigma cultural: pasar de ser pacientes pasivos a ser gestores activos de nuestro propio bienestar. Solo a traves de la educacion y el acceso equitativo a servicios preventivos podremos garantizar una longevidad que sea verdaderamente saludable y digna para todos."
+      ]
+    },
+    "clima-tormenta-atlantico": {
+      "title": "[EN] Tormenta tropical se intensifica en el Atlántico",
+      "summary": "[EN] Una tormenta tropical se intensifica en el Atlántico, generando alerta en varias islas del Caribe. Las autoridades emiten avisos de preparación.",
+      "category": "Weather",
+      "alt": "[EN] Tormenta tropical se intensifica en el Atlántico"
+    },
+    "clima-calor-europa": {
+      "title": "[EN] Ola de calor récord afecta el sur de Europa",
+      "summary": "[EN] Temperaturas históricas se registran en España, Italia y Grecia. Las autoridades implementan planes de emergencia por calor extremo.",
+      "category": "Weather",
+      "alt": "[EN] Ola de calor récord afecta el sur de Europa"
+    },
+    "clima-inundaciones-asia": {
+      "title": "[EN] Inundaciones causan evacuaciones en Asia",
+      "summary": "[EN] Monzones intensos provocan inundaciones masivas en el sudeste asiático. Miles de personas son evacuadas a zonas seguras.",
+      "category": "Weather",
+      "alt": "[EN] Inundaciones causan evacuaciones en Asia"
+    },
+    "clima-huracan-costa": {
+      "title": "[EN] Huracán categoría 4 se acerca a la costa este",
+      "summary": "[EN] Un poderoso huracán categoría 4 se aproxima a la costa este de EE.UU. con vientos de hasta 230 km/h. Se ordenan evacuaciones obligatorias.",
+      "category": "Weather",
+      "alt": "[EN] Huracán categoría 4 se acerca a la costa este"
+    }
+  },
+  "categories": {
+    "politica": {
+      "label": "Politics",
+      "description": "[EN] Cobertura sobre gobierno, poder legislativo, partidos, transparencia y decisiones públicas con impacto nacional.",
+      "latestTitle": "More in Politics",
+      "sidebarTitle": "Opinion",
+      "featuredSectionTitle": "Politics"
+    },
+    "internacional": {
+      "label": "International",
+      "description": "[EN] Panorama global con enfoque en diplomacia, conflictos, alianzas estrategicas y movimientos geopoliticos clave.",
+      "latestTitle": "More in International",
+      "sidebarTitle": "Opinion",
+      "featuredSectionTitle": "International"
+    },
+    "economia": {
+      "label": "Economy",
+      "description": "[EN] Mercados, inflación, empresas, empleo y decisiones financieras que marcan el ritmo económico del país y el mundo.",
+      "latestTitle": "More in Economy",
+      "sidebarTitle": "Opinion",
+      "featuredSectionTitle": "Economy"
+    },
+    "salud": {
+      "label": "Health",
+      "description": "[EN] Información sobre sistema sanitario, prevención, investigación médica y tendencias que impactan el bienestar colectivo.",
+      "latestTitle": "More in Health",
+      "sidebarTitle": "Opinion",
+      "featuredSectionTitle": "Health"
+    },
+    "deporte": {
+      "label": "Sports",
+      "description": "[EN] Actualidad deportiva con foco en resultados, figuras, torneos y el pulso competitivo de las principales disciplinas.",
+      "latestTitle": "More in Sports",
+      "sidebarTitle": "Opinion",
+      "featuredSectionTitle": "Sports"
+    },
+    "clima": {
+      "label": "Weather",
+      "description": "[EN] Seguimiento meteorológico, alertas, fenómenos extremos y efectos ambientales en comunidades y sectores productivos.",
+      "latestTitle": "More in Weather",
+      "sidebarTitle": "Opinion",
+      "featuredSectionTitle": "Weather"
+    },
+    "justicia": {
+      "label": "Justice",
+      "description": "[EN] Procesos judiciales, investigación de delitos, reformas legales y decisiones institucionales en materia de justicia.",
+      "latestTitle": "More in Justice",
+      "sidebarTitle": "Opinion",
+      "featuredSectionTitle": "Justice"
+    }
+  }
+}

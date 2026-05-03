@@ -3,7 +3,7 @@ import { createNewsArticle } from './utils';
 export const sidebarNewsByCategory = {
   politica: [
     createNewsArticle({
-      id: 'politica_ley_ambiental_apoyo',
+      id: 'politica-ley-ambiental',
       title: 'Ley ambiental recibe apoyo internacional',
       href: '/news/politica/aprobacion-historica-ley-proteccion-ambiental',
       category: 'Política',
@@ -14,7 +14,7 @@ export const sidebarNewsByCategory = {
       alt: 'Ley ambiental recibe apoyo internacional',
     }),
     createNewsArticle({
-      id: 'politica_presidente_popularidad',
+      id: 'politica-encuesta',
       title: 'Popularidad presidencial alcanza máximo histórico',
       href: '/news/politica/encuestas-revelan-incremento-popularidad-presidente',
       category: 'Política',
@@ -25,7 +25,7 @@ export const sidebarNewsByCategory = {
       alt: 'Popularidad presidencial alcanza máximo histórico',
     }),
     createNewsArticle({
-      id: 'politica_movimientos_sociales',
+      id: 'politica-protestas',
       title: 'Movimientos sociales demandan acción gubernamental',
       href: '/news/politica/protestas-corrupcion',
       category: 'Política',
@@ -36,7 +36,7 @@ export const sidebarNewsByCategory = {
       alt: 'Movimientos sociales demandan acción gubernamental',
     }),
     createNewsArticle({
-      id: 'politica_expertos_debate',
+      id: 'politica-debate',
       title: 'Expertos analizan desempeño de candidatos en debate',
       href: '/news/politica/debate-presidencial-candidatos-confrontan-propuestas',
       category: 'Política',
@@ -50,7 +50,7 @@ export const sidebarNewsByCategory = {
 
   internacional: [
     createNewsArticle({
-      id: 'internacional_paz_ucrania',
+      id: 'internacional-guerra',
       title: 'Acuerdo de paz en Ucrania es celebrado mundialmente',
       href: '/news/internacional/guerra-ucrania-llega-fin',
       category: 'Internacional',
@@ -61,7 +61,7 @@ export const sidebarNewsByCategory = {
       alt: 'Acuerdo de paz en Ucrania es celebrado mundialmente',
     }),
     createNewsArticle({
-      id: 'internacional_onu_emergencia',
+      id: 'internacional-israel-iran',
       title: 'ONU convoca sesión de emergencia por crisis en Medio Oriente',
       href: '/news/internacional/tensiones-israel-iran-crecen',
       category: 'Internacional',
@@ -72,7 +72,7 @@ export const sidebarNewsByCategory = {
       alt: 'ONU convoca sesión de emergencia por crisis en Medio Oriente',
     }),
     createNewsArticle({
-      id: 'internacional_europa_energia',
+      id: 'internacional-union-europea',
       title: 'Europa avanza en plan de independencia energética',
       href: '/news/internacional/union-europea-impulsa-energias-renovables-nuevas-directivas-ambiciosas',
       category: 'Internacional',
@@ -83,7 +83,7 @@ export const sidebarNewsByCategory = {
       alt: 'Europa avanza en plan de independencia energética',
     }),
     createNewsArticle({
-      id: 'internacional_china_eeuu_cooperacion',
+      id: 'internacional-china-usa',
       title: 'Diálogo China-EEUU abre nueva etapa de cooperación',
       href: '/news/internacional/conversaciones-china-estados-unidos-giro-politica-internacional',
       category: 'Internacional',
@@ -97,7 +97,7 @@ export const sidebarNewsByCategory = {
 
   economia: [
     createNewsArticle({
-      id: 'economia_inflacion_aumento',
+      id: 'economia-inflacion',
       title: 'Inflación sigue en aumento y preocupa a expertos',
       href: '/news/economia/incremento-inflacion-impacta-mercados',
       category: 'Economía',
@@ -108,7 +108,7 @@ export const sidebarNewsByCategory = {
       alt: 'Inflación sigue en aumento y preocupa a expertos',
     }),
     createNewsArticle({
-      id: 'economia_dolar_maximo',
+      id: 'economia-dolar',
       title: 'Dólar alcanza máximo del año frente a otras monedas',
       href: '/news/economia/dolar-alcanza-maximo-ano-frente-monedas',
       category: 'Economía',
@@ -119,7 +119,7 @@ export const sidebarNewsByCategory = {
       alt: 'Dólar alcanza máximo del año frente a otras monedas',
     }),
     createNewsArticle({
-      id: 'economia_bolsa_positiva',
+      id: 'economia-bolsa',
       title: 'Mercados bursátiles celebran jornada positiva',
       href: '/news/economia/bolsa-valores-cierra-alza-optimismo-inversor',
       category: 'Economía',
@@ -130,7 +130,7 @@ export const sidebarNewsByCategory = {
       alt: 'Mercados bursátiles celebran jornada positiva',
     }),
     createNewsArticle({
-      id: 'economia_pib_crecimiento',
+      id: 'economia-pib',
       title: 'Crecimiento económico supera expectativas del gobierno',
       href: '/news/economia/pib-crece-35-ultimo-trimestre-impulsado-consumo-inversion',
       category: 'Economía',
@@ -144,7 +144,7 @@ export const sidebarNewsByCategory = {
 
   salud: [
     createNewsArticle({
-      id: 'salud_oms_alerta',
+      id: 'salud-contaminacion',
       title: 'OMS emite alerta global por nuevo virus',
       href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
       category: 'Salud',
@@ -155,7 +155,7 @@ export const sidebarNewsByCategory = {
       alt: 'OMS emite alerta global por nuevo virus',
     }),
     createNewsArticle({
-      id: 'salud_terapia_cardiovascular',
+      id: 'salud-cardiovascular',
       title: 'Terapia cardiovascular revoluciona tratamiento de enfermedades del corazón',
       href: '/news/salud/avances-medicina-nueva-terapia-mejora-salud-cardiovascular',
       category: 'Salud',
@@ -166,7 +166,7 @@ export const sidebarNewsByCategory = {
       alt: 'Terapia cardiovascular revoluciona tratamiento de enfermedades del corazón',
     }),
     createNewsArticle({
-      id: 'salud_antibioticos_urgencia',
+      id: 'salud-antibioticos',
       title: 'Expertos piden acción urgente contra resistencia antibiótica',
       href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
       category: 'Salud',
@@ -177,7 +177,7 @@ export const sidebarNewsByCategory = {
       alt: 'Expertos piden acción urgente contra resistencia antibiótica',
     }),
     createNewsArticle({
-      id: 'salud_recursos_mental',
+      id: 'salud-mental',
       title: 'Gobiernos destinan recursos a programas de salud mental',
       href: '/news/salud/salud-mental-prioridad-aumento-estres-ansiedad',
       category: 'Salud',
@@ -191,7 +191,7 @@ export const sidebarNewsByCategory = {
 
   deporte: [
     createNewsArticle({
-      id: 'deporte_equipo_local_victoria_casa',
+      id: 'deporte-equipo-local',
       title: 'El equipo local celebra victoria en casa',
       href: '/news/deporte/gran-victoria-equipo-local-futbol',
       category: 'Deporte',
@@ -202,7 +202,7 @@ export const sidebarNewsByCategory = {
       alt: 'El equipo local celebra victoria en casa',
     }),
     createNewsArticle({
-      id: 'deporte_lebron_lakers',
+      id: 'deporte-nba',
       title: 'LeBron James lidera victoria de los Lakers',
       href: '/news/deporte/lakers-vencen-celtics-nba',
       category: 'Deporte',
@@ -213,7 +213,7 @@ export const sidebarNewsByCategory = {
       alt: 'LeBron James lidera victoria de los Lakers',
     }),
     createNewsArticle({
-      id: 'deporte_espana_final',
+      id: 'deporte-espana-final',
       title: 'España hacia la final del Mundial',
       href: '/news/deporte/espana-clasifica-final-mundial-futbol',
       category: 'Deporte',
@@ -224,7 +224,7 @@ export const sidebarNewsByCategory = {
       alt: 'España hacia la final del Mundial',
     }),
     createNewsArticle({
-      id: 'deporte_olimpicos_ceremonia',
+      id: 'deporte-atletas',
       title: 'Juegos Olímpicos: ceremonia inaugural impresiona',
       href: '/news/deporte/atletas-rompen-records-mundiales',
       category: 'Deporte',
@@ -238,7 +238,7 @@ export const sidebarNewsByCategory = {
 
   clima: [
     createNewsArticle({
-      id: 'clima_tormenta_atlantico',
+      id: 'clima-tormenta-atlantico',
       title: 'Tormenta tropical se intensifica en el Atlántico',
       href: '/news/clima/tormenta-tropical-aproxima-caribe-alerta-paises',
       category: 'Clima',
@@ -249,7 +249,7 @@ export const sidebarNewsByCategory = {
       alt: 'Tormenta tropical se intensifica en el Atlántico',
     }),
     createNewsArticle({
-      id: 'clima_ola_calor_europa',
+      id: 'clima-calor-europa',
       title: 'Ola de calor récord afecta el sur de Europa',
       href: '/news/clima/ola-calor-extremo-afecta-regiones-pais',
       category: 'Clima',
@@ -260,7 +260,7 @@ export const sidebarNewsByCategory = {
       alt: 'Ola de calor récord afecta el sur de Europa',
     }),
     createNewsArticle({
-      id: 'clima_inundaciones_asia',
+      id: 'clima-inundaciones-asia',
       title: 'Inundaciones causan evacuaciones en Asia',
       href: '/news/clima/inundaciones-afectan-miles-personas-sur',
       category: 'Clima',
@@ -271,7 +271,7 @@ export const sidebarNewsByCategory = {
       alt: 'Inundaciones causan evacuaciones en Asia',
     }),
     createNewsArticle({
-      id: 'clima_huracan_costa',
+      id: 'clima-huracan-costa',
       title: 'Huracán categoría 4 se acerca a la costa este',
       href: '/news/clima/huracan-se-forma-atlantico-amenaza-costa-este',
       category: 'Clima',
@@ -285,7 +285,7 @@ export const sidebarNewsByCategory = {
 
   justicia: [
     createNewsArticle({
-      id: 'justicia_homicidio_testigos',
+      id: 'justicia-homicidio',
       title: 'Policía busca testigos de homicidio en centro comercial',
       href: '/news/justicia/investigan-homicidio-centro-ciudad',
       category: 'Justicia',
@@ -296,7 +296,7 @@ export const sidebarNewsByCategory = {
       alt: 'Policía busca testigos de homicidio en centro comercial',
     }),
     createNewsArticle({
-      id: 'justicia_exfuncionario_audiencia',
+      id: 'justicia-fraude',
       title: 'Exfuncionario niega cargos de fraude durante audiencia',
       href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
       category: 'Justicia',
@@ -307,7 +307,7 @@ export const sidebarNewsByCategory = {
       alt: 'Exfuncionario niega cargos de fraude durante audiencia',
     }),
     createNewsArticle({
-      id: 'justicia_tribunal_precedente',
+      id: 'justicia-tribunal',
       title: 'Sentencia del Tribunal Supremo senta precedente legal importante',
       href: '/news/justicia/tribunal-supremo-confirma-sentencia',
       category: 'Justicia',
@@ -318,7 +318,7 @@ export const sidebarNewsByCategory = {
       alt: 'Sentencia del Tribunal Supremo senta precedente legal importante',
     }),
     createNewsArticle({
-      id: 'justicia_evasion_fiscal_reforma',
+      id: 'justicia-empresa',
       title: 'Caso de evasión fiscal podría llevar a reforma tributaria',
       href: '/news/justicia/fiscalia-inicia-juicio-empresa-evasion-fiscal-millonaria',
       category: 'Justicia',

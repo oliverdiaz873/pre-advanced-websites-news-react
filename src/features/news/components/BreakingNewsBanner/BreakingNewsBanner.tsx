@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import './BreakingNewsBanner.css';
 import { featuredGrid, latestNews } from '../../../../data';
+import { useArticleTranslator } from '../../hooks/useArticleTranslation';
 
 /** Obtiene 4 noticias aleatorias del array de noticias disponibles */
 const getRandomBreakingNews = () => {
@@ -11,7 +12,9 @@ const getRandomBreakingNews = () => {
 
 /** Representa el banner de "Última hora" de la home con múltiples titulares en formato ticker. */
 export const BreakingNewsBanner = () => {
-  const randomNews = getRandomBreakingNews();
+  const translateArticle = useArticleTranslator();
+  const rawRandomNews = getRandomBreakingNews();
+  const randomNews = rawRandomNews.map(translateArticle);
   const { t } = useTranslation('home');
 
   return (

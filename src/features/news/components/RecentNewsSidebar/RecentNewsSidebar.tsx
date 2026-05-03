@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './RecentNewsSidebar.css';
 import type { NewsArticle } from '../../../../data';
+import { useArticleTranslator } from '../../hooks/useArticleTranslation';
 
 interface RecentNewsSidebarProps {
   title?: string;
@@ -20,10 +21,11 @@ interface RecentNewsSidebarProps {
  * @param {NewsArticle[]} props.articles - Arreglo de noticias a mostrar en la lista.
  * @returns {JSX.Element} El componente de barra lateral.
  */
-export const RecentNewsSidebar = ({ title, articles }: RecentNewsSidebarProps) => {
+export const RecentNewsSidebar = ({ title, articles: rawArticles }: RecentNewsSidebarProps) => {
+  const translateArticle = useArticleTranslator();
   const { t } = useTranslation('news');
-  // Limitar a máximo 5 artículos para el sidebar
-  const recentArticles = articles.slice(0, 5);
+  // Traducción y límite de artículos
+  const recentArticles = rawArticles.slice(0, 5).map(translateArticle);
 
   const sectionTitle = title ?? t('recentNews');
 

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { latestNews, type NewsArticle } from '../../../../data';
+import { useArticleTranslator } from '../../hooks/useArticleTranslation';
 
 interface LatestNewsSectionProps {
   title?: string;
@@ -8,9 +9,12 @@ interface LatestNewsSectionProps {
 }
 
 /** Renderiza una cuadricula editorial reusable para portada y categorias. */
-export const LatestNewsSection = ({ title, articles = latestNews }: LatestNewsSectionProps) => {
+export const LatestNewsSection = ({ title, articles: rawArticles = latestNews }: LatestNewsSectionProps) => {
+  const translateArticle = useArticleTranslator();
   const { t } = useTranslation('home');
   const { t: tCommon } = useTranslation('common');
+
+  const articles = rawArticles.map(translateArticle);
 
   const sectionTitle = title ?? t('latestNews');
 

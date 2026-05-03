@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { opinionArticles, type OpinionArticle } from '../../../../data';
+import { useArticleTranslator } from '../../hooks/useArticleTranslation';
 import './OpinionSidebar.css';
 
 interface OpinionSidebarProps {
@@ -9,8 +10,11 @@ interface OpinionSidebarProps {
 }
 
 /** Representa una barra lateral editorial reusable para home y categorias. */
-export const OpinionSidebar = ({ title, articles = opinionArticles }: OpinionSidebarProps) => {
+export const OpinionSidebar = ({ title, articles: rawArticles = opinionArticles }: OpinionSidebarProps) => {
+  const translateArticle = useArticleTranslator();
   const { t } = useTranslation('home');
+  
+  const articles = rawArticles.map(translateArticle);
 
   const sectionTitle = title ?? t('opinion');
 

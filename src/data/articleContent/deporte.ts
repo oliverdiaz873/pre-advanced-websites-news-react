@@ -30,7 +30,7 @@ export const deporteArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'atletas',
+        id: 'deporte-atletas',
         title: 'Atletas Rompen Récords Mundiales',
         href: '/news/deporte/atletas-rompen-records-mundiales',
         category: 'Deporte',
@@ -41,7 +41,7 @@ export const deporteArticles: FullNewsArticle[] = [
         alt: 'Atletas Rompen Récords Mundiales'
       },
       {
-        id: 'baseball',
+        id: 'deporte-baseball',
         title: 'Serie Mundial de Baseball Comienza',
         href: '/news/deporte/serie-mundial-baseball-comienza',
         category: 'Deporte',
@@ -87,7 +87,7 @@ export const deporteArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'nba',
+        id: 'deporte-nba',
         title: 'Los Lakers vencen a los Celtics 112-107',
         href: '/news/deporte/lakers-vencen-celtics-nba',
         category: 'Deporte',
@@ -98,7 +98,7 @@ export const deporteArticles: FullNewsArticle[] = [
         alt: 'Los Lakers vencen a los Celtics 112-107'
       },
       {
-        id: 'natacion',
+        id: 'deporte-natacion',
         title: 'Nadadora Impone Nuevo Récord',
         href: '/news/deporte/nadadora-impone-nuevo-record',
         category: 'Deporte',
@@ -144,7 +144,7 @@ export const deporteArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'nba',
+        id: 'deporte-nba',
         title: 'Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA',
         href: '/news/deporte/lakers-vencen-celtics-nba',
         category: 'Deporte',
@@ -155,7 +155,7 @@ export const deporteArticles: FullNewsArticle[] = [
         alt: 'Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA'
       },
       {
-        id: 'equipo-local',
+        id: 'deporte-equipo-local',
         title: 'Gran victoria del equipo local en un emocionante partido de fútbol',
         href: '/news/deporte/gran-victoria-equipo-local-futbol',
         category: 'Deporte',
@@ -203,7 +203,7 @@ export const deporteArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'nba',
+        id: 'deporte-nba',
         title: 'Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA',
         href: '/news/deporte/lakers-vencen-celtics-nba',
         category: 'Deporte',
@@ -214,7 +214,7 @@ export const deporteArticles: FullNewsArticle[] = [
         alt: 'Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA'
       },
       {
-        id: 'atletas',
+        id: 'deporte-atletas',
         title: 'Atletas Rompen Récords Mundiales en Campeonato Internacional',
         href: '/news/deporte/atletas-rompen-records-mundiales',
         category: 'Deporte',
@@ -252,7 +252,7 @@ export const deporteArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'nba',
+        id: 'deporte-nba',
         title: 'Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA',
         href: '/news/deporte/lakers-vencen-celtics-nba',
         category: 'Deporte',
@@ -263,7 +263,7 @@ export const deporteArticles: FullNewsArticle[] = [
         alt: 'Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA'
       },
       {
-        id: 'spain-germany',
+        id: 'deporte-espana-final',
         title: 'España se clasifica para la final del Mundial de Fútbol',
         href: '/news/deporte/espana-clasifica-final-mundial-futbol',
         category: 'Deporte',
@@ -281,7 +281,7 @@ export const deporteArticles: FullNewsArticle[] = [
     }
   },
   {
-    id: 'deporte-spain-germany',
+    id: 'deporte-espana-final',
     title: 'España se clasifica para la final del Mundial de Fútbol tras vencer a Alemania',
     href: '/news/deporte/espana-clasifica-final-mundial-futbol',
     category: 'Deporte',
@@ -305,7 +305,7 @@ export const deporteArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'nba',
+        id: 'deporte-nba',
         title: 'Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA',
         href: '/news/deporte/lakers-vencen-celtics-nba',
         category: 'Deporte',
@@ -316,7 +316,7 @@ export const deporteArticles: FullNewsArticle[] = [
         alt: 'Los Lakers vencen a los Celtics 112-107 en un emocionante partido de la NBA'
       },
       {
-        id: 'equipo-local',
+        id: 'deporte-equipo-local',
         title: 'Gran victoria del equipo local en un emocionante partido de fútbol',
         href: '/news/deporte/gran-victoria-equipo-local-futbol',
         category: 'Deporte',

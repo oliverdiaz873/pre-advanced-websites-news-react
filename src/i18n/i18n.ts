@@ -20,7 +20,7 @@ i18n
     fallbackLng: 'es',
 
     // Namespaces organizados por módulo/feature
-    ns: ['common', 'navbar', 'home', 'news', 'search', 'legal', 'footer'],
+    ns: ['common', 'navbar', 'home', 'news', 'search', 'legal', 'footer', 'data'],
     defaultNS: 'common',
 
     // Detección de idioma

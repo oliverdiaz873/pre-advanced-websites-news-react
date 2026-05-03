@@ -28,7 +28,7 @@ export const internacionalArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'guerra',
+        id: 'internacional-guerra',
         title: 'La guerra de Ucrania llega a su fin',
         href: '/news/internacional/guerra-ucrania-llega-fin',
         category: 'Internacional',
@@ -39,7 +39,7 @@ export const internacionalArticles: FullNewsArticle[] = [
         alt: 'La guerra de Ucrania llega a su fin'
       },
       {
-        id: 'israel-iran',
+        id: 'internacional-israel-iran',
         title: 'Crecen las tensiones entre Israel e Irán',
         href: '/news/internacional/tensiones-israel-iran-crecen',
         category: 'Internacional',
@@ -85,7 +85,7 @@ export const internacionalArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'china-usa',
+        id: 'internacional-china-usa',
         title: 'Nuevas conversaciones entre China y Estados Unidos',
         href: '/news/internacional/conversaciones-china-estados-unidos-giro-politica-internacional',
         category: 'Internacional',
@@ -96,7 +96,7 @@ export const internacionalArticles: FullNewsArticle[] = [
         alt: 'Nuevas conversaciones entre China y Estados Unidos'
       },
       {
-        id: 'israel-iran',
+        id: 'internacional-israel-iran',
         title: 'Crecen las tensiones entre Israel e Irán',
         href: '/news/internacional/tensiones-israel-iran-crecen',
         category: 'Internacional',
@@ -140,7 +140,7 @@ export const internacionalArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'china-usa',
+        id: 'internacional-china-usa',
         title: 'Nuevas conversaciones entre China y Estados Unidos',
         href: '/news/internacional/conversaciones-china-estados-unidos-giro-politica-internacional',
         category: 'Internacional',
@@ -151,7 +151,7 @@ export const internacionalArticles: FullNewsArticle[] = [
         alt: 'Nuevas conversaciones entre China y Estados Unidos'
       },
       {
-        id: 'guerra',
+        id: 'internacional-guerra',
         title: 'La guerra de Ucrania llega a su fin',
         href: '/news/internacional/guerra-ucrania-llega-fin',
         category: 'Internacional',
@@ -191,7 +191,7 @@ export const internacionalArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'guerra',
+        id: 'internacional-guerra',
         title: 'La guerra de Ucrania llega a su fin',
         href: '/news/internacional/guerra-ucrania-llega-fin',
         category: 'Internacional',
@@ -202,7 +202,7 @@ export const internacionalArticles: FullNewsArticle[] = [
         alt: 'La guerra de Ucrania llega a su fin'
       },
       {
-        id: 'china-usa',
+        id: 'internacional-china-usa',
         title: 'Nuevas conversaciones entre China y Estados Unidos',
         href: '/news/internacional/conversaciones-china-estados-unidos-giro-politica-internacional',
         category: 'Internacional',
@@ -242,7 +242,7 @@ export const internacionalArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'guerra',
+        id: 'internacional-guerra',
         title: 'La guerra de Ucrania llega a su fin',
         href: '/news/internacional/guerra-ucrania-llega-fin',
         category: 'Internacional',
@@ -253,7 +253,7 @@ export const internacionalArticles: FullNewsArticle[] = [
         alt: 'La guerra de Ucrania llega a su fin'
       },
       {
-        id: 'china-usa',
+        id: 'internacional-china-usa',
         title: 'Nuevas conversaciones entre China y Estados Unidos',
         href: '/news/internacional/conversaciones-china-estados-unidos-giro-politica-internacional',
         category: 'Internacional',
@@ -293,7 +293,7 @@ export const internacionalArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'guerra',
+        id: 'internacional-guerra',
         title: 'La guerra de Ucrania llega a su fin',
         href: '/news/internacional/guerra-ucrania-llega-fin',
         category: 'Internacional',
@@ -304,7 +304,7 @@ export const internacionalArticles: FullNewsArticle[] = [
         alt: 'La guerra de Ucrania llega a su fin'
       },
       {
-        id: 'china-usa',
+        id: 'internacional-china-usa',
         title: 'Nuevas conversaciones entre China y Estados Unidos',
         href: '/news/internacional/conversaciones-china-estados-unidos-giro-politica-internacional',
         category: 'Internacional',

@@ -28,7 +28,7 @@ export const politicaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'casa-blanca',
+        id: 'politica-casa-blanca',
         title: 'Casa Blanca Confirma Cumbre Internacional',
         href: '/news/politica/casa-blanca-confirma-cumbre-internacional',
         category: 'Política',
@@ -39,7 +39,7 @@ export const politicaArticles: FullNewsArticle[] = [
         alt: 'Casa Blanca Confirma Cumbre Internacional'
       },
       {
-        id: 'ley-ambiental',
+        id: 'politica-ley-ambiental',
         title: 'Aprobación Histórica: Ley Ambiental',
         href: '/news/politica/aprobacion-historica-ley-ambiental',
         category: 'Política',
@@ -81,7 +81,7 @@ export const politicaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'encuesta',
+        id: 'politica-encuesta',
         title: 'Encuestas Revelan Incremento en la Popularidad del Presidente',
         href: '/news/politica/encuestas-revelan-incremento-popularidad-presidente',
         category: 'Política',
@@ -92,7 +92,7 @@ export const politicaArticles: FullNewsArticle[] = [
         alt: 'Encuestas Revelan Incremento en la Popularidad del Presidente'
       },
       {
-        id: 'ley-ambiental',
+        id: 'politica-ley-ambiental',
         title: 'Aprobación Histórica: Ley Ambiental',
         href: '/news/politica/aprobacion-historica-ley-ambiental',
         category: 'Política',
@@ -140,7 +140,7 @@ export const politicaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'encuesta',
+        id: 'politica-encuesta',
         title: 'Encuestas Revelan Incremento en Popularidad',
         href: '/news/politica/encuestas-revelan-incremento-popularidad-presidente',
         category: 'Política',
@@ -151,7 +151,7 @@ export const politicaArticles: FullNewsArticle[] = [
         alt: 'Encuestas Revelan Incremento en Popularidad'
       },
       {
-        id: 'casa-blanca',
+        id: 'politica-casa-blanca',
         title: 'Casa Blanca Confirma Cumbre Internacional',
         href: '/news/politica/casa-blanca-confirma-cumbre-internacional',
         category: 'Política',
@@ -191,7 +191,7 @@ export const politicaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'encuesta',
+        id: 'politica-encuesta',
         title: 'Encuestas Revelan Incremento en la Popularidad del Presidente',
         href: '/news/politica/encuestas-revelan-incremento-popularidad-presidente',
         category: 'Política',
@@ -202,7 +202,7 @@ export const politicaArticles: FullNewsArticle[] = [
         alt: 'Encuestas Revelan Incremento en la Popularidad del Presidente'
       },
       {
-        id: 'casa-blanca',
+        id: 'politica-casa-blanca',
         title: 'Casa Blanca Confirma Cumbre Internacional',
         href: '/news/politica/casa-blanca-confirma-cumbre-internacional',
         category: 'Política',
@@ -250,7 +250,7 @@ export const politicaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'encuesta',
+        id: 'politica-encuesta',
         title: 'Encuestas Revelan Incremento en la Popularidad del Presidente',
         href: '/news/politica/encuestas-revelan-incremento-popularidad-presidente',
         category: 'Política',
@@ -261,7 +261,7 @@ export const politicaArticles: FullNewsArticle[] = [
         alt: 'Encuestas Revelan Incremento en la Popularidad del Presidente'
       },
       {
-        id: 'ley-ambiental',
+        id: 'politica-ley-ambiental',
         title: 'Aprobación Histórica: El Congreso Da Luz Verde a la Ley de Protección Ambiental',
         href: '/news/politica/aprobacion-historica-ley-proteccion-ambiental',
         category: 'Política',
@@ -309,7 +309,7 @@ export const politicaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'encuesta',
+        id: 'politica-encuesta',
         title: 'Encuestas Revelan Incremento en la Popularidad del Presidente',
         href: '/news/politica/encuestas-revelan-incremento-popularidad-presidente',
         category: 'Política',
@@ -320,7 +320,7 @@ export const politicaArticles: FullNewsArticle[] = [
         alt: 'Encuestas Revelan Incremento en la Popularidad del Presidente'
       },
       {
-        id: 'casa-blanca',
+        id: 'politica-casa-blanca',
         title: 'Casa Blanca Confirma Cumbre Internacional',
         href: '/news/politica/casa-blanca-confirma-cumbre-internacional',
         category: 'Política',

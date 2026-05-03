@@ -22,7 +22,7 @@ export const economiaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'inflacion',
+        id: 'economia-inflacion',
         title: 'Inflación sigue en aumento y preocupa a expertos',
         href: '/news/economia/inflacion-sigue-aumento-preocupa-expertos',
         category: 'Economía',
@@ -33,7 +33,7 @@ export const economiaArticles: FullNewsArticle[] = [
         alt: 'Inflación sigue en aumento y preocupa a expertos'
       },
       {
-        id: 'dolar',
+        id: 'economia-dolar',
         title: 'Dólar alcanza máximo del año frente a otras monedas',
         href: '/news/economia/dolar-alcanza-maximo-ano-frente-monedas',
         category: 'Economía',
@@ -77,7 +77,7 @@ export const economiaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'bolsa',
+        id: 'economia-bolsa',
         title: 'La bolsa de valores cierra en alza',
         href: '/news/economia/bolsa-valores-cierra-alza-optimismo-inversor',
         category: 'Economía',
@@ -88,7 +88,7 @@ export const economiaArticles: FullNewsArticle[] = [
         alt: 'La bolsa de valores cierra en alza'
       },
       {
-        id: 'dolar',
+        id: 'economia-dolar',
         title: 'Dólar alcanza máximo del año frente a otras monedas',
         href: '/news/economia/dolar-alcanza-maximo-ano-frente-monedas',
         category: 'Economía',
@@ -130,7 +130,7 @@ export const economiaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'bolsa',
+        id: 'economia-bolsa',
         title: 'La bolsa de valores cierra en alza',
         href: '/news/economia/bolsa-valores-cierra-alza-optimismo-inversor',
         category: 'Economía',
@@ -141,7 +141,7 @@ export const economiaArticles: FullNewsArticle[] = [
         alt: 'La bolsa de valores cierra en alza'
       },
       {
-        id: 'inflacion',
+        id: 'economia-inflacion',
         title: 'Incremento de la inflación impacta a los mercados',
         href: '/news/economia/incremento-inflacion-impacta-mercados',
         category: 'Economía',
@@ -185,7 +185,7 @@ export const economiaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'inflacion',
+        id: 'economia-inflacion',
         title: 'Incremento de la inflación impacta a los mercados',
         href: '/news/economia/incremento-inflacion-impacta-mercados',
         category: 'Economía',
@@ -196,7 +196,7 @@ export const economiaArticles: FullNewsArticle[] = [
         alt: 'Incremento de la inflación impacta a los mercados'
       },
       {
-        id: 'dolar',
+        id: 'economia-dolar',
         title: 'Dólar alcanza máximo del año frente a otras monedas',
         href: '/news/economia/dolar-alcanza-maximo-ano-frente-monedas',
         category: 'Economía',
@@ -236,7 +236,7 @@ export const economiaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'inflacion',
+        id: 'economia-inflacion',
         title: 'Incremento de la inflación impacta a los mercados',
         href: '/news/economia/incremento-inflacion-impacta-mercados',
         category: 'Economía',
@@ -247,7 +247,7 @@ export const economiaArticles: FullNewsArticle[] = [
         alt: 'Incremento de la inflación impacta a los mercados'
       },
       {
-        id: 'dolar',
+        id: 'economia-dolar',
         title: 'Dólar alcanza máximo del año frente a otras monedas',
         href: '/news/economia/dolar-alcanza-maximo-ano-frente-monedas',
         category: 'Economía',
@@ -285,7 +285,7 @@ export const economiaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'inflacion',
+        id: 'economia-inflacion',
         title: 'Incremento de la inflación impacta a los mercados',
         href: '/news/economia/incremento-inflacion-impacta-mercados',
         category: 'Economía',
@@ -296,7 +296,7 @@ export const economiaArticles: FullNewsArticle[] = [
         alt: 'Incremento de la inflación impacta a los mercados'
       },
       {
-        id: 'dolar',
+        id: 'economia-dolar',
         title: 'Dólar alcanza máximo del año frente a otras monedas',
         href: '/news/economia/dolar-alcanza-maximo-ano-frente-monedas',
         category: 'Economía',

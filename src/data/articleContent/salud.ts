@@ -24,7 +24,7 @@ export const saludArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'contaminacion',
+        id: 'salud-contaminacion',
         title: 'La contaminación del aire aumenta el riesgo de enfermedades respiratorias',
         href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
         category: 'Salud',
@@ -35,7 +35,7 @@ export const saludArticles: FullNewsArticle[] = [
         alt: 'Contaminación del aire y salud'
       },
       {
-        id: 'cardiovascular',
+        id: 'salud-cardiovascular',
         title: 'Nueva terapia cardiovascular promete mejorar la salud del corazón',
         href: '/news/salud/nueva-terapia-cardiovascular-mejora-salud-corazon',
         category: 'Salud',
@@ -75,7 +75,7 @@ export const saludArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'antibioticos',
+        id: 'salud-antibioticos',
         title: 'Aumenta la preocupación por la resistencia a los antibióticos',
         href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
         category: 'Salud',
@@ -86,7 +86,7 @@ export const saludArticles: FullNewsArticle[] = [
         alt: 'Resistencia a los antibióticos'
       },
       {
-        id: 'cardiovascular',
+        id: 'salud-cardiovascular',
         title: 'Nueva terapia cardiovascular promete mejorar la salud del corazón',
         href: '/news/salud/nueva-terapia-cardiovascular-mejora-salud-corazon',
         category: 'Salud',
@@ -126,7 +126,7 @@ export const saludArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'antibioticos',
+        id: 'salud-antibioticos',
         title: 'Aumenta la preocupación por la resistencia a los antibióticos',
         href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
         category: 'Salud',
@@ -137,7 +137,7 @@ export const saludArticles: FullNewsArticle[] = [
         alt: 'Resistencia a los antibióticos'
       },
       {
-        id: 'contaminacion',
+        id: 'salud-contaminacion',
         title: 'La contaminación del aire aumenta el riesgo de enfermedades respiratorias',
         href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
         category: 'Salud',
@@ -177,7 +177,7 @@ export const saludArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'antibioticos',
+        id: 'salud-antibioticos',
         title: 'Aumenta la preocupación por la resistencia a los antibióticos a nivel mundial',
         href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
         category: 'Salud',
@@ -188,7 +188,7 @@ export const saludArticles: FullNewsArticle[] = [
         alt: 'Aumenta la preocupación por la resistencia a los antibióticos a nivel mundial'
       },
       {
-        id: 'contaminacion',
+        id: 'salud-contaminacion',
         title: 'La contaminación del aire aumenta el riesgo de enfermedades respiratorias',
         href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
         category: 'Salud',
@@ -228,7 +228,7 @@ export const saludArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'antibioticos',
+        id: 'salud-antibioticos',
         title: 'Aumenta la preocupación por la resistencia a los antibióticos a nivel mundial',
         href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
         category: 'Salud',
@@ -239,7 +239,7 @@ export const saludArticles: FullNewsArticle[] = [
         alt: 'Aumenta la preocupación por la resistencia a los antibióticos a nivel mundial'
       },
       {
-        id: 'contaminacion',
+        id: 'salud-contaminacion',
         title: 'La contaminación del aire aumenta el riesgo de enfermedades respiratorias',
         href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
         category: 'Salud',
@@ -279,7 +279,7 @@ export const saludArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'antibioticos',
+        id: 'salud-antibioticos',
         title: 'Aumenta la preocupación por la resistencia a los antibióticos',
         href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
         category: 'Salud',
@@ -290,7 +290,7 @@ export const saludArticles: FullNewsArticle[] = [
         alt: 'Resistencia a los antibióticos'
       },
       {
-        id: 'contaminacion',
+        id: 'salud-contaminacion',
         title: 'La contaminación del aire aumenta el riesgo de enfermedades respiratorias',
         href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
         category: 'Salud',

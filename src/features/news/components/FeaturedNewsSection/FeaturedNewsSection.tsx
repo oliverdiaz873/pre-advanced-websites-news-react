@@ -7,6 +7,7 @@ import {
   type FeaturedSectionContent,
   type NewsArticle,
 } from '../../../../data';
+import { useArticleTranslator } from '../../hooks/useArticleTranslation';
 
 /** Muestra el bloque de metadatos editoriales de una noticia: fecha y categoria. */
 const ArticleMeta = ({ article }: { article: NewsArticle }) => {
@@ -45,15 +46,24 @@ interface FeaturedNewsSectionProps {
 
 /** Renderiza un bloque editorial destacado reusable para portada y categorias. */
 export const FeaturedNewsSection = ({ content }: FeaturedNewsSectionProps) => {
+  const translateArticle = useArticleTranslator();
   const { t } = useTranslation('home');
   const { t: tCommon } = useTranslation('common');
 
-  const sectionContent: FeaturedSectionContent = content ?? {
+  const rawSectionContent: FeaturedSectionContent = content ?? {
     title: t('featuredNews'),
     primary: featuredPrimary,
     secondary: [featuredSecondary[0], featuredSecondary[1], featuredGrid[0]],
     grid: [featuredGrid[1], featuredGrid[2]],
   };
+
+  const sectionContent = {
+    title: rawSectionContent.title,
+    primary: translateArticle(rawSectionContent.primary),
+    secondary: rawSectionContent.secondary.map(translateArticle),
+    grid: rawSectionContent.grid.map(translateArticle),
+  };
+
   const [secondary1, secondary2, secondary3] = sectionContent.secondary;
 
   return (

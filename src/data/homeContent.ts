@@ -6,7 +6,7 @@ export const breakingNews = {
 };
 
 export const featuredPrimary: NewsArticle = {
-  id: 'inflacion_mercados',
+  id: 'economia-inflacion',
   title: 'Incremento de la inflación impacta a los mercados',
   href: '/news/economia/incremento-inflacion-impacta-mercados',
   category: 'Economía',
@@ -20,7 +20,7 @@ export const featuredPrimary: NewsArticle = {
 
 export const featuredSecondary: [NewsArticle, NewsArticle] = [
   {
-    id: 'victoria_equipo_local',
+    id: 'deporte-equipo-local',
     title: 'Gran victoria del equipo local',
     href: '/news/deporte/gran-victoria-equipo-local-futbol',
     category: 'Deporte',
@@ -32,7 +32,7 @@ export const featuredSecondary: [NewsArticle, NewsArticle] = [
     alt: 'Gran victoria del equipo local',
   },
   {
-    id: 'guerra_ucrania_fin',
+    id: 'internacional-guerra',
     title: 'La guerra de Ucrania llega a su fin',
     href: '/news/internacional/guerra-ucrania-llega-fin',
     category: 'Internacional',
@@ -47,7 +47,7 @@ export const featuredSecondary: [NewsArticle, NewsArticle] = [
 
 export const featuredGrid: NewsArticle[] = [
   {
-    id: 'protestas_corrupcion',
+    id: 'politica-protestas',
     title: 'Protestas por corrupción',
     href: '/news/politica/protestas-corrupcion',
     category: 'Política',
@@ -59,7 +59,7 @@ export const featuredGrid: NewsArticle[] = [
     alt: 'Protestas por corrupción en el país',
   },
   {
-    id: 'descubrimiento_virus',
+    id: 'salud-contaminacion',
     title: 'Descubren un nuevo virus que alerta a científicos',
     href: '/news/salud/contaminacion-aire-aumenta-riesgo-enfermedades-respiratorias',
     category: 'Salud',
@@ -71,7 +71,7 @@ export const featuredGrid: NewsArticle[] = [
     alt: 'Descubren un nuevo virus que alerta a científicos',
   },
   {
-    id: 'investigacion_homicidio',
+    id: 'justicia-homicidio',
     title: 'Investigan homicidio en el centro de la ciudad',
     href: '/news/justicia/investigan-homicidio-centro-ciudad',
     category: 'Justicia',
@@ -83,9 +83,9 @@ export const featuredGrid: NewsArticle[] = [
     alt: 'Investigan homicidio en el centro de la ciudad',
   },
   {
-    id: 'huracan_atlantico',
+    id: 'clima-huracan',
     title: 'Huracán se fortalece en el Atlántico y genera alertas en la costa este de EE.UU.',
-    href: '/news/clima/huracan-se-forma-atlantico-amenaza-costa-este',
+    href: '/news/clima/huracan-se-forma-atlantico-amenaza-costa-east',
     category: 'Clima',
     date: '11 de octubre de 2025',
     datetime: '2025-10-11',
@@ -95,7 +95,7 @@ export const featuredGrid: NewsArticle[] = [
     alt: 'Huracán se fortalece en el Atlántico y genera alertas en la costa este de EE.UU.',
   },
   {
-    id: 'detencion_fraude',
+    id: 'justicia-fraude',
     title: 'Detienen a exfuncionario acusado de fraude financiero millonario',
     href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
     category: 'Justicia',
@@ -107,7 +107,7 @@ export const featuredGrid: NewsArticle[] = [
     alt: 'Detienen a exfuncionario acusado de fraude financiero millonario',
   },
   {
-    id: 'bolsa_valores_alza',
+    id: 'economia-bolsa',
     title: 'La bolsa de valores cierra en alza tras jornada de optimismo inversor',
     href: '/news/economia/bolsa-valores-cierra-alza-optimismo-inversor',
     category: 'Economía',
@@ -122,7 +122,7 @@ export const featuredGrid: NewsArticle[] = [
 
 export const latestNews: NewsArticle[] = [
   {
-    id: 'tormenta_caribe',
+    id: 'clima-tormenta',
     title: 'Tormenta tropical se aproxima al Caribe y alerta a varios países',
     href: '/news/clima/tormenta-tropical-aproxima-caribe-alerta-paises',
     category: 'Clima',
@@ -134,7 +134,7 @@ export const latestNews: NewsArticle[] = [
     alt: 'Tormenta tropical se aproxima al Caribe',
   },
   {
-    id: 'lakers_celtics',
+    id: 'deporte-nba',
     title: 'Los Lakers se imponen a los Celtics en un vibrante partido de la NBA',
     href: '/news/deporte/lakers-vencen-celtics-nba',
     category: 'Deporte',
@@ -146,7 +146,7 @@ export const latestNews: NewsArticle[] = [
     alt: 'Los Lakers vencen a los Celtics',
   },
   {
-    id: 'popularidad_presidente',
+    id: 'politica-encuesta',
     title: 'Encuestas revelan incremento en la popularidad del presidente',
     href: '/news/politica/encuestas-revelan-incremento-popularidad-presidente',
     category: 'Política',
@@ -158,7 +158,7 @@ export const latestNews: NewsArticle[] = [
     alt: 'Encuesta de popularidad presidencial',
   },
   {
-    id: 'olimpiadas_apertura',
+    id: 'deporte-atletas',
     title: 'Atletas internacionales brillan en ceremonia inaugural de los Juegos Olímpicos',
     href: '/news/deporte/atletas-rompen-records-mundiales',
     category: 'Deporte',
@@ -170,7 +170,7 @@ export const latestNews: NewsArticle[] = [
     alt: 'Ceremonia inaugural Juegos Olímpicos',
   },
   {
-    id: 'resistencia_antibioticos',
+    id: 'salud-antibioticos',
     title: 'Aumenta la preocupación por la resistencia a los antibióticos',
     href: '/news/salud/aumenta-preocupacion-resistencia-antibioticos-mundial',
     category: 'Salud',
@@ -182,7 +182,7 @@ export const latestNews: NewsArticle[] = [
     alt: 'Resistencia a antibióticos',
   },
   {
-    id: 'dolar_fortalece',
+    id: 'economia-dolar',
     title: 'El dólar se fortalece ante incertidumbre económica global',
     href: '/news/economia/dolar-alcanza-maximo-ano-frente-monedas',
     category: 'Economía',
@@ -194,3 +194,4 @@ export const latestNews: NewsArticle[] = [
     alt: 'El dólar se fortalece',
   },
 ];
+

@@ -5,12 +5,15 @@ import { SearchIcon } from '../../shared/components/icons';
 import { NewsLayout } from '../../shared/layouts';
 import { useSearch } from '../../features/news/hooks/useSearch';
 import { EmptyState } from '../../shared/components';
+import { useArticleTranslator } from '../../features/news/hooks/useArticleTranslation';
 
 /**
  * Search Page - Internacionalizada
  */
 const Search = () => {
-  const { query, results, count, hasQuery, isEmpty } = useSearch();
+  const translateArticle = useArticleTranslator();
+  const { query, results: rawResults, count, hasQuery, isEmpty } = useSearch();
+  const results = rawResults.map(translateArticle);
   const { t } = useTranslation('search');
   const { t: tCommon } = useTranslation('common');
 

@@ -5,6 +5,7 @@ import '../Home/Home.css';
 import { Breadcrumb } from '../../features/navigation/components';
 import { RecentNewsSidebar, ArticleDetail, useNewsArticle } from '../../features/news';
 import { NewsLayout } from '../../shared/layouts';
+import { useArticleTranslator } from '../../features/news/hooks/useArticleTranslation';
 
 
 /**
@@ -20,7 +21,9 @@ import { NewsLayout } from '../../shared/layouts';
  * - ArticleDetail: Componente que renderiza el cuerpo y metadatos de la noticia.
  */
 export const Article = () => {
-  const { article, categoryName, categorySlug } = useNewsArticle();
+  const translateArticle = useArticleTranslator();
+  const { article: rawArticle, categoryName, categorySlug } = useNewsArticle();
+  const article = translateArticle(rawArticle);
   const { t } = useTranslation('news');
   const { t: tCommon } = useTranslation('common');
 
@@ -49,7 +52,7 @@ export const Article = () => {
     <>
       <Breadcrumb 
         home={t('breadcrumbHome')}
-        category={categoryName}
+        category={t(`data:categories.${categorySlug}.label`, { defaultValue: categoryName })}
         categoryPath={`/category/${categorySlug}`}
         current={article?.breadcrumb?.current || article?.title || ""}
       />

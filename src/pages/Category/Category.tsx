@@ -4,6 +4,7 @@ import './Category.css';
 import '../Home/Home.css';
 import { useCategory, RecentNewsSidebar, FeaturedNewsSection, LatestNewsSection } from '../../features/news';
 import { NewsLayout } from '../../shared/layouts';
+import { useCategoryTranslation } from '../../features/news/hooks/useCategoryTranslation';
 
 
 /**
@@ -19,7 +20,8 @@ import { NewsLayout } from '../../shared/layouts';
  * - LatestNewsSection: Listado inferior de noticias adicionales.
  */
 export const Category = () => {
-  const { content } = useCategory();
+  const { content: rawContent } = useCategory();
+  const content = useCategoryTranslation(rawContent);
   const { t } = useTranslation('news');
   const { t: tCommon } = useTranslation('common');
 

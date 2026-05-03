@@ -30,7 +30,7 @@ export const justiciaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'fraude',
+        id: 'justicia-fraude',
         title: 'Detienen a exfuncionario acusado de fraude financiero millonario',
         href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
         category: 'Justicia',
@@ -41,7 +41,7 @@ export const justiciaArticles: FullNewsArticle[] = [
         alt: 'Detienen a exfuncionario acusado de fraude financiero millonario'
       },
       {
-        id: 'tribunal',
+        id: 'justicia-tribunal',
         title: 'Tribunal Supremo confirma sentencia',
         href: '/news/justicia/tribunal-supremo-confirma-sentencia',
         category: 'Justicia',
@@ -83,7 +83,7 @@ export const justiciaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'criminal',
+        id: 'justicia-criminal',
         title: 'Condenan a cadena perpetua a líder criminal',
         href: '/news/justicia/condenan-cadena-perpetua-lider-organizacion-criminal',
         category: 'Justicia',
@@ -94,7 +94,7 @@ export const justiciaArticles: FullNewsArticle[] = [
         alt: 'Condenan a cadena perpetua a líder criminal'
       },
       {
-        id: 'tribunal',
+        id: 'justicia-tribunal',
         title: 'Tribunal Supremo confirma sentencia',
         href: '/news/justicia/tribunal-supremo-confirma-sentencia',
         category: 'Justicia',
@@ -138,7 +138,7 @@ export const justiciaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'criminal',
+        id: 'justicia-criminal',
         title: 'Condenan a cadena perpetua a líder criminal',
         href: '/news/justicia/condenan-cadena-perpetua-lider-organizacion-criminal',
         category: 'Justicia',
@@ -149,7 +149,7 @@ export const justiciaArticles: FullNewsArticle[] = [
         alt: 'Condenan a cadena perpetua a líder criminal'
       },
       {
-        id: 'fraude',
+        id: 'justicia-fraude',
         title: 'Detienen a exfuncionario acusado de fraude financiero millonario',
         href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
         category: 'Justicia',
@@ -191,7 +191,7 @@ export const justiciaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'criminal',
+        id: 'justicia-criminal',
         title: 'Condenan a cadena perpetua a líder criminal',
         href: '/news/justicia/condenan-cadena-perpetua-lider-organizacion-criminal',
         category: 'Justicia',
@@ -202,7 +202,7 @@ export const justiciaArticles: FullNewsArticle[] = [
         alt: 'Condenan a cadena perpetua a líder criminal'
       },
       {
-        id: 'fraude',
+        id: 'justicia-fraude',
         title: 'Detienen a exfuncionario acusado de fraude financiero millonario',
         href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
         category: 'Justicia',
@@ -242,7 +242,7 @@ export const justiciaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'criminal',
+        id: 'justicia-criminal',
         title: 'Condenan a cadena perpetua a líder criminal',
         href: '/news/justicia/condenan-cadena-perpetua-lider-organizacion-criminal',
         category: 'Justicia',
@@ -253,7 +253,7 @@ export const justiciaArticles: FullNewsArticle[] = [
         alt: 'Condenan a cadena perpetua a líder criminal'
       },
       {
-        id: 'fraude',
+        id: 'justicia-fraude',
         title: 'Detienen a exfuncionario acusado de fraude financiero millonario',
         href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
         category: 'Justicia',
@@ -293,7 +293,7 @@ export const justiciaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'criminal',
+        id: 'justicia-criminal',
         title: 'Condenan a cadena perpetua a líder criminal',
         href: '/news/justicia/condenan-cadena-perpetua-lider-organizacion-criminal',
         category: 'Justicia',
@@ -304,7 +304,7 @@ export const justiciaArticles: FullNewsArticle[] = [
         alt: 'Condenan a cadena perpetua a líder criminal'
       },
       {
-        id: 'fraude',
+        id: 'justicia-fraude',
         title: 'Detienen a exfuncionario acusado de fraude financiero millonario',
         href: '/news/justicia/detienen-exfuncionario-fraude-financiero-millonario',
         category: 'Justicia',

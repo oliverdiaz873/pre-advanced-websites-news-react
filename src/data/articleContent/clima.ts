@@ -24,7 +24,7 @@ export const climaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'calor',
+        id: 'clima-calor',
         title: 'Ola de calor extremo afecta a varias regiones del país',
         href: '/news/clima/ola-calor-extremo-afecta-regiones-pais',
         category: 'Clima',
@@ -35,7 +35,7 @@ export const climaArticles: FullNewsArticle[] = [
         alt: 'Ola de calor extremo afecta a varias regiones del país'
       },
       {
-        id: 'tornado',
+        id: 'clima-tornado',
         title: 'Tornado causa graves daños en el centro del país',
         href: '/news/clima/tornado-causa-graves-danos-centro-pais',
         category: 'Clima',
@@ -77,7 +77,7 @@ export const climaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'tormenta',
+        id: 'clima-tormenta',
         title: 'Tormenta tropical se aproxima al Caribe',
         href: '/news/clima/tormenta-tropical-aproxima-caribe-alerta-paises',
         category: 'Clima',
@@ -88,7 +88,7 @@ export const climaArticles: FullNewsArticle[] = [
         alt: 'Tormenta tropical se aproxima al Caribe'
       },
       {
-        id: 'tornado',
+        id: 'clima-tornado',
         title: 'Tornado causa graves daños en el centro del país',
         href: '/news/clima/tornado-causa-graves-danos-centro-pais',
         category: 'Clima',
@@ -130,7 +130,7 @@ export const climaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'tormenta',
+        id: 'clima-tormenta',
         title: 'Tormenta tropical se aproxima al Caribe',
         href: '/news/clima/tormenta-tropical-aproxima-caribe-alerta-paises',
         category: 'Clima',
@@ -141,7 +141,7 @@ export const climaArticles: FullNewsArticle[] = [
         alt: 'Tormenta tropical se aproxima al Caribe'
       },
       {
-        id: 'calor',
+        id: 'clima-calor',
         title: 'Ola de calor extremo afecta a varias regiones',
         href: '/news/clima/ola-calor-extremo-afecta-regiones-pais',
         category: 'Clima',
@@ -191,7 +191,7 @@ export const climaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'calor',
+        id: 'clima-calor',
         title: 'Ola de calor extremo afecta a varias regiones del país',
         href: '/news/clima/ola-calor-extremo-afecta-regiones-pais',
         category: 'Clima',
@@ -202,7 +202,7 @@ export const climaArticles: FullNewsArticle[] = [
         alt: 'Ola de calor extremo afecta a varias regiones del país'
       },
       {
-        id: 'tornado',
+        id: 'clima-tornado',
         title: 'Tornado causa graves daños en el centro del país',
         href: '/news/clima/tornado-causa-graves-danos-centro-pais',
         category: 'Clima',
@@ -256,7 +256,7 @@ export const climaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'calor',
+        id: 'clima-calor',
         title: 'Ola de calor extremo afecta a varias regiones del país',
         href: '/news/clima/ola-calor-extremo-afecta-regiones-pais',
         category: 'Clima',
@@ -267,7 +267,7 @@ export const climaArticles: FullNewsArticle[] = [
         alt: 'Ola de calor extremo afecta a varias regiones del país'
       },
       {
-        id: 'tornado',
+        id: 'clima-tornado',
         title: 'Tornado causa graves daños en el centro del país',
         href: '/news/clima/tornado-causa-graves-danos-centro-pais',
         category: 'Clima',
@@ -317,7 +317,7 @@ export const climaArticles: FullNewsArticle[] = [
     ],
     relatedNews: [
       {
-        id: 'calor',
+        id: 'clima-calor',
         title: 'Ola de calor extremo afecta a varias regiones del país',
         href: '/news/clima/ola-calor-extremo-afecta-regiones-pais',
         category: 'Clima',
@@ -328,7 +328,7 @@ export const climaArticles: FullNewsArticle[] = [
         alt: 'Ola de calor extremo afecta a varias regiones del país'
       },
       {
-        id: 'tornado',
+        id: 'clima-tornado',
         title: 'Tornado causa graves daños en el centro del país',
         href: '/news/clima/tornado-causa-graves-danos-centro-pais',
         category: 'Clima',

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import type { FullNewsArticle } from '../../../../data';
+import { useArticleTranslator } from '../../hooks/useArticleTranslation';
 
 interface ArticleDetailProps {
   article: FullNewsArticle;
@@ -20,6 +21,7 @@ interface ArticleDetailProps {
  */
 export const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
   const { t } = useTranslation('common');
+  
   // Separamos el primer párrafo del resto para mejorar el diseño visual
   const [firstParagraph, ...restParagraphs] = article.content || [];
 

@@ -6,6 +6,7 @@ import '../Article/Article.css';
 import { Breadcrumb } from '../../features/navigation/components';
 import { RecentNewsSidebar, ArticleDetail, useOpinion } from '../../features/news';
 import { NewsLayout } from '../../shared/layouts';
+import { useArticleTranslator } from '../../features/news/hooks/useArticleTranslation';
 
 /**
  * Opinion Page
@@ -14,7 +15,10 @@ import { NewsLayout } from '../../shared/layouts';
  * Utiliza la misma plantilla que las noticias para mantener la consistencia visual.
  */
 export const Opinion = () => {
-  const { article, sidebarOpinions } = useOpinion();
+  const translateArticle = useArticleTranslator();
+  const { article: rawArticle, sidebarOpinions: rawSidebar } = useOpinion();
+  const article = translateArticle(rawArticle);
+  const sidebarOpinions = rawSidebar?.map(translateArticle) || [];
   const { t } = useTranslation('news');
   const { t: tCommon } = useTranslation('common');
 
