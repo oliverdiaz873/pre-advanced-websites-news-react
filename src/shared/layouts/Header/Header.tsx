@@ -59,7 +59,7 @@ export const Header = () => {
           <div className="header-mobile-actions border-b border-gray-100 pb-4 mb-2 dark:border-gray-800">
             <div className="flex flex-col gap-4">
               <SearchBar onSearchComplete={() => setIsMenuOpen(false)} />
-              <div className="flex justify-start px-2 gap-3">
+              <div className="flex flex-col items-start px-2 gap-4">
                 <LanguageSelector />
                 <ThemeToggle />
               </div>

@@ -80,7 +80,7 @@
   background: transparent;
   border: 0;
   border-radius: 12px;
-  color: var(--color-text-secondary);
+  color: var(--color-text-primary);
   cursor: pointer;
   display: inline-flex;
   font: inherit;

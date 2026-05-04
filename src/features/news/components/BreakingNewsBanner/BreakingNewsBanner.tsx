@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import './BreakingNewsBanner.css';
 import { featuredGrid, latestNews } from '../../../../data';
 import { useArticleTranslator } from '../../hooks/useArticleTranslation';
+import { BreakingNewsBadge } from './BreakingNewsBadge';
 
 /** Obtiene 4 noticias aleatorias del array de noticias disponibles */
 const getRandomBreakingNews = () => {
@@ -20,10 +21,7 @@ export const BreakingNewsBanner = () => {
   return (
     <section className="breaking-news rounded-md">
       <div className="relative flex items-center overflow-hidden rounded-md bg-[#dc3545] text-white shadow-sm">
-        <div className="z-10 mr-2 flex shrink-0 items-center gap-2 rounded-md bg-[#212529] px-3 py-[0.25em] text-[0.75em] font-bold uppercase">
-          {t('breakingNews')}
-          <span className="h-2 w-2 rounded-full bg-[#ff0000] animate-blink"></span>
-        </div>
+        <BreakingNewsBadge />
 
         <div className="breaking-news-content">
           <div className="breaking-news-text inline-flex items-center">
