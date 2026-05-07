@@ -20,6 +20,14 @@
   font-weight: 600;
 }
 
+.breaking-news-text > span {
+  font-size: 1.5rem;
+}
+
+.breaking-news-text a span {
+  font-size: 15px;
+}
+
 @keyframes pulse {
   0%,
   100% {

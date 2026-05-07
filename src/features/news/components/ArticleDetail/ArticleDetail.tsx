@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import type { FullNewsArticle } from '../../../../data';
-import { useArticleTranslator } from '../../hooks/useArticleTranslation';
 
 interface ArticleDetailProps {
   article: FullNewsArticle;

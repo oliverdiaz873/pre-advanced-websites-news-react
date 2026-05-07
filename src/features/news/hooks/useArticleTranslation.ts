@@ -61,10 +61,10 @@ export const useArticleTranslator = () => {
       const translatedContent = t(`data:articles.${articleId}.content`, { 
         returnObjects: true, 
         defaultValue: article.content 
-      });
+      }) as unknown;
 
       if (Array.isArray(translatedContent)) {
-        fullArticle.content = translatedContent;
+        fullArticle.content = translatedContent.filter((item): item is string => typeof item === 'string');
       }
       
       // Traducimos el breadcrumb si existe

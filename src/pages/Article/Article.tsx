@@ -58,6 +58,7 @@ export const Article = () => {
       />
       
       <NewsLayout
+        className="article-layout"
         sidebar={
           <RecentNewsSidebar 
             title={t('relatedNews')}

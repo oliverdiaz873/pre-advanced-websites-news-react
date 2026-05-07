@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import './BreakingNewsBanner.css';
 import { featuredGrid, latestNews } from '../../../../data';
 import { useArticleTranslator } from '../../hooks/useArticleTranslation';
@@ -16,7 +15,6 @@ export const BreakingNewsBanner = () => {
   const translateArticle = useArticleTranslator();
   const rawRandomNews = getRandomBreakingNews();
   const randomNews = rawRandomNews.map(translateArticle);
-  const { t } = useTranslation('home');
 
   return (
     <section className="breaking-news rounded-md">

@@ -49,6 +49,7 @@ export const Category = () => {
   return (
     <>
       <NewsLayout
+        className="category-layout"
         sidebar={
           <RecentNewsSidebar 
             title={t('category.recentNews')}
@@ -56,7 +57,7 @@ export const Category = () => {
           />
         }
       >
-        <div className="space-y-8">
+        <div className="category-page space-y-8">
           {/* Sección de noticias destacadas de la categoría */}
           <FeaturedNewsSection content={content.featuredSection} />
           

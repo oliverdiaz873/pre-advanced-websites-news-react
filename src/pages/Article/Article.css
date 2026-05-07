@@ -48,8 +48,16 @@ html[data-theme='dark'] .breadcrumb-item.active {
   margin-bottom: 2rem;
 }
 
+.article-layout {
+  padding-top: 1rem;
+}
+
 /* Truncamiento para móviles */
 @media (max-width: 576px) {
+  .article-layout {
+    padding-top: 0.75rem;
+  }
+
   .breadcrumb-item a {
     max-width: 120px;
     white-space: nowrap;
@@ -63,10 +71,6 @@ html[data-theme='dark'] .breadcrumb-item.active {
     overflow: hidden;
     text-overflow: ellipsis;
   }
-}
-
-span {
-  font-size: 1.5rem;
 }
 
 /* Estilo para h1 en páginas de noticias */
@@ -131,13 +135,15 @@ html[data-theme='dark'] .featured-article:hover {
 
 /* Estilos adicionales para React */
 .article-wrapper .featured-article .content {
-  flex: 0 0 35%;
-  max-width: 35%;
+  flex: none;
+  max-width: 100%;
+  width: 100%;
 }
 
 .article-wrapper .featured-article .image-wrapper {
-  flex: 0 0 60%;
-  max-width: 60%;
+  flex: none;
+  max-width: 100%;
+  width: 100%;
 }
 
 .article-wrapper .featured-article .image-wrapper img {
@@ -154,6 +160,20 @@ html[data-theme='dark'] .featured-article:hover {
 }
 
 /* Estilos responsive */
+@media (min-width: 992px) {
+  .article-wrapper .featured-article .content {
+    flex: 0 0 40%;
+    max-width: 40%;
+    width: auto;
+  }
+
+  .article-wrapper .featured-article .image-wrapper {
+    flex: 0 0 55%;
+    max-width: 55%;
+    width: auto;
+  }
+}
+
 @media (max-width: 991px) {
   .article-wrapper .featured-article .d-flex {
     flex-direction: column;
@@ -162,6 +182,30 @@ html[data-theme='dark'] .featured-article:hover {
   .article-wrapper .featured-article .image-wrapper {
     flex: none;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .article-wrapper {
+    border-radius: 8px;
+    padding: 16px;
+  }
+
+  .article-wrapper .h1 {
+    font-size: 1.55rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .article-body,
+  .featured-article .lead,
+  .article-body p {
+    font-size: 1rem !important;
+    line-height: 1.7;
+  }
+
+  .article-body p,
+  .article-wrapper .featured-article p {
+    text-align: left;
   }
 }
 

@@ -1,4 +1,5 @@
 import { useEffect, useId, useRef, useState, type ReactElement } from 'react';
+import { useTranslation } from 'react-i18next';
 import './ThemeToggle.css';
 import { SunIcon, MoonIcon, SystemIcon } from '../icons';
 import { useTheme, type ThemePreference } from '../../../theme';
@@ -9,18 +10,21 @@ const iconByTheme: Record<ThemePreference, ReactElement> = {
   system: <SystemIcon className="h-[1.25rem] w-[1.25rem] shrink-0" />,
 };
 
-const options: Array<{ value: ThemePreference; label: string; menuLabel: string }> = [
-  { value: 'light', label: 'light', menuLabel: 'light' },
-  { value: 'dark', label: 'dark', menuLabel: 'dark' },
-  { value: 'system', label: 'auto', menuLabel: 'auto' },
+const options: Array<{ value: ThemePreference; labelKey: string }> = [
+  { value: 'light', labelKey: 'theme.options.light' },
+  { value: 'dark', labelKey: 'theme.options.dark' },
+  { value: 'system', labelKey: 'theme.options.system' },
 ];
 
 export const ThemeToggle = () => {
+  const { t } = useTranslation('common');
   const { theme, setTheme, resolvedTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
   const menuId = useId();
   const selectedOption = options.find((option) => option.value === theme) ?? options[2];
+  const selectedLabel = t(selectedOption.labelKey);
+  const resolvedThemeLabel = t(`theme.options.${resolvedTheme}`);
 
   useEffect(() => {
     const handlePointerDown = (event: MouseEvent) => {
@@ -53,33 +57,35 @@ export const ThemeToggle = () => {
     <div
       ref={rootRef}
       className="theme-toggle"
-      aria-label={`Theme selector. Active preference: ${theme}. Applied theme: ${resolvedTheme}.`}
+      aria-label={t('theme.selectorLabel', {
+        preference: selectedLabel,
+        applied: resolvedThemeLabel,
+      })}
     >
       <button
         type="button"
-        className="theme-toggle-trigger"
+        className={`theme-toggle-trigger ${isOpen ? 'is-open' : ''}`}
         aria-haspopup="menu"
         aria-expanded={isOpen}
         aria-controls={menuId}
-        aria-label={`Tema: ${selectedOption.label}. Tema aplicado: ${resolvedTheme}.`}
+        aria-label={t('theme.triggerLabel', {
+          preference: selectedLabel,
+          applied: resolvedThemeLabel,
+        })}
         onClick={() => setIsOpen((currentValue) => !currentValue)}
       >
         {iconByTheme[theme]}
-        {isOpen && (
-          <span className="theme-toggle-trigger-value">{selectedOption.label}</span>
-        )}
-        {isOpen && (
-          <span className={`theme-toggle-caret ${isOpen ? 'is-open' : ''}`} aria-hidden="true">
-            ▼
-          </span>
-        )}
+        <span className="theme-toggle-trigger-value">{selectedLabel}</span>
+        <span className={`theme-toggle-caret ${isOpen ? 'is-open' : ''}`} aria-hidden="true">
+          ▼
+        </span>
       </button>
 
       <div
         id={menuId}
         className={`theme-toggle-menu ${isOpen ? 'is-open' : ''}`}
         role="menu"
-        aria-label="Theme options"
+        aria-label={t('theme.menuLabel')}
       >
         {options.map((option) => (
           <button
@@ -89,14 +95,16 @@ export const ThemeToggle = () => {
             onClick={() => handleSelect(option.value)}
             role="menuitemradio"
             aria-checked={theme === option.value}
-            aria-label={
-              option.value === 'system'
-                ? `Use auto theme. Currently applied: ${resolvedTheme}.`
-                : `Use ${option.menuLabel.toLowerCase()} theme.`
-            }
+            aria-label={t(
+              option.value === 'system' ? 'theme.useSystemLabel' : 'theme.useThemeLabel',
+              {
+                theme: t(option.labelKey),
+                applied: resolvedThemeLabel,
+              },
+            )}
           >
             {iconByTheme[option.value]}
-            <span className="theme-toggle-label">{option.menuLabel}</span>
+            <span className="theme-toggle-label">{t(option.labelKey)}</span>
           </button>
         ))}
       </div>

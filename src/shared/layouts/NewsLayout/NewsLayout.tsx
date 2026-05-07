@@ -3,6 +3,7 @@ import React from 'react';
 interface NewsLayoutProps {
   children: React.ReactNode;
   sidebar?: React.ReactNode;
+  className?: string;
 }
 
 /**
@@ -15,9 +16,9 @@ interface NewsLayoutProps {
  * 
  * Se ajusta automáticamente a 1320px de ancho máximo.
  */
-export const NewsLayout = ({ children, sidebar }: NewsLayoutProps) => {
+export const NewsLayout = ({ children, sidebar, className = '' }: NewsLayoutProps) => {
   return (
-    <main className="min-h-[calc(100vh-200px)] px-4 py-8 lg:px-4">
+    <main className={`min-h-[calc(100vh-200px)] px-4 py-8 lg:px-4 ${className}`}>
       <div className="mx-auto max-w-[1320px]">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
           {/* Columna Principal */}

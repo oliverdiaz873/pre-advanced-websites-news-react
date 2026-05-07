@@ -25,7 +25,11 @@ export const useCategoryTranslation = (content?: CategoryPageContent): CategoryP
       title: t(`${basePath}.featuredSectionTitle`, { defaultValue: content.featuredSection.title }),
       // Traducimos los artículos destacados
       primary: translateArticle(content.featuredSection.primary),
-      secondary: content.featuredSection.secondary.map(translateArticle),
+      secondary: [
+        translateArticle(content.featuredSection.secondary[0]),
+        translateArticle(content.featuredSection.secondary[1]),
+        translateArticle(content.featuredSection.secondary[2]),
+      ],
       grid: content.featuredSection.grid.map(translateArticle),
     },
     // Traducimos las listas de noticias
