@@ -157,7 +157,8 @@ const economiaArticles: NewsArticle[] = [
     category: 'Economía',
     date: '4 de octubre de 2025',
     datetime: '2025-10-04',
-    summary: 'La inflación volvió a ocupar el centro de atención tras conocerse nuevos datos que muestran un incremento sostenido en los precios a nivel global.',
+    summary:
+      'El aumento sostenido de la inflación genera incertidumbre en los mercados financieros y afecta el poder adquisitivo de los ciudadanos. Los precios de productos básicos y servicios esenciales continúan incrementándose, obligando a empresas y familias a ajustar presupuestos. Analistas advierten que, de no implementarse políticas económicas efectivas, esta tendencia podría persistir, impactando la inversión, el empleo y la estabilidad económica del país a mediano plazo.',
     imageUrl: '/images/news/economia/inflacion.jpg',
     alt: 'Incremento de la inflación impacta a los mercados',
   }),

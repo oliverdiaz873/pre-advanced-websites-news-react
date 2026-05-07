@@ -128,7 +128,8 @@ const extractData = () => {
     },
     'economia-inflacion': {
       title: 'Rising inflation impacts markets',
-      summary: 'The sustained increase in inflation is creating uncertainty in financial markets and affecting citizens\' purchasing power.',
+      summary:
+        'A sustained rise in inflation is rattling financial markets and squeezing household purchasing power. Prices for essential goods and services keep climbing, forcing businesses and families to tighten budgets. Analysts warn that without effective policy measures, the trend could persist and weigh on investment, jobs, and economic stability in the medium term.',
       content: [
         'According to recent reports, annual inflation in major economies has exceeded analysts\' expectations, driven by rising costs for energy, food, and transport. In several European countries, prices recorded their highest increase in over a year.',
         'International stock markets reacted with volatility. The S&P 500 fell more than 1%, while the Euro Stoxx 50 and Japan\'s Nikkei recorded similar declines. Investors fear that central banks may delay interest rate cuts.',
