@@ -69,7 +69,7 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
         {/* Desktop: El input va antes [Input][Lupa]
             Mobile: Queremos [Lupa][Input]
         */}
-        <div className="flex w-full items-center lg:flex-row-reverse">
+        <div className="flex w-full items-center md:flex-row-reverse">
           
           {/* Botón de la lupa */}
           <button
@@ -86,7 +86,7 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
           <div 
             className={`transition-all duration-500 ease-in-out ${
               isExpanded 
-                ? 'flex-1 opacity-100 scale-100 ml-2 lg:ml-0 lg:mr-2' 
+                ? 'flex-1 opacity-100 scale-100 ml-2 md:ml-0 md:mr-2' 
                 : 'w-0 opacity-0 scale-95 pointer-events-none'
             } lg:absolute lg:right-full lg:flex-none lg:w-[300px]`}
           >
