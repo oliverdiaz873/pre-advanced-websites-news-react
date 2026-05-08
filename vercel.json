@@ -1,7 +1,4 @@
-
 {
-  "$comment": "All routes are rewritten to index.html so React Router can handle client-side navigation in production on Vercel.",
-
   "rewrites": [
     {
       "source": "/(.*)",
@@ -9,7 +6,6 @@
     }
   ]
 }
-
 
 
 
