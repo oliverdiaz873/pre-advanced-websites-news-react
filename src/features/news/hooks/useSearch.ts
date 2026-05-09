@@ -8,13 +8,16 @@ import { hasSearchQuery, matchesSearchQuery } from '../../../shared/utils/search
  * Hook para gestionar la lógica de búsqueda global de noticias y opiniones.
  * 
  * Filtra los datos centralizados basándose en el parámetro 'q' de la URL.
- * Busca tanto en los datos originales (ES) como en las traducciones del idioma activo,
- * garantizando que la búsqueda funcione en todos los idiomas del i18n.
+ * Búsqueda bilingüe: siempre busca en AMBOS idiomas (ES + EN),
+ * independientemente del idioma activo, para una experiencia profesional.
  */
 export const useSearch = () => {
   const [searchParams] = useSearchParams();
   const query = searchParams.get('q') || '';
-  const { t, i18n } = useTranslation('data');
+  const { i18n } = useTranslation('data');
+
+  // Obtenemos traductores fijos para ambos idiomas
+  const tEn = i18n.getFixedT('en', 'data');
 
   const results = useMemo(() => {
     if (!hasSearchQuery(query)) return [];
@@ -26,9 +29,9 @@ export const useSearch = () => {
     ];
 
     // Filtramos por título, categoría o resumen
-    // Buscamos en AMBOS: datos originales (ES) y traducciones del idioma activo
+    // Buscamos siempre en AMBOS idiomas: datos originales (ES) + traducciones (EN)
     return allContent.filter(article => {
-      // 1. Búsqueda en datos originales (siempre en español)
+      // 1. Búsqueda en datos originales (español hardcoded)
       const matchesOriginal =
         matchesSearchQuery(article.title, query) ||
         matchesSearchQuery(article.category, query) ||
@@ -36,26 +39,19 @@ export const useSearch = () => {
 
       if (matchesOriginal) return true;
 
-      // 2. Búsqueda en datos traducidos (idioma activo)
-      // Solo necesario si no es español (los datos base ya son ES)
-      if (i18n.language !== 'es') {
-        const translatedTitle = t(`articles.${article.id}.title`, { defaultValue: '' });
-        const translatedSummary = t(`articles.${article.id}.summary`, { defaultValue: '' });
-        
-        // Categoría traducida via el label del data.json
-        const categoryKey = article.category?.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        const translatedCategory = t(`categories.${categoryKey}.label`, { defaultValue: '' });
+      // 2. Búsqueda en traducciones EN (siempre, sin importar idioma activo)
+      const enTitle = tEn(`articles.${article.id}.title`, { defaultValue: '' });
+      const enSummary = tEn(`articles.${article.id}.summary`, { defaultValue: '' });
+      const categoryKey = article.category?.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      const enCategory = tEn(`categories.${categoryKey}.label`, { defaultValue: '' });
 
-        return (
-          (translatedTitle && matchesSearchQuery(translatedTitle, query)) ||
-          (translatedCategory && matchesSearchQuery(translatedCategory, query)) ||
-          (translatedSummary && matchesSearchQuery(translatedSummary, query))
-        );
-      }
-
-      return false;
+      return (
+        (enTitle && matchesSearchQuery(enTitle, query)) ||
+        (enCategory && matchesSearchQuery(enCategory, query)) ||
+        (enSummary && matchesSearchQuery(enSummary, query))
+      );
     });
-  }, [query, t, i18n.language]);
+  }, [query, tEn]);
 
   return {
     query,

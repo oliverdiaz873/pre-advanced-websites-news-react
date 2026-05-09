@@ -7,7 +7,7 @@ import {
 import { opinionArticles } from './opinionArticles';
 import type { CategoryPageContent, NewsArticle, OpinionArticle } from './newsModels';
 import { sidebarNewsByCategory } from './sidebarNews';
-import { createNewsArticle } from './utils';
+import { createNewsArticle } from './articleFactory';
 
 
 const politicaArticles: NewsArticle[] = [

@@ -10,7 +10,6 @@ export const SearchIcon = ({ className }: IconProps) => (
 );
 
 
-
 // SunIcon
 export const SunIcon = ({ className }: IconProps) => (
   <svg className={className} xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">

@@ -1,4 +1,4 @@
-import { createNewsArticle } from './utils';
+import { createNewsArticle } from './articleFactory';
 
 export const sidebarNewsByCategory = {
   politica: [
