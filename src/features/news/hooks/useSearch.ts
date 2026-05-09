@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { newsArticles, opinionArticles } from '../../../data';
@@ -11,13 +11,20 @@ import { hasSearchQuery, matchesSearchQuery } from '../../../shared/utils/search
  * Búsqueda bilingüe: siempre busca en AMBOS idiomas (ES + EN),
  * independientemente del idioma activo, para una experiencia profesional.
  */
-export const useSearch = () => {
+export const useSearch = (overrideQuery?: string) => {
   const [searchParams] = useSearchParams();
-  const query = searchParams.get('q') || '';
+  const query = overrideQuery !== undefined ? overrideQuery : (searchParams.get('q') || '');
   const { i18n } = useTranslation('data');
 
   // Obtenemos traductores fijos para ambos idiomas
   const tEn = i18n.getFixedT('en', 'data');
+  
+  // Aseguramos que el idioma inglés esté cargado para la búsqueda bilingüe
+  useEffect(() => {
+    if (i18n.options.supportedLngs && (i18n.options.supportedLngs as string[]).includes('en')) {
+      i18n.loadLanguages('en');
+    }
+  }, [i18n]);
 
   const results = useMemo(() => {
     if (!hasSearchQuery(query)) return [];

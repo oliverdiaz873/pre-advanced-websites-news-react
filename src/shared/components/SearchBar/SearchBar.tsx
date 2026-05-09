@@ -22,7 +22,7 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
   const { t } = useTranslation('navbar');
   
   const translateArticle = useArticleTranslator();
-  const { results: rawResults, hasQuery } = useSearch();
+  const { results: rawResults, hasQuery } = useSearch(searchTerm);
   const results = rawResults.map(translateArticle);
 
   useEffect(() => {
