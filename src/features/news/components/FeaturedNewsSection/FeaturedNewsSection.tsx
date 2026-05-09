@@ -77,12 +77,12 @@ export const FeaturedNewsSection = ({ content }: FeaturedNewsSectionProps) => {
             aria-label={tCommon('readArticle', { title: sectionContent.primary.title })}
             className="block text-inherit no-underline xl:flex xl:items-start xl:gap-6"
           >
-            <div className="mb-4 xl:order-2 xl:mb-0 xl:w-[60%]">
-              <div className="overflow-hidden rounded-lg">
+            <div className="mb-4 xl:order-2 xl:mb-0 xl:w-[70%]">
+              <div className="overflow-hidden rounded-lg aspect-video">
                 <img
                   src={sectionContent.primary.imageUrl}
                   alt={sectionContent.primary.alt}
-                  className="h-auto w-full transition-transform duration-300 hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
             </div>

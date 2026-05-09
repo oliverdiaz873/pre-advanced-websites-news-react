@@ -8,6 +8,7 @@ export interface NewsArticle {
   summary: string;
   imageUrl: string;
   alt: string;
+  isBreaking?: boolean;
 }
 
 export interface FullNewsArticle extends NewsArticle {

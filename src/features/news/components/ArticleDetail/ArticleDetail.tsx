@@ -36,26 +36,17 @@ export const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
               {t('publishedOn')} <time dateTime={article.datetime}>{article.date}</time> | {article.category}
             </p>
             
-            <div className="space-y-6">
-              {/* Resumen (Lead) */}
-              <p className="text-[1.1rem] leading-[1.8] text-[#333] dark:text-[#d1d5db] text-justify">
-                {article.summary}
-              </p>
-              
-              {/* Primer párrafo al lado de la imagen */}
-              {firstParagraph && (
-                <p className="text-[1.1rem] leading-[1.8] text-[#333] dark:text-[#d1d5db] text-justify border-t border-gray-100 dark:border-gray-800 pt-6">
-                  {firstParagraph}
-                </p>
-              )}
-            </div>
+            {/* Resumen (Lead) */}
+            <p className="text-[1.1rem] leading-[1.8] text-[#333] dark:text-[#d1d5db] text-justify">
+              {article.summary}
+            </p>
           </div>
           
-          <div className="image-wrapper order-1 lg:order-2 flex-[0_0_55%] max-w-full lg:max-w-[55%] shadow-sm overflow-hidden rounded-[10px]">
+          <div className="image-wrapper order-1 lg:order-2 flex-[0_0_100%] lg:flex-[0_0_60%] max-w-full lg:max-w-[60%] shadow-sm overflow-hidden rounded-[10px] aspect-video">
             <img 
               src={article.imageUrl} 
               alt={article.alt} 
-              className="w-full h-auto transition-transform duration-300 hover:scale-105" 
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" 
               loading="lazy"
             />
           </div>
@@ -63,6 +54,13 @@ export const ArticleDetail: React.FC<ArticleDetailProps> = ({ article }) => {
       </article>
 
       <div className="article-body px-1 mt-8">
+        {/* Primer párrafo */}
+        {firstParagraph && (
+          <p className="mb-6 text-[1.1rem] leading-[1.8] text-[#333] dark:text-[#d1d5db] text-justify border-t border-gray-100 dark:border-gray-800 pt-6">
+            {firstParagraph}
+          </p>
+        )}
+        
         {/* Resto de párrafos */}
         {restParagraphs.map((paragraph, index) => (
           <p 

@@ -1,20 +1,19 @@
 import './BreakingNewsBanner.css';
-import { featuredGrid, latestNews } from '../../../../data';
+import { featuredPrimary, featuredGrid, latestNews } from '../../../../data';
 import { useArticleTranslator } from '../../hooks/useArticleTranslation';
 import { BreakingNewsBadge } from './BreakingNewsBadge';
 
-/** Obtiene 4 noticias aleatorias del array de noticias disponibles */
-const getRandomBreakingNews = () => {
-  const allNews = [...featuredGrid, ...latestNews];
-  const shuffled = [...allNews].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, 4);
+/** Obtiene los 4 artículos editorialmente seleccionados marcados como última hora */
+const getBreakingNews = () => {
+  const allNews = [featuredPrimary, ...featuredGrid, ...latestNews];
+  return allNews.filter(article => article.isBreaking === true).slice(0, 4);
 };
 
 /** Representa el banner de "Última hora" de la home con múltiples titulares en formato ticker. */
 export const BreakingNewsBanner = () => {
   const translateArticle = useArticleTranslator();
-  const rawRandomNews = getRandomBreakingNews();
-  const randomNews = rawRandomNews.map(translateArticle);
+  const breakingNews = getBreakingNews();
+  const translatedNews = breakingNews.map(translateArticle);
 
   return (
     <section className="breaking-news rounded-md">
@@ -23,7 +22,7 @@ export const BreakingNewsBanner = () => {
 
         <div className="breaking-news-content">
           <div className="breaking-news-text inline-flex items-center">
-            {randomNews.map((news, index) => (
+            {translatedNews.map((news, index) => (
               <span key={news.id}>
                 {index > 0 && <span className="mx-4 align-middle">•</span>}
                 <a 

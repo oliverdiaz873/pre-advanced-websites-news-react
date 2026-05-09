@@ -191,6 +191,10 @@ html[data-theme='dark'] .featured-article:hover {
     padding: 16px;
   }
 
+  .article-wrapper .featured-article .image-wrapper {
+    border-radius: 8px;
+  }
+
   .article-wrapper .h1 {
     font-size: 1.55rem !important;
     line-height: 1.25 !important;

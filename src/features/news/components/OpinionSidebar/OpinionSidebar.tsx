@@ -36,7 +36,7 @@ export const OpinionSidebar = ({ title, articles: rawArticles = opinionArticles 
                   loading="lazy"
                   className="mb-2 h-[120px] w-full rounded-lg object-cover"
                 />
-                <h4 className="mb-2 text-[0.95rem] font-bold leading-[1.3] text-[#212529] transition-colors duration-300 hover:text-[#dc3545] dark:text-[var(--color-text-primary)]">
+                <h4 className="mb-2 text-[0.95rem] font-bold leading-[1.3] text-[#212529] transition-colors duration-300 hover:text-[#dc3545] dark:text-[var(--color-text-primary)] line-clamp-3">
                   {article.title}
                 </h4>
                 <div className="metadata">

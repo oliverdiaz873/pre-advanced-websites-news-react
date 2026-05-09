@@ -16,6 +16,7 @@ export const featuredPrimary: NewsArticle = {
     'El aumento sostenido de la inflación genera incertidumbre en los mercados financieros y afecta el poder adquisitivo de los ciudadanos. Los precios de productos básicos y servicios esenciales continúan incrementándose, obligando a empresas y familias a ajustar presupuestos. Analistas advierten que, de no implementarse políticas económicas efectivas, esta tendencia podría persistir, impactando la inversión, el empleo y la estabilidad económica del país a mediano plazo.',
   imageUrl: '/images/news/economia/inflacion.jpg',
   alt: 'Incremento de la inflación impacta a los mercados',
+  isBreaking: true,
 };
 
 export const featuredSecondary: [NewsArticle, NewsArticle] = [
@@ -69,6 +70,7 @@ export const featuredGrid: NewsArticle[] = [
       'Investigadores internacionales analizan un nuevo virus que podría representar un riesgo para la salud pública global.',
     imageUrl: '/images/news/salud/virus.jpg',
     alt: 'Descubren un nuevo virus que alerta a científicos',
+    isBreaking: true,
   },
   {
     id: 'justicia-homicidio',
@@ -93,6 +95,7 @@ export const featuredGrid: NewsArticle[] = [
       'El fenómeno meteorológico continúa intensificándose y obliga a emitir alertas preventivas en varias zonas costeras.',
     imageUrl: '/images/news/clima/ciclon.jpg',
     alt: 'Huracán se fortalece en el Atlántico y genera alertas en la costa este de EE.UU.',
+    isBreaking: true,
   },
   {
     id: 'justicia-fraude',
@@ -105,6 +108,7 @@ export const featuredGrid: NewsArticle[] = [
       'El exfuncionario fue arrestado tras ser vinculado a un esquema de fraude que habría causado pérdidas millonarias al Estado.',
     imageUrl: '/images/news/justicia/arrested.jpg',
     alt: 'Detienen a exfuncionario acusado de fraude financiero millonario',
+    isBreaking: true,
   },
   {
     id: 'economia-bolsa',

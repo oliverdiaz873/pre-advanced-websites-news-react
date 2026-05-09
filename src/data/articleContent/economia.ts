@@ -24,7 +24,7 @@ export const economiaArticles: FullNewsArticle[] = [
       {
         id: 'economia-inflacion',
         title: 'Inflación sigue en aumento y preocupa a expertos',
-        href: '/news/economia/inflacion-sigue-aumento-preocupa-expertos',
+        href: '/news/economia/incremento-inflacion-impacta-mercados',
         category: 'Economía',
         date: '4 de octubre de 2025',
         datetime: '2025-10-04',
