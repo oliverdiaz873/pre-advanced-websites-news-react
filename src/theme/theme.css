@@ -1,9 +1,9 @@
 :root {
   color-scheme: light dark;
-  --color-bg-primary: #f5f1ea;
-  --color-bg-secondary: #fcfaf6;
+  --color-bg-primary: #f8f9fa;
+  --color-bg-secondary: #f1f3f5;
   --color-surface-base: #ffffff;
-  --color-surface-elevated: #fffaf2;
+  --color-surface-elevated: #ffffff;
   --color-surface-inverse: #111827;
   --color-text-primary: #1f2937;
   --color-text-secondary: #52606d;
@@ -18,10 +18,10 @@
 }
 
 html[data-theme='light'] {
-  --color-bg-primary: #f5f1ea;
-  --color-bg-secondary: #fcfaf6;
+  --color-bg-primary: #f8f9fa;
+  --color-bg-secondary: #f1f3f5;
   --color-surface-base: #ffffff;
-  --color-surface-elevated: #fffaf2;
+  --color-surface-elevated: #ffffff;
   --color-surface-inverse: #111827;
   --color-text-primary: #1f2937;
   --color-text-secondary: #52606d;
