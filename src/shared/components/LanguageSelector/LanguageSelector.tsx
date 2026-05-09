@@ -33,10 +33,13 @@ export const LanguageSelector = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    document.documentElement.lang = i18n.language || 'es';
+  }, [i18n.language]);
+
   const changeLanguage = (lng: string) => {
     if (i18n.language !== lng) {
       i18n.changeLanguage(lng);
-      document.documentElement.lang = lng;
     }
     setIsOpen(false);
   };

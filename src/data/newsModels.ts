@@ -54,4 +54,4 @@ export interface CategoryPageContent {
   opinionArticles: OpinionArticle[];
 }
 
-export interface ArticleContent extends FullNewsArticle {}
+export type ArticleContent = FullNewsArticle;

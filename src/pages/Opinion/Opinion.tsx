@@ -64,6 +64,7 @@ export const Opinion = () => {
         sidebar={
           <RecentNewsSidebar 
             title={t('opinion.sidebarTitle')}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             articles={sidebarOpinions as any}
           />
         }

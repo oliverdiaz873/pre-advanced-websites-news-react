@@ -38,7 +38,7 @@ export const useArticleTranslator = () => {
           month: 'long',
           day: 'numeric'
         }).format(d);
-      } catch (e) {
+      } catch {
         // Fallback
       }
     }

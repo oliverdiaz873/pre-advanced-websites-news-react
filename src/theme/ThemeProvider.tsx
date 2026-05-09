@@ -19,6 +19,7 @@ import { readThemePreference, writeThemePreference, isThemePreference } from './
 import { getSystemTheme, resolveTheme, subscribeToSystemTheme } from './system';
 import type { ResolvedTheme, StoredThemeState, ThemeContextValue, ThemePreference } from './types';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 const getDocumentThemePreference = (): StoredThemeState => {
