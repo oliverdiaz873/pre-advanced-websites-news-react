@@ -87,7 +87,7 @@ export const featuredGrid: NewsArticle[] = [
   {
     id: 'clima-huracan',
     title: 'Huracán se fortalece en el Atlántico y genera alertas en la costa este de EE.UU.',
-    href: '/news/clima/huracan-se-forma-atlantico-amenaza-costa-east',
+    href: '/news/clima/huracan-se-forma-atlantico-amenaza-costa-este',
     category: 'Clima',
     date: '11 de octubre de 2025',
     datetime: '2025-10-11',
