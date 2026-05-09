@@ -49,8 +49,10 @@
   }
 }
 
-.breaking-news:hover .breaking-news-text {
-  animation-play-state: paused;
+@media (hover: hover) {
+  .breaking-news:hover .breaking-news-text {
+    animation-play-state: paused;
+  }
 }
 
 @media (max-width: 768px) {

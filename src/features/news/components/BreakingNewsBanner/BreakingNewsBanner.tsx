@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './BreakingNewsBanner.css';
 import { featuredPrimary, featuredGrid, latestNews } from '../../../../data';
 import { useArticleTranslator } from '../../hooks/useArticleTranslation';
@@ -25,12 +26,12 @@ export const BreakingNewsBanner = () => {
             {translatedNews.map((news, index) => (
               <span key={news.id}>
                 {index > 0 && <span className="mx-4 align-middle">•</span>}
-                <a 
-                  href={news.href} 
+                <Link 
+                  to={news.href} 
                   className="inline-flex items-center text-white no-underline hover:underline"
                 >
                   <span className="align-middle" style={{fontSize: '15px', fontFamily: 'Arial, sans-serif', fontWeight: '600'}}>{news.title}</span>
-                </a>
+                </Link>
               </span>
             ))}
           </div>
