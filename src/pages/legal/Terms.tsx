@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { LegalLayout } from '../../shared/layouts';
+import { SEO } from '../../shared/components'
 
 export const Terms: React.FC = () => {
   const { t } = useTranslation('legal')
@@ -13,7 +14,12 @@ export const Terms: React.FC = () => {
   }>
 
   return (
-    <LegalLayout title={t('terms.title')} date={t('terms.date')}>
+    <>
+      <SEO 
+        title={t('terms.title')}
+        description={t('terms.intro')}
+      />
+      <LegalLayout title={t('terms.title')} date={t('terms.date')}>
       <p>{t('terms.intro')}</p>
       {sections.map(section => (
         <div key={section.id}>
@@ -25,6 +31,7 @@ export const Terms: React.FC = () => {
         </div>
       ))}
     </LegalLayout>
+    </>
   )
 }
 

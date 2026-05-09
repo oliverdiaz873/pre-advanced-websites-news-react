@@ -1,4 +1,5 @@
 import { useHome } from '../../features/news';
+import { SEO } from '../../shared/components';
 import './Home.css';
 import {
   BreakingNewsBanner,
@@ -23,7 +24,12 @@ export const Home = () => {
   const { featuredSection, latestNews, opinionArticles } = useHome();
 
   return (
-    <main className="home-main min-h-[calc(100vh-200px)] px-4 py-0 pb-8 md:px-[0.1rem] lg:px-4 lg:pb-12">
+    <>
+      <SEO 
+        title="Inicio" 
+        description="Las noticias más importantes del mundo, política, economía y deportes en un solo lugar."
+      />
+      <main className="home-main min-h-[calc(100vh-200px)] px-4 py-0 pb-8 md:px-[0.1rem] lg:px-4 lg:pb-12">
       <div className="mx-auto mt-3 max-w-[1600px]">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <div className="lg:col-span-9">
@@ -43,5 +49,6 @@ export const Home = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };

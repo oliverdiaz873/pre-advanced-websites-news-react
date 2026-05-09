@@ -5,6 +5,7 @@ import '../Home/Home.css';
 import { Breadcrumb } from '../../features/navigation/components';
 import { RecentNewsSidebar, ArticleDetail, useNewsArticle } from '../../features/news';
 import { NewsLayout } from '../../shared/layouts';
+import { SEO } from '../../shared/components';
 import { useArticleTranslator } from '../../features/news/hooks/useArticleTranslation';
 
 
@@ -50,6 +51,13 @@ export const Article = () => {
 
   return (
     <>
+      <SEO 
+        title={article.title}
+        description={article.summary}
+        imageUrl={article.imageUrl}
+        type="article"
+        datePublished={article.datetime}
+      />
       <Breadcrumb 
         home={t('breadcrumbHome')}
         category={t(`data:categories.${categorySlug}.label`, { defaultValue: categoryName })}

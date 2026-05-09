@@ -4,6 +4,7 @@ import './Category.css';
 import '../Home/Home.css';
 import { useCategory, RecentNewsSidebar, FeaturedNewsSection, LatestNewsSection } from '../../features/news';
 import { NewsLayout } from '../../shared/layouts';
+import { SEO } from '../../shared/components';
 import { useCategoryTranslation } from '../../features/news/hooks/useCategoryTranslation';
 
 
@@ -48,6 +49,10 @@ export const Category = () => {
 
   return (
     <>
+      <SEO 
+        title={content.label}
+        description={content.description}
+      />
       <NewsLayout
         className="category-layout"
         sidebar={

@@ -4,7 +4,7 @@ import { SearchIcon } from '../../shared/components/icons';
 
 import { NewsLayout } from '../../shared/layouts';
 import { useSearch } from '../../features/news/hooks/useSearch';
-import { EmptyState } from '../../shared/components';
+import { EmptyState, SEO } from '../../shared/components';
 import { useArticleTranslator } from '../../features/news/hooks/useArticleTranslation';
 
 /**
@@ -18,7 +18,12 @@ const Search = () => {
   const { t: tCommon } = useTranslation('common');
 
   return (
-    <NewsLayout>
+    <>
+      <SEO 
+        title={hasQuery ? `${t('resultsFor')} "${query}"` : t('search')}
+        description={hasQuery ? `${t('foundCount', { count })} para la búsqueda: ${query}` : t('useSearchHint')}
+      />
+      <NewsLayout>
       <div className="container mx-auto pt-1 pb-2">
         {hasQuery ? (
           isEmpty ? (
@@ -91,6 +96,7 @@ const Search = () => {
         )}
       </div>
     </NewsLayout>
+    </>
   );
 };
 

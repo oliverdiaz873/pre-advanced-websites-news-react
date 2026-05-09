@@ -6,6 +6,7 @@ import '../Article/Article.css';
 import { Breadcrumb } from '../../features/navigation/components';
 import { RecentNewsSidebar, ArticleDetail, useOpinion } from '../../features/news';
 import { NewsLayout } from '../../shared/layouts';
+import { SEO } from '../../shared/components';
 import { useArticleTranslator } from '../../features/news/hooks/useArticleTranslation';
 
 /**
@@ -45,6 +46,13 @@ export const Opinion = () => {
 
   return (
     <>
+      <SEO 
+        title={article.title}
+        description={article.summary}
+        imageUrl={article.imageUrl}
+        type="article"
+        datePublished={article.datetime}
+      />
       <Breadcrumb 
         home={t('breadcrumbHome')}
         category={t('opinion.breadcrumbCategory')}
