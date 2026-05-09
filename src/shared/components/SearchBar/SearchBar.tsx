@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { SearchIcon, CloseIcon } from '../icons';
 import { useSearch } from '../../../features/news/hooks/useSearch';
+import { useArticleTranslator } from '../../../features/news/hooks/useArticleTranslation';
 
 /**
  * SearchBar
@@ -20,7 +21,9 @@ export const SearchBar = ({ onSearchComplete }: { onSearchComplete?: () => void 
   const inputRef = useRef<HTMLInputElement>(null);
   const { t } = useTranslation('navbar');
   
-  const { results, hasQuery } = useSearch();
+  const translateArticle = useArticleTranslator();
+  const { results: rawResults, hasQuery } = useSearch();
+  const results = rawResults.map(translateArticle);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
